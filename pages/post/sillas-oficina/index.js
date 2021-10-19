@@ -1,5 +1,5 @@
 import  {Navbar, SEO, Footer, Conclusiones, Cabecera, Buttom, TopBox, TablaContenido } from "/components/Imports";
-import { AmazonURLS, CabeceraText, TopText, contenido, conclusiones, img, NumItems, ImgCabecera } from "./data";
+import { AmazonURLS, CabeceraText, TopText, contenido, conclusiones, img, NumItems, ImgCabecera } from "../../../data/SillasGamers";
 
 function SillasOficina() {
   return (

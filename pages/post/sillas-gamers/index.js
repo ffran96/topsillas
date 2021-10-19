@@ -16,7 +16,6 @@ function sillasGamers() {
           img={ImgCabecera}
           text={CabeceraText}
         />
-        Hola ryke
         {NumItems.map((NumItems, index) => (
           <div className="top">
             <TopBox

@@ -1,0 +1,61 @@
+import Image from "next/image";
+
+const index = (props) => {
+  return (
+    <>
+      <a href={props.url} rel="nofollow" target="_blank">
+        <h2 id={props.title}>{props.title}</h2>
+      </a>
+      <div className="top-box">
+        <a href={props.url} rel="nofollow" target="_blank">
+          <div className="top-image">
+            <Image
+              src={"/"+props.img+".jpg"}
+              alt={props.img}
+              width={props.width}
+              height={props.height}
+            />
+          </div>
+        </a>
+        <div className="top-text">
+          {props.text.map((text) => (
+            <p>{text}</p>
+          ))}
+        </div>
+      </div>
+
+      <style jsx>{`
+        a {
+          color: #000000;
+          text-decoration: none;
+        }
+        p {
+          text-align: justify;
+        }
+
+        h2 {
+          text-align: center;
+        }
+
+        .top-image {
+          display: flex;
+          justify-content: center;
+        }
+
+        @media only screen and (min-width: 1200px) {
+          .top-box {
+            display: flex;
+            gap: 3em;
+            justify-content: center;
+          }
+
+          .top-text {
+            max-width: 30em;
+          }
+        }
+      `}</style>
+    </>
+  );
+};
+
+export default index;

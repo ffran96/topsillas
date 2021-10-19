@@ -1,0 +1,57 @@
+import Image from "next/image";
+
+const index = (props) => {
+  return (
+    <>
+      <h1 id={props.title}>{props.title}</h1>
+      <div className="cabecera">
+        <div className="figure">
+          <Image
+            src={"/"+props.img+".jpg"}
+            alt={props.img}
+            width={800}
+            height={400}
+          />
+        </div>
+        <div className="cabecera-texto">
+          {props.text.map((text) => (
+            <p>{text}</p>
+          ))}
+        </div>
+      </div>
+
+      <style jsx>{`
+        p {
+          text-align: justify;
+        }
+        h1 {
+          text-align: center;
+        }
+        .cabecera {
+          margin-bottom: 2.5em;
+        }
+
+        @media only screen and (min-width: 1200px) {
+          h1 {
+            font-size: 52px;
+          }
+          .cabecera {
+            display: flex;
+            gap: 2em;
+            margin-bottom: 3.5em;
+          }
+
+          .cabecera-texto {
+            max-width: 30em;
+          }
+
+          .figure {
+            margin-top: 1.3em;
+          }
+        }
+      `}</style>
+    </>
+  );
+};
+
+export default index;

@@ -5,7 +5,7 @@ const CategoyData = [
     src: "/silla-gaming.jpg",
     alt: "silla gaming",
     title: "Sillas para gamers",
-    width: 121.5,
+    width: 161.5,
     height: 250,
   },
   {

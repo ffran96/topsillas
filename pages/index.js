@@ -13,7 +13,9 @@ export default function Home () {
       <Navbar />
       <Categories />
       <Footer />
-      <style jsx>{''}</style>
+      <style jsx>{`
+      
+      `}</style>
 
       <style jsx global>{`
         html,

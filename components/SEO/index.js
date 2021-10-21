@@ -3,7 +3,6 @@ import Head from "next/head";
 const index = (props) => {
   return (
       <Head>
-        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{props.title} | TopSillas</title>
         <meta name="description" content={props.description} />

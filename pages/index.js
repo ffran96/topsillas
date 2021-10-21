@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Home"
+        title="Inicio"
         description="¡Encuentra tu silla ideal al mejor precio y calidad!"
       />
       <Navbar />

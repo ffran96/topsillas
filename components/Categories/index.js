@@ -5,7 +5,7 @@ const index = () => {
     <>
       <div className="container">
         <CategoriasBox
-          link="/post/sillas-gamers"
+          link="/posts/sillas-gamers"
           src="/silla-gaming.jpg"
           alt="silla gaming"
           title="Sillas para gamers"
@@ -13,7 +13,7 @@ const index = () => {
           height={250}
         />
         <CategoriasBox
-          link="/post/sillas-oficina"
+          link="/posts/sillas-oficina"
           src="/silla-oficina.jpg"
           alt="silla de oficina"
           title="Sillas de oficina"
@@ -21,7 +21,7 @@ const index = () => {
           height={250}
         />
         <CategoriasBox
-          link="/post/puffs"
+          link="/"
           src="/puff.jpg"
           alt="puff rojo"
           title="Puffs"
@@ -127,6 +127,7 @@ const index = () => {
             margin-left: 150px;
             margin-right: 150px;
           }
+
         }
 
         @media only screen and (min-width: 1600px) {
@@ -135,6 +136,7 @@ const index = () => {
             margin-left: 250px;
             margin-right: 250px;
           }
+
         }
       `}</style>
     </>

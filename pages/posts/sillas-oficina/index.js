@@ -1,4 +1,4 @@
-import  {Navbar, SEO, Footer, Conclusiones, Cabecera, Buttom, TopBox, TablaContenido } from "/components/Imports";
+import  { Navbar, SEO, Footer, Conclusiones, Cabecera, Buttom, TopBox, TablaContenido } from "/components/Imports";
 import { AmazonURLS, CabeceraText, TopText, contenido, conclusiones, img, NumItems, ImgCabecera } from "../../../data/SillasOficina";
 
 function SillasOficina() {

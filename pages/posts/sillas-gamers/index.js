@@ -16,6 +16,7 @@ function sillasGamers() {
           img={ImgCabecera}
           text={CabeceraText}
         />
+        
         {NumItems.map((NumItems, index) => (
           <div className="top">
             <TopBox

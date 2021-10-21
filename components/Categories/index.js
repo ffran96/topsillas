@@ -1,5 +1,5 @@
-import CategoriasBox from "/components/CategoriasBox";
-import { CategoyData, numItems } from "../../data/home"
+import CategoriasBox from '/components/CategoriasBox'
+import { CategoyData, numItems } from '../../data/home'
 
 const index = () => {
   return (
@@ -14,7 +14,7 @@ const index = () => {
           width={CategoyData[index].width}
           height={CategoyData[index].height}
         />
-          ))}
+        ))}
       </div>
 
       <style jsx>{`
@@ -85,7 +85,7 @@ const index = () => {
         }
       `}</style>
     </>
-  );
-};
+  )
+}
 
-export default index;
+export default index

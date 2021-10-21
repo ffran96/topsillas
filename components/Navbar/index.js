@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const index = () => {
   return (
@@ -94,7 +94,7 @@ const index = () => {
         }
       `}</style>
     </>
-  );
-};
+  )
+}
 
-export default index;
+export default index

@@ -1,16 +1,16 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 const index = (props) => {
   return (
     <>
-      <a href={props.url} rel="nofollow" target="_blank">
+      <a href={props.url} rel="nofollow noreferrer" target="_blank">
         <h2 id={props.title}>{props.title}</h2>
       </a>
       <div className="top-box">
-        <a href={props.url} rel="nofollow" target="_blank">
+        <a href={props.url} rel="nofollow noreferrer" target="_blank">
           <div className="top-image">
             <Image
-              src={"/"+props.img+".jpg"}
+              src={'/' + props.img + '.jpg'}
               alt={props.img}
               width={props.width}
               height={props.height}
@@ -55,7 +55,7 @@ const index = (props) => {
         }
       `}</style>
     </>
-  );
-};
+  )
+}
 
-export default index;
+export default index

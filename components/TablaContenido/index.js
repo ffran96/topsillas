@@ -7,7 +7,7 @@ const index = (props) => {
         </div>
         <ul>
           {props.contenido.map((contenido) => (
-            <a href={"#"+contenido.url}>
+            <a href={'#' + contenido.url}>
               <li>{contenido.title}</li>
             </a>
           ))}
@@ -78,7 +78,7 @@ const index = (props) => {
         }
       `}</style>
     </>
-  );
-};
+  )
+}
 
-export default index;
+export default index

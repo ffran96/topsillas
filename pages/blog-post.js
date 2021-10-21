@@ -1,6 +1,6 @@
-import SEO from "/components/SEO";
-import React from "react";
-import Navbar from "/components/Navbar";
+import SEO from '/components/SEO'
+import React from 'react'
+import Navbar from '/components/Navbar'
 
 const index = () => {
   return (
@@ -35,7 +35,7 @@ const index = () => {
         }
       `}</style>
     </>
-  );
-};
+  )
+}
 
-export default index;
+export default index

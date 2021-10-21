@@ -5,7 +5,7 @@ const index = (props) => {
         <div className="buttom">
           <a
             href={props.url}
-            rel="nofollow"
+            rel="nofollow noreferrer"
             target="_blank"
           >
             {props.label}
@@ -37,7 +37,7 @@ const index = (props) => {
       `}</style>
 
     </>
-  );
-};
+  )
+}
 
-export default index;
+export default index

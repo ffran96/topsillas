@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 const index = (props) => {
   return (
@@ -7,7 +7,7 @@ const index = (props) => {
       <div className="cabecera">
         <div className="figure">
           <Image
-            src={"/"+props.img+".jpg"}
+            src={'/' + props.img + '.jpg'}
             alt={props.img}
             width={800}
             height={400}
@@ -51,7 +51,7 @@ const index = (props) => {
         }
       `}</style>
     </>
-  );
-};
+  )
+}
 
-export default index;
+export default index

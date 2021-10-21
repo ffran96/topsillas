@@ -1,7 +1,7 @@
-import  { Navbar, SEO, Footer, Conclusiones, Cabecera, Buttom, TopBox, TablaContenido } from "/components/Imports";
-import { AmazonURLS, CabeceraText, TopText, contenido, conclusiones, img, NumItems, ImgCabecera } from "../../../data/SillasOficina";
+import { Navbar, SEO, Footer, Conclusiones, Cabecera, Buttom, TopBox, TablaContenido } from '/components/Imports'
+import { AmazonURLS, CabeceraText, TopText, contenido, conclusiones, img, NumItems, ImgCabecera } from '../../../data/SillasOficina'
 
-function SillasOficina() {
+function SillasOficina () {
   return (
     <>
       <SEO
@@ -97,7 +97,7 @@ function SillasOficina() {
         }
       `}</style>
     </>
-  );
+  )
 }
 
-export default SillasOficina;
+export default SillasOficina

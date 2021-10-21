@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from 'next/head'
 
 const index = (props) => {
   return (
@@ -9,7 +9,7 @@ const index = (props) => {
         <meta name="theme-color" content="#000000" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-  );
-};
+  )
+}
 
-export default index;
+export default index

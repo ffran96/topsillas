@@ -1,7 +1,7 @@
-import  { Navbar, SEO, Footer, Conclusiones, Cabecera, Buttom, TopBox, TablaContenido } from "/components/Imports";
-import { AmazonURLS, CabeceraText, TopText, contenido, conclusiones, img, NumItems, ImgCabecera } from "../../../data/SillasGamers";
+import { Navbar, SEO, Footer, Conclusiones, Cabecera, Buttom, TopBox, TablaContenido } from '/components/Imports'
+import { AmazonURLS, CabeceraText, TopText, contenido, conclusiones, img, NumItems, ImgCabecera } from '../../../data/SillasGamers'
 
-function sillasGamers() {
+function sillasGamers () {
   return (
     <>
       <SEO
@@ -16,7 +16,7 @@ function sillasGamers() {
           img={ImgCabecera}
           text={CabeceraText}
         />
-        
+
         {NumItems.map((NumItems, index) => (
           <div className="top">
             <TopBox
@@ -98,7 +98,7 @@ function sillasGamers() {
         }
       `}</style>
     </>
-  );
+  )
 }
 
-export default sillasGamers;
+export default sillasGamers

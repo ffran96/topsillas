@@ -1,9 +1,9 @@
-import Navbar from '/components/Navbar'
-import Categories from '/components/Categories'
-import Footer from '/components/Footer'
-import SEO from '/components/SEO'
+import Navbar from "/components/Navbar";
+import Categories from "/components/Categories";
+import Footer from "/components/Footer";
+import SEO from "/components/SEO";
 
-export default function Home () {
+export default function Home() {
   return (
     <>
       <SEO
@@ -13,9 +13,7 @@ export default function Home () {
       <Navbar />
       <Categories />
       <Footer />
-      <style jsx>{`
-      
-      `}</style>
+      <style jsx>{``}</style>
 
       <style jsx global>{`
         html,
@@ -33,5 +31,5 @@ export default function Home () {
         }
       `}</style>
     </>
-  )
+  );
 }

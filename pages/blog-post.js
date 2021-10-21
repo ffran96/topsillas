@@ -1,14 +1,14 @@
-import SEO from '/components/SEO'
-import React from 'react'
-import Navbar from '/components/Navbar'
+import SEO from "/components/SEO";
+import React from "react";
+import Navbar from "/components/Navbar";
 
 const index = () => {
   return (
     <>
-        <SEO
-          title="Blog | TopSillas"
-          description="¡Encuentra tu silla ideal al mejor precio y calidad!"
-        />
+      <SEO
+        title="Blog | TopSillas"
+        description="¡Encuentra tu silla ideal al mejor precio y calidad!"
+      />
 
       <Navbar />
       <h1>blog post</h1>
@@ -26,8 +26,7 @@ const index = () => {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
-            background-color: #ebedef;
-
+          background-color: #ebedef;
         }
 
         * {
@@ -35,7 +34,7 @@ const index = () => {
         }
       `}</style>
     </>
-  )
-}
+  );
+};
 
-export default index
+export default index;

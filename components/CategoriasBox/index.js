@@ -17,7 +17,7 @@ const index = (props) => {
 
       <style jsx>{`
         .box {
-          background-color: white;
+          background-color: #FFFFFF;
           border-radius: 15px;
           height: 300px;
           cursor: pointer;

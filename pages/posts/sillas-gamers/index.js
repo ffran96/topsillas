@@ -41,7 +41,7 @@ function sillasGamers () {
       <style jsx>{`
         .container {
           margin: 0;
-          padding: 0 1em;
+          padding: 1em;
           background-color: #FFFFFF;
         }
 

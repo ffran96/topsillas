@@ -26,9 +26,9 @@ const index = (props) => {
 
         @media only screen and (min-width: 1200px) {
           .TablaContenido {
-            margin-top: 5em;
+            margin-top: 1.5em;
             background-color: #f8f9f9;
-            max-width: 250px;
+            max-width: 200px;
             padding: 5px;
             border-radius: 15px;
             display: block;

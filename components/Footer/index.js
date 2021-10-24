@@ -12,7 +12,7 @@ const index = () => {
        align-items: center;
         color: white;
         bottom: 0;
-        height: 110px;
+        height: 130px;
         background-color: rgba(0,0,0,0.95);
       }
       

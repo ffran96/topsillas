@@ -36,13 +36,14 @@ const index = () => {
         .nav {
           display: flex;
           flex-direction: column;
-          padding: 2em 0 1em 0 ;
+          padding: 1.5em 0 1.5em 0;
           align-items: center;
+          background-color: #000000E6;
         }
 
         .logo {
+          margin-bottom: 1em;
           cursor: pointer;
-          margin-bottom: 15px;
         }
 
         ul {
@@ -54,42 +55,41 @@ const index = () => {
 
         a {
           text-decoration: none;
-          color: black;
+          color: #FFFFFF;
           font-weight: 700;
           cursor: pointer;
-          padding: 1em;
-          border-radius: 45px;
+          padding: 1.7em 1em;
           font-size: 18px;
-          transition: all .4s ease-in-out;
-
         }
 
-        a:hover {
-          background-color: #0000000D;
-        }
+
 
         @media only screen and (min-width: 1200px) {
           .header {
-            margin-left: 250px;
-            margin-right: 250px;            
             flex-direction: row;
             justify-content: space-between;
           }
 
+          .nav{
+            padding: 1.5em 15em 1.5em 15em;
+
+          }
+
           .logo {
-            margin-bottom: 15px;
+            margin: 0;
+          }
+
+          a:hover {
+            background-color: #FFFFFF0D;
           }
           
           @media only screen and (min-width: 1920px) {
             .nav {
-              margin-left: 250px;
-              margin-right: 250px;
               flex-direction: row;
               justify-content: space-between;
             }
 
             .logo {
-              margin-bottom: 15px;
             }
         }
       `}</style>

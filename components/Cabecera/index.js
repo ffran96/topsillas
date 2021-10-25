@@ -1,16 +1,16 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 const index = (props) => {
   return (
     <>
-      <h1 id={props.title}>{props.title}</h1>
+        <h1 id={props.title}>{props.title}</h1>
       <div className="cabecera">
         <div className="figure">
           <Image
-            src={'/' + props.img + '.jpg'}
+            src={"/" + props.img + ".jpg"}
             alt={props.img}
-            width={800}
-            height={400}
+            width={598}
+            height={335.5}
           />
         </div>
         <div className="cabecera-texto">
@@ -24,6 +24,7 @@ const index = (props) => {
         p {
           text-align: justify;
         }
+
         h1 {
           text-align: center;
         }
@@ -37,12 +38,14 @@ const index = (props) => {
           }
           .cabecera {
             display: flex;
+            justify-content: center;
             gap: 2em;
             margin-bottom: 3.5em;
           }
+        
 
           .cabecera-texto {
-            max-width: 30em;
+            max-width: 550px;
           }
 
           .figure {
@@ -51,7 +54,7 @@ const index = (props) => {
         }
       `}</style>
     </>
-  )
-}
+  );
+};
 
-export default index
+export default index;

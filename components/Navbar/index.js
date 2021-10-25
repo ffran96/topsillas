@@ -71,7 +71,7 @@ const index = () => {
           }
 
           .nav{
-            padding: 1.5em 15em 1.5em 15em;
+            padding: 1.5em 22em 1.5em 22em;
 
           }
 

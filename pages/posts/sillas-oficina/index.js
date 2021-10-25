@@ -65,7 +65,7 @@ function SillasOficina () {
 
         @media only screen and (min-width: 1200px) {
           .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: auto;
             background-color: #FFFFFF;
             padding: 25px;

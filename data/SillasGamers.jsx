@@ -142,7 +142,7 @@ const TopText = [
 const contenido = [
   {
     url: 'TOP SILLAS GAMING POR MENOS DE 100 EUROS',
-    title: 'Introducción. Mejores sillas por menos de 100 euros.'
+    title: 'Introducción. Mejores sillas gamers por menos de 100 euros.'
   },
   {
     url: '🏆 TOP 1 – INTIMATE WM HEART',

@@ -39,9 +39,9 @@ function SillasOficina () {
 
       <style jsx>{`
         .container {
-          border-radius: 15px;
-          margin: 0 20px 6em 20px;
-          padding: 0 5px 5px 5px 5px;
+          margin: 0;
+          padding: 1em;
+          background-color: #FFFFFF;
         }
 
         .top {
@@ -65,8 +65,10 @@ function SillasOficina () {
 
         @media only screen and (min-width: 1200px) {
           .container {
-            margin-left: 350px;
-            margin-right: 350px;
+            max-width: 1400px;
+            margin: auto;
+            background-color: #FFFFFF;
+            padding: 25px;
           }
 
           .top {
@@ -76,8 +78,7 @@ function SillasOficina () {
 
         @media only screen and (min-width: 1600px) {
           .container {
-            margin-left: 450px;
-            margin-right: 450px;
+
           }
         }
       `}</style>
@@ -90,6 +91,8 @@ function SillasOficina () {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
+          background-color: #ebedef;
+
         }
 
         * {

@@ -28,12 +28,12 @@ const index = (props) => {
           .TablaContenido {
             margin-top: 1.5em;
             background-color: #f8f9f9;
-            max-width: 200px;
+            max-width: 250px;
             padding: 5px;
             border-radius: 15px;
             display: block;
             position: fixed;
-            right: 32px;
+            right: 44px;
           }
           .title {
             text-align: center;

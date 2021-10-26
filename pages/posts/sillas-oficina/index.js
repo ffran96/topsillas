@@ -68,7 +68,7 @@ function SillasOficina () {
             max-width: 1200px;
             margin: auto;
             background-color: #FFFFFF;
-            padding: 25px;
+            padding: 2em 3em;
           }
 
           .top {

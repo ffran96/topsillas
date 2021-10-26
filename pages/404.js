@@ -22,10 +22,6 @@ export default function Custom404() {
           background-color: #ffffff;
         }
 
-        .top {
-          margin-bottom: 2.5em;
-        }
-
         @media only screen and (min-width: 600px) {
           .container {
           }
@@ -49,9 +45,6 @@ export default function Custom404() {
             padding: 2em 3em;
           }
 
-          .top {
-            margin-bottom: 3.5em;
-          }
         }
 
         @media only screen and (min-width: 1600px) {

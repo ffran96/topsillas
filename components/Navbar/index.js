@@ -36,7 +36,7 @@ const index = () => {
         .nav {
           display: flex;
           flex-direction: column;
-          padding: 1.5em 0 1.5em 0;
+          padding: 1.5em 0;
           align-items: center;
           background-color: #000000E6;
         }
@@ -58,7 +58,7 @@ const index = () => {
           color: #FFFFFF;
           font-weight: 700;
           cursor: pointer;
-          padding: 1.7em 1em;
+          padding: 1em 1em;
           font-size: 18px;
         }
 
@@ -90,6 +90,10 @@ const index = () => {
             }
 
             .logo {
+            }
+            a {
+              text-decoration: none;
+              padding: 1.7em 1em;
             }
         }
       `}</style>

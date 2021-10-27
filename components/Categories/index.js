@@ -25,7 +25,9 @@ const index = () => {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
           gap: 1em;
-          margin: 2em 40px 2em 40px;
+          max-width: 350px;
+          margin: auto;
+          margin-top: 1em;
         }
 
         .box {
@@ -52,6 +54,12 @@ const index = () => {
         .title-box {
           margin: 0 0 10px 10px;
         }
+        span h1{
+          max-width: 350px;
+          margin: auto;
+          margin-top: 1em;
+          font-size:24px;
+        }
 
         @media only screen and (min-width: 600px) {
           .container {
@@ -74,21 +82,20 @@ const index = () => {
         @media only screen and (min-width: 1200px) {
           .container {
             grid-template-columns: repeat(3, 1fr);
-            margin-left: 150px;
-            margin-right: 150px;
+            max-width: 1450px;
+            margin: auto;
+            margin-top: 1em;
           }
           span h1{
             max-width: 1400px;
-            margin: auto;
-            margin-top: 1em;
+            font-size: 32px;
+
           }
         }
 
         @media only screen and (min-width: 1600px) {
           .container {
             grid-template-columns: repeat(4, 1fr);
-            margin-left: 250px;
-            margin-right: 250px;
           }
         }
       `}</style>

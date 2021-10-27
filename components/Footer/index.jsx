@@ -60,40 +60,46 @@ const index = () => {
           margin: 0;
           padding: 0;
         }
+        .container{
+          display: none;
+        }
 
         footer {
           bottom: 0;
           background-color: #000000e6;
-        }
-        .container {
-          display: flex;
-          justify-content: space-between;
-          max-width: 900px;
-          margin: auto;
-          padding: 2em;
-        }
-        .col ul{
-          margin-top: 1.2em;
-        }
-        .col ul li {
-          color: #ffffffE6;
-          list-style: none;
-          padding: 0.3em;
-          max-width: 250px;
-        }
-        .title{
-          color: #FFFFFF;
-        }
-
-        .col ul li:hover {
-          cursor: pointer;
-          background-color: #ffffff1a;
         }
         p {
           margin-top: 1.5em;
           color: #ffffff;
           text-align: center;
           padding: 0 0 2em 0em;
+        }
+
+        @media only screen and (min-width: 1200px) {
+          .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: auto;
+            padding: 2em;
+          }
+          .col ul{
+            margin-top: 1.2em;
+          }
+          .col ul li {
+            color: #ffffffE6;
+            list-style: none;
+            padding: 0.3em;
+            max-width: 250px;
+          }
+          .title{
+            color: #FFFFFF;
+          }
+  
+          .col ul li:hover {
+            cursor: pointer;
+            background-color: #ffffff1a;
+          }
         }
       `}</style>
     </>

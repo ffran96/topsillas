@@ -25,7 +25,7 @@ const index = () => {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
           gap: 1em;
-          max-width: 350px;
+          max-width: 320px;
           margin: auto;
           margin-top: 1em;
         }
@@ -55,7 +55,7 @@ const index = () => {
           margin: 0 0 10px 10px;
         }
         span h1{
-          max-width: 350px;
+          max-width: 320px;
           margin: auto;
           margin-top: 1em;
           font-size:24px;

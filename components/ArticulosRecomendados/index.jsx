@@ -43,7 +43,7 @@ export default function index() {
 
       <style jsx>{`
         .container {
-          max-width: 350px;
+          max-width: 320px;
           margin: auto;
           background-color: #ffffff;
           border-radius: 15px;
@@ -88,7 +88,7 @@ export default function index() {
           text-decoration: none;
         }
         span h2 {
-          max-width: 350px;
+          max-width: 320px;
           margin: auto;
           margin-top: 2em;
           font-size: 22px;

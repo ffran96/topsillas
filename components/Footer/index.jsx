@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const index = () => {
   return (
@@ -10,14 +11,46 @@ const index = () => {
               <b>Categorías recomendadas</b>
             </span>
             <ul>
-              <li>Sillas gaming</li>
-              <li>Sillas de oficina</li>
-              <li>Puffs</li>
-              <li>Sillas de comedor</li>
-              <li>Sillas de exterior</li>
-              <li>Taburetes para barra/cocina</li>
-              <li>Sillones de masaje</li>
-              <li>Sillas mecedoras</li>
+              <Link href="/posts/sillas-gamers">
+                <a>
+                  <li>Sillas gaming</li>
+                </a>
+              </Link>
+              <Link href="/posts/sillas-oficina">
+                <a>
+                  <li>Sillas de oficina</li>
+                </a>
+              </Link>
+              <Link href="/">
+                <a>
+                  <li>Puffs</li>
+                </a>
+              </Link>
+              <Link href="/">
+                <a>
+                  <li>Sillas de comedor</li>
+                </a>
+              </Link>
+              <Link href="/">
+                <a>
+                  <li>Sillas de exterior</li>
+                </a>
+              </Link>
+              <Link href="/">
+                <a>
+                  <li>Taburetes para barra/cocina</li>
+                </a>
+              </Link>
+              <Link href="/">
+                <a>
+                  <li>Sillones de masaje</li>
+                </a>
+              </Link>
+              <Link href="/">
+                <a>
+                  <li>Sillas mecedoras</li>
+                </a>
+              </Link>
             </ul>
           </div>
           <div className="col">
@@ -25,8 +58,18 @@ const index = () => {
               <b>Artículos recomendados</b>
             </span>
             <ul>
-              <li>Top sillas gaming por menos de 100 euros</li>
-              <li>Top 5 mejores sillas de oficina relación calidad precio</li>
+              <Link href="/posts/sillas-gamers">
+                <a>
+                  <li>Top sillas gaming por menos de 100 euros</li>
+                </a>
+              </Link>
+              <Link href="/posts/sillas-oficina">
+                <a>
+                  <li>
+                    Top 5 mejores sillas de oficina relación calidad precio
+                  </li>
+                </a>
+              </Link>
             </ul>
           </div>
           <div className="col">
@@ -34,9 +77,21 @@ const index = () => {
               <b>Legal</b>
             </span>
             <ul>
-              <li>Política de privacidad</li>
-              <li>Política de cookies</li>
-              <li>Aviso legal</li>
+              <Link href="/privacidad">
+                <a>
+                  <li>Política de privacidad</li>
+                </a>
+              </Link>
+              <Link href="/cookies">
+                <a>
+                  <li>Política de cookies</li>
+                </a>
+              </Link>
+              <Link href="/aviso-legal">
+                <a>
+                  <li>Aviso legal</li>
+                </a>
+              </Link>
             </ul>
           </div>
           <div className="col">
@@ -44,8 +99,16 @@ const index = () => {
               <b>Contactar</b>
             </span>
             <ul>
-              <li>Sobre nosotros</li>
-              <li>Contacto</li>
+              <Link href="/sobre-nosotros">
+                <a>
+                  <li>Sobre nosotros</li>
+                </a>
+              </Link>
+              <Link href="/contacto">
+                <a>
+                  <li>Contacto</li>
+                </a>
+              </Link>
             </ul>
           </div>
         </div>
@@ -60,7 +123,10 @@ const index = () => {
           margin: 0;
           padding: 0;
         }
-        .container{
+        a {
+          text-decoration: none;
+        }
+        .container {
           display: none;
         }
 
@@ -83,19 +149,19 @@ const index = () => {
             margin: auto;
             padding: 2em;
           }
-          .col ul{
+          .col ul {
             margin-top: 1.2em;
           }
           .col ul li {
-            color: #ffffffE6;
+            color: #ffffffe6;
             list-style: none;
             padding: 0.3em;
             max-width: 250px;
           }
-          .title{
-            color: #FFFFFF;
+          .title {
+            color: #ffffff;
           }
-  
+
           .col ul li:hover {
             cursor: pointer;
             background-color: #ffffff1a;

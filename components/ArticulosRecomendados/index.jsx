@@ -56,6 +56,7 @@ export default function index() {
         article {
           margin: auto;
           display: flex;
+          flex-direction: column;
           gap: 2em;
           align-items: start;
           margin-buttom: 200px;
@@ -79,9 +80,6 @@ export default function index() {
           border-radius: 49px;
           cursor: pointer;
         }
-        .buttom:hover {
-          background-color: #000000e6;
-        }
 
         a {
           color: #000000;
@@ -90,7 +88,7 @@ export default function index() {
         span h2 {
           max-width: 320px;
           margin: auto;
-          margin-top: 2em;
+          margin-top: 1.5em;
           font-size: 22px;
         }
         @media only screen and (min-width: 1200px) {
@@ -100,42 +98,14 @@ export default function index() {
           }
           .container {
             max-width: 1450px;
-            margin: auto;
-            background-color: #ffffff;
-            border-radius: 15px;
-            padding: 2em;
-            margin-bottom: 2em;
-            margin-top: 1em;
-            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
           }
           article {
-            margin: auto;
-            display: flex;
-            gap: 2em;
-            align-items: start;
-            margin-buttom: 200px;
-            margin-buttom: 2em;
-            cursor: pointer;
+            flex-direction: row;
           }
           .figure {
             display: block;
-            max-width: 500px;
           }
-          .text {
-            max-width: 700px;
-          }
-          .buttom {
-            float: right;
-            padding: 1em;
-            background-color: #000000;
-            color: #ffffff;
-            font-weight: 700;
-            width: 100px;
-            text-align: center;
-            border-radius: 49px;
-            cursor: pointer;
-          }
+    
           .buttom:hover {
             background-color: #000000e6;
           }

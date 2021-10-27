@@ -26,14 +26,14 @@ const index = (props) => {
 
         @media only screen and (min-width: 1200px) {
           .TablaContenido {
-            margin-top: 1.5em;
-            background-color: #f8f9f9;
-            max-width: 250px;
-            padding: 5px;
-            border-radius: 15px;
             display: block;
             position: fixed;
             right: 44px;
+            max-width: 250px;
+            margin-top: 1.5em;
+            padding: 5px;
+            border-radius: 15px;
+            background-color: #FFFFFF;
           }
           .title {
             text-align: center;

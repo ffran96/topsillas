@@ -1,7 +1,6 @@
 const index = (props) => {
   return (
     <>
-    <buttom>
         <div className="buttom">
           <a
             href={props.url}
@@ -11,8 +10,6 @@ const index = (props) => {
             {props.label}
           </a>
         </div>
-</buttom>
-
       <style jsx>{`
               .buttom {
                 margin-top: 35px;

@@ -1,19 +1,22 @@
-import CategoriasBox from '/components/CategoriasBox'
-import { CategoyData, numItems } from '../../data/home'
+import CategoriasBox from "/components/CategoriasBox";
+import { CategoyData, numItems } from "../../data/home";
 
 const index = () => {
   return (
     <>
+      <span>
+        <h1>Categorías recomendadas por TopSillas</h1>
+      </span>
       <div className="container">
         {numItems.map((numItems, index) => (
           <CategoriasBox
-          link={CategoyData[index].link}
-          src={CategoyData[index].src}
-          alt={CategoyData[index].alt}
-          title={CategoyData[index].title}
-          width={CategoyData[index].width}
-          height={CategoyData[index].height}
-        />
+            link={CategoyData[index].link}
+            src={CategoyData[index].src}
+            alt={CategoyData[index].alt}
+            title={CategoyData[index].title}
+            width={CategoyData[index].width}
+            height={CategoyData[index].height}
+          />
         ))}
       </div>
 
@@ -22,7 +25,7 @@ const index = () => {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
           gap: 1em;
-          margin: 2em 40px 5em 40px;
+          margin: 2em 40px 2em 40px;
         }
 
         .box {
@@ -74,6 +77,11 @@ const index = () => {
             margin-left: 150px;
             margin-right: 150px;
           }
+          span h1{
+            max-width: 1400px;
+            margin: auto;
+            margin-top: 1em;
+          }
         }
 
         @media only screen and (min-width: 1600px) {
@@ -85,7 +93,7 @@ const index = () => {
         }
       `}</style>
     </>
-  )
-}
+  );
+};
 
-export default index
+export default index;

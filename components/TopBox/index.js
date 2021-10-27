@@ -45,12 +45,20 @@ const index = (props) => {
         @media only screen and (min-width: 1200px) {
           .top-box {
             display: flex;
-            gap: 3em;
+            max-width: 1000px;
+            margin: auto;
             justify-content: center;
+            align-items: center;
+
+          }
+          .top-image{
+            min-width: 320px;
+
           }
 
+
           .top-text {
-            max-width: 30em;
+            max-width: 500px;
           }
         }
       `}</style>

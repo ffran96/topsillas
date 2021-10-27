@@ -18,7 +18,7 @@ export default function index() {
       {numItems.map((numItems, index) => (
         <Link href={"/posts/" + link[index]}>
           <div className="container">
-            <h2>{title[index]}</h2>
+            <h3>{title[index]}</h3>
             <article>
               <div className="figure">
                 <Image
@@ -91,10 +91,16 @@ export default function index() {
           margin-top: 1.5em;
           font-size: 22px;
         }
+        h3{
+          font-size: 18px;
+        }
         @media only screen and (min-width: 1200px) {
           span h2 {
             max-width: 1400px;
             font-size: 32px;
+          }
+          h3{
+            font-size: 28px;
           }
           .container {
             max-width: 1450px;

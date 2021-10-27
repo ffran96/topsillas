@@ -1,6 +1,6 @@
 const title = [
   "Top sillas gaming por menos de 100 euros",
-  "Top 5 Mejores sillas de oficina relaciónn calidad precio",
+  "Top 5 Mejores sillas de oficina relación calidad precio",
 ];
 const CabeceraText = [
   [

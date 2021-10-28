@@ -64,8 +64,7 @@ export default function index() {
             z-index: 100;
             position: absolute;
             top: 86px;
-            left: 22%;
-            right: 22%;
+            right: 10%;
             border-top: 3px solid #1f1f1f;
             background-color: #000000f2;
             border-radius: 0 0 15px 15px;

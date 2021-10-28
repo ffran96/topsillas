@@ -62,11 +62,13 @@ export default function index() {
           .container {
             position: absolute;
             z-index: 100;
-            min-width: 1200px;
-            left: 352px;
-            margin-top: 28px;
+            position: absolute;
+            top: 86px;
+            left: 20%;
+            right: 20%;
             border-top: 3px solid #1f1f1f;
             background-color: #000000F2;
+            border-radius: 0 0 15px 15px;
           }
           .hide-container {
             display: none;

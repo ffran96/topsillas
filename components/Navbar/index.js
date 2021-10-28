@@ -45,6 +45,7 @@ export default function index() {
       <style jsx>{`
       .container{
         background-color: #000000E6;
+        z-index: 10000;
         
       }
       .nav {

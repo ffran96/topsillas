@@ -59,4 +59,3 @@ const img = [
   },
 ];
 export { CabeceraText, img, title, numItems, link };
-

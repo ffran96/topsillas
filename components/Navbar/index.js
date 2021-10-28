@@ -4,14 +4,7 @@ import Image from "next/image";
 import Dropdown from "/components/Dropdown";
 
 export default function index() {
-  const [click, setClick] = useState(false);
-
-  const handleClick = () => setClick(!click);
-
-  const onClick = () => {
-    setClick(true);
-  };
-
+  const [dropdown, setDropdown] = useState(false);
   return (
     <>
       <div className="container">
@@ -28,8 +21,16 @@ export default function index() {
                   <a>Home</a>
                 </Link>
               </li>
-              <li onClick={onClick}>
-                <a>Categorias</a>
+              <li>
+                <Link href="/categorias">
+                  <a
+                    onMouseEnter={() => setDropdown(true)}
+                    onMouseLeave={() => setDropdown(false)}
+                  >
+                    Categorías
+                    {dropdown && <Dropdown />}
+                  </a>
+                </Link>
               </li>
               <li>
                 <Link href="/blog-post">
@@ -40,7 +41,6 @@ export default function index() {
           </div>
         </nav>
       </div>
-      {click && <Dropdown />}
 
       <style jsx>{`
       .container{

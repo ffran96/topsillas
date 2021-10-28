@@ -1,4 +1,4 @@
-const CategoyData = [
+export const CategoyData = [
   {
     id: 0,
     link: '/posts/sillas-gamers',
@@ -72,6 +72,3 @@ const CategoyData = [
     height: 250
   }
 ]
-const numItems = [0, 1, 2, 3, 4, 5, 6, 7]
-
-export { CategoyData, numItems }

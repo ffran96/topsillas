@@ -1,43 +1,53 @@
-import Items from "./Items";
-import React, {useState} from "react"
+import { MenuItemsHogar, MenuItemsBebe } from "./Items";
+import React, { useState } from "react";
+import Link from "next/link";
 
 export default function index() {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click)
+  const [dropdown, setDropdown] = useState(false);
   return (
     <>
-      <div onClick={handleClick} className={click ? "container" : "container"}>
+      <div
+        onClick={() => setDropdown(!dropdown)}
+        className={dropdown ? "hide-container" : "container"}
+      >
         <div className="categorias">
           <div className="col">
             <ul>
-              <li>Sillas gaming</li>
-              <li>Sillas de oficina</li>
-              <li>Sillas de exterior</li>
-              <li>Sillas de comedor</li>
-              <li>Sillones de masaje</li>
-              <li>Taburetes</li>
-              <li>Puffs</li>
-              <li>Mecedoras</li>
+              {MenuItemsHogar.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <Link href={item.path} onClick={() => setDropdown(false)}>
+                      <a>{item.title}</a>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="col">
             <ul>
-              <li>Cochecitos bugaboo</li>
-              <li>Sillas de coche</li>
-              <li>Sillas de paseo</li>
-              <li>Tronas</li>
-              <li>Cunas</li>
-              <li>Cunas de viaje</li>
+              {MenuItemsBebe.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <Link href={item.path}>
+                      <a>{item.title}</a>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="col">
             <ul>
-              <li>Lorem, ipsum dolor.</li>
-              <li>Lorem, ipsum dolor.</li>
-              <li>Lorem, ipsum dolor.</li>
-              <li>Lorem, ipsum dolor.</li>
-              <li>Lorem, ipsum dolor.</li>
-              <li>Lorem, ipsum dolor.</li>
+              {MenuItemsBebe.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <Link href={item.path}>
+                      <a>{item.title}</a>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -45,13 +55,20 @@ export default function index() {
 
       <style jsx>
         {`
-          .container {
-            display: block;
-            z-index: 100;
-            border-top: 3px solid #1f1f1f;
-            background-color: #000000e6;
+          a {
+            color: #ffffff;
+            text-decoration: none;
           }
-          .hide-container{
+          .container {
+            position: absolute;
+            z-index: 100;
+            min-width: 1200px;
+            left: 352px;
+            margin-top: 28px;
+            border-top: 3px solid #1f1f1f;
+            background-color: #000000F2;
+          }
+          .hide-container {
             display: none;
           }
           .categorias {

@@ -21,16 +21,14 @@ export default function index() {
                   <a>Home</a>
                 </Link>
               </li>
-              <li>
+              <li
+                onMouseEnter={() => setDropdown(true)}
+                onMouseLeave={() => setDropdown(false)}
+              >
                 <Link href="/categorias">
-                  <a
-                    onMouseEnter={() => setDropdown(true)}
-                    onMouseLeave={() => setDropdown(false)}
-                  >
-                    Categorías
-                    {dropdown && <Dropdown />}
-                  </a>
+                  <a>Categorías</a>
                 </Link>
+                {dropdown && <Dropdown />}
               </li>
               <li>
                 <Link href="/blog-post">

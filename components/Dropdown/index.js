@@ -28,11 +28,11 @@ export default function index() {
             <ul>
               {MenuItemsBebe.map((item) => {
                 return (
-                  <li key={item.id}>
-                    <Link href={item.path}>
-                      <a>{item.title}</a>
-                    </Link>
-                  </li>
+                  <Link href={item.path}>
+                    <a>
+                      <li key={item.id}>{item.title}</li>
+                    </a>
+                  </Link>
                 );
               })}
             </ul>
@@ -41,11 +41,11 @@ export default function index() {
             <ul>
               {MenuItemsBebe.map((item) => {
                 return (
-                  <li key={item.id}>
-                    <Link href={item.path}>
-                      <a>{item.title}</a>
-                    </Link>
-                  </li>
+                  <Link href={item.path}>
+                    <a>
+                      <li key={item.id}>{item.title}</li>
+                    </a>
+                  </Link>
                 );
               })}
             </ul>
@@ -64,10 +64,10 @@ export default function index() {
             z-index: 100;
             position: absolute;
             top: 86px;
-            left: 20%;
-            right: 20%;
+            left: 22%;
+            right: 22%;
             border-top: 3px solid #1f1f1f;
-            background-color: #000000F2;
+            background-color: #000000f2;
             border-radius: 0 0 15px 15px;
           }
           .hide-container {

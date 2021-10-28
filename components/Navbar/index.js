@@ -31,7 +31,7 @@ export default function index() {
                 {dropdown && <Dropdown />}
               </li>
               <li>
-                <Link href="/blog-post">
+                <Link href="/favoritos">
                   <a>Favoritos</a>
                 </Link>
               </li>

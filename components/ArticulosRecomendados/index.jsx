@@ -42,12 +42,13 @@ export default function index() {
       ))}
 
       <style jsx>{`
+
         .container {
           max-width: 320px;
           margin: auto;
           background-color: #ffffff;
           border-radius: 15px;
-          padding: 2em;
+          padding: 0.5em 2em 2em 2em;
           margin-bottom: 2em;
           margin-top: 1em;
           box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
@@ -59,8 +60,6 @@ export default function index() {
           flex-direction: column;
           gap: 2em;
           align-items: start;
-          margin-buttom: 200px;
-          margin-buttom: 2em;
           cursor: pointer;
         }
         .figure {

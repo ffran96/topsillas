@@ -9,7 +9,7 @@ export default function Custom404() {
       />
       <Navbar />
       <div className="container">
-        <h1>Error 404 - Página no encontrada 😥</h1>
+        <h1>Error 404 - Página no encontrada 😥😥</h1>
       </div>
 
       <Footer />

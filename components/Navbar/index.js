@@ -1,44 +1,57 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
+import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import Dropdown from "/components/Dropdown";
 
-const index = () => {
+export default function index() {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+
+  const onClick = () => {
+    setClick(true);
+  };
+
   return (
     <>
-      <nav className="nav">
-        <div className="logo">
-          <Link href="/">
-            <Image src="/logo.svg" alt="top sillas" width={250} height={35} />
-          </Link>
-        </div>
-        <div>
-          <ul>
-            <li>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/about">
+      <div className="container">
+        <nav className="nav">
+          <div className="logo">
+            <Link href="/">
+              <Image src="/logo.svg" alt="top sillas" width={250} height={35} />
+            </Link>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <Link href="/">
+                  <a>Home</a>
+                </Link>
+              </li>
+              <li onClick={onClick}>
                 <a>Categorias</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog-post">
-                <a>Favoritos</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+              </li>
+              <li>
+                <Link href="/blog-post">
+                  <a>Favoritos</a>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      {click && <Dropdown />}
 
       <style jsx>{`
-        .nav {
-          display: flex;
-          flex-direction: column;
-          padding: 1.5em 0;
-          align-items: center;
-          background-color: #000000E6;
+      .container{
+        background-color: #000000E6;
+        
+      }
+      .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5em 0;
         }
 
         .logo {
@@ -62,17 +75,12 @@ const index = () => {
           font-size: 18px;
         }
 
-
-
         @media only screen and (min-width: 1200px) {
-          .header {
+          .nav{
             flex-direction: row;
             justify-content: space-between;
-          }
-
-          .nav{
-            padding: 1.5em 22em 1.5em 22em;
-
+            max-width: 1072px;
+            margin: auto;
           }
 
           .logo {
@@ -83,10 +91,10 @@ const index = () => {
             background-color: #FFFFFF0D;
           }
           
-          @media only screen and (min-width: 1920px) {
+          @media only screen and (min-width: 1600px) {
             .nav {
-              flex-direction: row;
-              justify-content: space-between;
+              max-width: 1200px;
+              margin: auto;
             }
 
             .logo {
@@ -98,7 +106,5 @@ const index = () => {
         }
       `}</style>
     </>
-  )
+  );
 }
-
-export default index

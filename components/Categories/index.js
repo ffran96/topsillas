@@ -63,39 +63,58 @@ const index = () => {
 
         @media only screen and (min-width: 600px) {
           .container {
-            grid-template-columns: repeat(1, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 472px;
+          }
+          span h1{
+            max-width: 472px;
+            font-size: 32px;
           }
         }
 
         @media only screen and (min-width: 768px) {
           .container {
             grid-template-columns: repeat(2, 1fr);
+            max-width: 640px;
+          }
+          span h1{
+            max-width: 640px;
+            font-size: 32px;
           }
         }
 
         @media only screen and (min-width: 990px) {
           .container {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 862px;
+          }
+          span h1{
+            max-width: 862px;
+            font-size: 32px;
           }
         }
 
         @media only screen and (min-width: 1200px) {
           .container {
             grid-template-columns: repeat(3, 1fr);
-            max-width: 1450px;
+            max-width: 1072px;
             margin: auto;
             margin-top: 1em;
           }
           span h1{
-            max-width: 1400px;
+            max-width: 1072px;
             font-size: 32px;
-
           }
         }
 
         @media only screen and (min-width: 1600px) {
           .container {
             grid-template-columns: repeat(4, 1fr);
+            max-width: 1200px;
+          }
+          span h1{
+            max-width: 1200px;
+            font-size: 32px;
           }
         }
       `}</style>

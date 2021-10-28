@@ -24,7 +24,7 @@ const index = (props) => {
           display: none;
         }
 
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (min-width: 1920px) {
           .TablaContenido {
             display: block;
             position: fixed;

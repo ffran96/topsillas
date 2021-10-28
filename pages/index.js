@@ -3,7 +3,6 @@ import Categories from "/components/Categories";
 import ArticulosRecomendados from "/components/ArticulosRecomendados"
 import Footer from "/components/Footer";
 import SEO from "/components/SEO";
-
 export default function Home() {
   return (
     <>

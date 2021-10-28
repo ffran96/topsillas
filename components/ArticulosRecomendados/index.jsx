@@ -91,29 +91,66 @@ export default function index() {
           margin-top: 1.5em;
           font-size: 22px;
         }
-        h3{
+        h3 {
           font-size: 18px;
         }
+        @media only screen and (min-width: 600px) {
+          .container {
+            grid-template-columns: repeat(1, 1fr);
+            max-width: 472px;
+          }
+          span h2 {
+            max-width: 472px;
+          }
+        }
+
+        @media only screen and (min-width: 768px) {
+          .container {
+            max-width: 640px;
+          }
+          span h2 {
+            max-width: 640px;
+          }
+        }
+        @media only screen and (min-width: 990px) {
+          .container {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 862px;
+          }
+          span h2 {
+            max-width: 862px;
+          }
+        }
+
         @media only screen and (min-width: 1200px) {
           span h2 {
-            max-width: 1400px;
+            max-width: 1072px;
             font-size: 32px;
           }
-          h3{
+          h3 {
             font-size: 28px;
           }
           .container {
-            max-width: 1450px;
+            max-width: 1072px;
           }
           article {
             flex-direction: row;
           }
-          .figure {
-            display: block;
-          }
-    
+
           .buttom:hover {
             background-color: #000000e6;
+          }
+          .figure {
+            display: block;
+            min-width: 420px;
+          }
+        }
+        @media only screen and (min-width: 1600px) {
+          span h2 {
+            max-width: 1200px;
+          }
+          .container {
+            max-width: 1200px;
           }
         }
       `}</style>

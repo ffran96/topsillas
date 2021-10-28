@@ -51,23 +51,27 @@ function sillasGamers () {
 
         @media only screen and (min-width: 600px) {
           .container {
+            max-width: 472px;
+            margin: auto;
           }
         }
 
         @media only screen and (min-width: 768px) {
           .container {
+            max-width: 640px;
+
           }
         }
 
         @media only screen and (min-width: 990px) {
           .container {
+            max-width: 862px;
           }
         }
 
         @media only screen and (min-width: 1200px) {
           .container {
-            max-width: 1200px;
-            margin: auto;
+            max-width: 1072px;
             background-color: #FFFFFF;
             padding: 2em 3em;
           }
@@ -79,7 +83,7 @@ function sillasGamers () {
 
         @media only screen and (min-width: 1600px) {
           .container {
-
+            max-width: 1200px;
           }
         }
       `}</style>

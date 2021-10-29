@@ -1,6 +1,5 @@
 import { Navbar, SEO, Footer, Conclusiones, Cabecera, Buttom, TopBox, TablaContenido } from '/components/Imports'
-import { contenido } from '../../data/SillasGamers'
-import { CabeceraData, TopData } from "../../data/SillasGasmersMenos100"
+import { CabeceraData, TopData, Contenido } from "../../data/SillasGasmersMenos100"
 function sillasGamers () {
   return (
     <>
@@ -9,7 +8,7 @@ function sillasGamers () {
         description="¡Encuentra tu silla ideal al mejor precio y calidad!"
       />
       <Navbar />
-      <TablaContenido contenido={contenido} />
+      <TablaContenido contenido={Contenido} />
       <div className="container">
         <Cabecera
           title={CabeceraData.title}

@@ -1,5 +1,6 @@
 export const CabeceraData = {
   title: "TOP SILLAS GAMING POR MENOS DE 100 EUROS",
+  titleContentTable: "Introducción. Mejores sillas gamers por menos de 100 euros.",
   img: "silla gaming ergonomica",
   text: (
     <>
@@ -229,5 +230,32 @@ export const TopData = [
     },
     AmazonURL:
       "https://www.amazon.es/IntimaTe-WM-Heart-Escritorio-Apoyabrazos/dp/B07F8S742Q/ref=sr_1_9?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=silla+gamer+play+haha&qid=1634495604&qsid=259-2113611-9323707&s=kitchen&sr=1-9&sres=B07S2XCK3P%2CB07XXP3FQS%2CB085246DCM%2CB08FC59KFR%2CB07QZMN6RY%2CB07F8S742Q%2CB01EIXO56O%2CB01EIXO424%2CB083SXXFN1%2CB09D38W6JM%2CB01HNXGIRK%2CB08S3STC4V%2CB07R6C3FMT%2CB08423NPRF%2CB017IAKF8Q%2CB07WF933C1%2CB08K96VM1N%2CB07PDN7L5R%2CB01N4AEDAF%2CB07SVY3HVS&srpt=CHAIR",
+  },
+];
+
+export const Contenido = [
+  {
+    url: CabeceraData.title,
+    title: CabeceraData.titleContentTable,
+  },
+  {
+    url: "🏆 TOP 1 – INTIMATE WM HEART",
+    title: "Top 1: Intimate WM Heart.",
+  },
+  {
+    url: "TOP 2 – STMENG LIBERTY T1",
+    title: "Top 2: Stmeng Liberty T1.",
+  },
+  {
+    url: "TOP 3 – SONGMICS OBG28BU",
+    title: "Top 3: Songmics OBG28BU.",
+  },
+  {
+    url: "TOP 4 – Songmics OBG56L",
+    title: "Top 4: Songmics OBG56L.",
+  },
+  {
+    url: "TOP 5 – IntimaTe WM Heart Silla Gaming",
+    title: "Top 5: IntimaTe WM Heart Silla Gaming",
   },
 ];

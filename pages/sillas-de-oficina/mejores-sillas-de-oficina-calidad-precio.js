@@ -1,36 +1,36 @@
 import { Navbar, SEO, Footer, Conclusiones, Cabecera, Buttom, TopBox, TablaContenido } from '/components/Imports'
-import { AmazonURLS, CabeceraText, TopText, contenido, conclusiones, img, NumItems, ImgCabecera } from '../../data/SillasOficina'
-
-function SillasOficina () {
+import { CabeceraData, TopData, Contenido } from "../../data/SillasOficina"
+function sillasGamers () {
   return (
     <>
       <SEO
-        title="Sillas de oficina"
+        title="Sillas gamers"
         description="¡Encuentra tu silla ideal al mejor precio y calidad!"
       />
       <Navbar />
-      <TablaContenido contenido={contenido} />
+      <TablaContenido contenido={Contenido} />
       <div className="container">
         <Cabecera
-          title={contenido[0].url}
-          img={ImgCabecera}
-          text={CabeceraText}
+          title={CabeceraData.title}
+          img={CabeceraData.img}
+          text={CabeceraData.text}
         />
-        {NumItems.map((NumItems, index) => (
+
+        {TopData.map((item) => (
           <div className="top">
             <TopBox
-              title={contenido[index + 1].url}
-              img={img[index].title}
-              width={img[index].width}
-              height={img[index].height}
-              url={AmazonURLS[index]}
-              text={TopText[index]}
+              title={item.title}
+              img={item.imgSrc}
+              width={item.width}
+              height={item.height}
+              url={item.AmazonURL}
+              text={item.text}
             />
             <Conclusiones
-              vtg={conclusiones[index].vtg}
-              dtg={conclusiones[index].dtg}
+              vtg={item.conclusiones.vtg}
+              dtg={item.conclusiones.dtg}
             />
-            <Buttom url={AmazonURLS[index]} label="Ver precio" />
+            <Buttom url={item.AmazonURL} label="Ver precio" />
           </div>
         ))}
       </div>
@@ -50,23 +50,27 @@ function SillasOficina () {
 
         @media only screen and (min-width: 600px) {
           .container {
+            max-width: 472px;
+            margin: auto;
           }
         }
 
         @media only screen and (min-width: 768px) {
           .container {
+            max-width: 640px;
+
           }
         }
 
         @media only screen and (min-width: 990px) {
           .container {
+            max-width: 862px;
           }
         }
 
         @media only screen and (min-width: 1200px) {
           .container {
-            max-width: 1200px;
-            margin: auto;
+            max-width: 1072px;
             background-color: #FFFFFF;
             padding: 2em 3em;
           }
@@ -78,7 +82,7 @@ function SillasOficina () {
 
         @media only screen and (min-width: 1600px) {
           .container {
-
+            max-width: 1200px;
           }
         }
       `}</style>
@@ -103,4 +107,4 @@ function SillasOficina () {
   )
 }
 
-export default SillasOficina
+export default sillasGamers

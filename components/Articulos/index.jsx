@@ -5,7 +5,7 @@ export default function index(props) {
   return (
     <>
       {props.Data.map((item) => (
-        <Link href={item.link}>
+        <Link href={item.link} key={item.id}>
           <div className="container">
             <h2>{item.title}</h2>
             <article>

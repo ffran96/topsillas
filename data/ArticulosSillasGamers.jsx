@@ -1,5 +1,6 @@
 export const ArtsSillasGamers = [
   {
+    id: 0,
     title: "Top sillas gaming por menos de 100 euros",
     text: (
       <>
@@ -29,6 +30,7 @@ export const ArtsSillasGamers = [
     alt: "set-up gamer",
   },
   {
+    id: 1,
     title: "Top sillas gaming por menos de 100 euros",
     text: (
       <>

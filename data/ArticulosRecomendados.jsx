@@ -1,5 +1,6 @@
 export const ArtsRecData = [
   {
+    id: 0,
     title: "Top sillas gaming por menos de 100 euros",
     text: (
       <>
@@ -29,6 +30,7 @@ export const ArtsRecData = [
     alt: "set-up gamer",
   },
   {
+    id: 1,
     title: "Top 5 Mejores sillas de oficina relación calidad precio",
     text: (
       <>

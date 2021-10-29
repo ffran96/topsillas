@@ -15,11 +15,9 @@ export default function index() {
             <ul>
               {MenuItemsHogar.map((item) => {
                 return (
-                  <li key={item.id}>
-                    <Link href={item.path} onClick={() => setDropdown(false)}>
-                      <a>{item.title}</a>
-                    </Link>
-                  </li>
+                  <Link href={item.path} key={item.id} onClick={() => setDropdown(false)}>
+                    <a><li>{item.title}</li></a>
+                  </Link>
                 );
               })}
             </ul>
@@ -28,9 +26,9 @@ export default function index() {
             <ul>
               {MenuItemsBebe.map((item) => {
                 return (
-                  <Link href={item.path}>
+                  <Link href={item.path} key={item.id} onClick={() => setDropdown(false)}>
                     <a>
-                      <li key={item.id}>{item.title}</li>
+                      <li>{item.title}</li>
                     </a>
                   </Link>
                 );
@@ -41,9 +39,9 @@ export default function index() {
             <ul>
               {MenuItemsBebe.map((item) => {
                 return (
-                  <Link href={item.path}>
+                  <Link href={item.path} key={item.id} onClick={() => setDropdown(false)}>
                     <a>
-                      <li key={item.id}>{item.title}</li>
+                      <li>{item.title}</li>
                     </a>
                   </Link>
                 );

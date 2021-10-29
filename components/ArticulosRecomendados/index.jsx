@@ -10,7 +10,7 @@ export default function index() {
       </span>
 
       {ArtsRecData.map((item) => (
-        <Link href={item.link}>
+        <Link href={item.link} key={item.id}>
           <div className="container">
             <h3>{item.title}</h3>
             <article>

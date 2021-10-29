@@ -1,18 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArtsRecData } from "../../data/ArticulosRecomendados";
 
-export default function index() {
+export default function index(props) {
   return (
     <>
-      <span>
-        <h2>Artículos recomendados</h2>
-      </span>
-
-      {ArtsRecData.map((item) => (
+      {props.Data.map((item) => (
         <Link href={item.link}>
           <div className="container">
-            <h3>{item.title}</h3>
+            <h2>{item.title}</h2>
             <article>
               <div className="figure">
                 <Image

@@ -1,7 +1,7 @@
 export const CategoyData = [
   {
     id: 0,
-    link: '/posts/sillas-gamers',
+    link: '/sillas-gamers',
     src: '/silla-gaming.jpg',
     alt: 'silla gaming',
     title: 'Sillas para gamers',
@@ -10,7 +10,7 @@ export const CategoyData = [
   },
   {
     id: 1,
-    link: '/posts/sillas-oficina',
+    link: '/sillas-de-oficina',
     src: '/silla-oficina.jpg',
     alt: 'silla de oficina',
     title: 'Sillas de oficina',

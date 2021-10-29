@@ -11,12 +11,12 @@ const index = () => {
               <b>Categorías recomendadas</b>
             </span>
             <ul>
-              <Link href="/posts/sillas-gamers">
+              <Link href="/sillas-gamers">
                 <a>
                   <li>Sillas gaming</li>
                 </a>
               </Link>
-              <Link href="/posts/sillas-oficina">
+              <Link href="/sillas-de-oficina">
                 <a>
                   <li>Sillas de oficina</li>
                 </a>
@@ -58,12 +58,12 @@ const index = () => {
               <b>Artículos recomendados</b>
             </span>
             <ul>
-              <Link href="/posts/sillas-gamers">
+              <Link href="/sillas-gamers/mejores-sillas-gaming-por-menos-de-100-euros">
                 <a>
                   <li>Top sillas gaming por menos de 100 euros</li>
                 </a>
               </Link>
-              <Link href="/posts/sillas-oficina">
+              <Link href="/sillas-de-oficina/mejores-sillas-de-oficina-calidad-precio">
                 <a>
                   <li>
                     Top 5 mejores sillas de oficina relación calidad precio

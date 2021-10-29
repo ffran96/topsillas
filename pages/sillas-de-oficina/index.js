@@ -1,15 +1,18 @@
 import { Navbar, SEO, Footer } from "/components/Imports";
+import Articulos from "/components/Articulos";
+import { ArtsSillasOficina } from "../../data/ArticulosSillasOficina";
 
-export default function Custom404() {
+function SillasOficina() {
   return (
     <>
       <SEO
-        title="Error 404"
-        description="No hemos podido encontrar lo que buscabas 😥"
+        title="Sillas de oficina"
+        description="¡Encuentra tu silla ideal al mejor precio y calidad!"
       />
       <Navbar />
       <div className="container">
-        <h1>Error 404 - Página no encontrada 😥</h1>
+        <h1>Sillas de oficina</h1>
+        <Articulos Data={ArtsSillasOficina}/>
       </div>
 
       <Footer />
@@ -17,7 +20,6 @@ export default function Custom404() {
       <style jsx>{`
         .container {
           margin: 0;
-          min-height: 720px;
           padding: 1em;
           background-color: #ffffff;
         }
@@ -44,7 +46,6 @@ export default function Custom404() {
             background-color: #ffffff;
             padding: 2em 3em;
           }
-
         }
 
         @media only screen and (min-width: 1600px) {
@@ -71,3 +72,5 @@ export default function Custom404() {
     </>
   );
 }
+
+export default SillasOficina;

@@ -8,7 +8,7 @@ export const MenuItemsHogar = [
   {
     id: 1,
     title: "Sillas de oficina",
-    path: "/sillas-oficina",
+    path: "/sillas-de-oficina",
     cName: "dropdown-link",
   },
   {

@@ -2,7 +2,7 @@ import { Navbar, SEO, Footer } from "/components/Imports";
 import Articulos from "/components/Articulos";
 import { ArtsSillasGamers } from "../../data/ArticulosSillasGamers";
 
-function SillasOficina() {
+function index() {
   return (
     <>
       <SEO
@@ -11,7 +11,6 @@ function SillasOficina() {
       />
       <Navbar />
       <div className="container">
-        <h1>Sillas de gaming</h1>
         <Articulos Data={ArtsSillasGamers} />
       </div>
 
@@ -46,7 +45,6 @@ function SillasOficina() {
             background-color: #ffffff;
             padding: 2em 3em;
           }
-
         }
 
         @media only screen and (min-width: 1600px) {
@@ -74,4 +72,4 @@ function SillasOficina() {
   );
 }
 
-export default SillasOficina;
+export default index;

@@ -19,13 +19,13 @@ export default function index(props) {
               </div>
               <div className="text">
                 {item.text}
+              </div>
+            </article>
                 <Link href={item.link}>
                   <a>
                     <div className="buttom"> Leer más</div>
                   </a>
                 </Link>
-              </div>
-            </article>
           </div>
         </Link>
       ))}
@@ -36,10 +36,7 @@ export default function index(props) {
           margin: auto;
           background-color: #ffffff;
           border-radius: 15px;
-          padding: 0.5em 2em 2em 2em;
-          margin-bottom: 2em;
           margin-top: 1em;
-          box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
           cursor: pointer;
         }
         article {
@@ -47,7 +44,7 @@ export default function index(props) {
           display: flex;
           flex-direction: column;
           gap: 2em;
-          align-items: start;
+          align-items: center;
           cursor: pointer;
         }
         .figure {
@@ -57,7 +54,7 @@ export default function index(props) {
           max-width: 700px;
         }
         .buttom {
-          float: right;
+          margin-left: 90%;
           padding: 1em;
           background-color: #000000;
           color: #ffffff;
@@ -72,21 +69,12 @@ export default function index(props) {
           color: #000000;
           text-decoration: none;
         }
-        span h2 {
-          max-width: 320px;
-          margin: auto;
-          margin-top: 1.5em;
-          font-size: 22px;
-        }
-        h3 {
+        h2 {
           font-size: 18px;
         }
         @media only screen and (min-width: 600px) {
           .container {
             grid-template-columns: repeat(1, 1fr);
-            max-width: 472px;
-          }
-          span h2 {
             max-width: 472px;
           }
         }
@@ -95,26 +83,16 @@ export default function index(props) {
           .container {
             max-width: 640px;
           }
-          span h2 {
-            max-width: 640px;
-          }
         }
         @media only screen and (min-width: 990px) {
           .container {
             grid-template-columns: repeat(2, 1fr);
             max-width: 862px;
           }
-          span h2 {
-            max-width: 862px;
-          }
         }
 
         @media only screen and (min-width: 1200px) {
-          span h2 {
-            max-width: 1072px;
-            font-size: 32px;
-          }
-          h3 {
+          h2 {
             font-size: 28px;
           }
           .container {
@@ -130,12 +108,10 @@ export default function index(props) {
           .figure {
             display: block;
             min-width: 420px;
+          
           }
         }
         @media only screen and (min-width: 1600px) {
-          span h2 {
-            max-width: 1200px;
-          }
           .container {
             max-width: 1200px;
           }

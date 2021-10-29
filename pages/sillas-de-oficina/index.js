@@ -2,7 +2,7 @@ import { Navbar, SEO, Footer } from "/components/Imports";
 import Articulos from "/components/Articulos";
 import { ArtsSillasOficina } from "../../data/ArticulosSillasOficina";
 
-function SillasOficina() {
+function index() {
   return (
     <>
       <SEO
@@ -11,7 +11,6 @@ function SillasOficina() {
       />
       <Navbar />
       <div className="container">
-        <h1>Sillas de oficina</h1>
         <Articulos Data={ArtsSillasOficina}/>
       </div>
 
@@ -73,4 +72,4 @@ function SillasOficina() {
   );
 }
 
-export default SillasOficina;
+export default index;

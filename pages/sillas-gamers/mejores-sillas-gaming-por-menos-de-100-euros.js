@@ -1,6 +1,6 @@
 import { Navbar, SEO, Footer, Conclusiones, Cabecera, Buttom, TopBox, TablaContenido } from '/components/Imports'
-import { AmazonURLS, CabeceraText, TopText, contenido, conclusiones, img, NumItems, ImgCabecera } from '../../data/SillasGamers'
-
+import { contenido } from '../../data/SillasGamers'
+import { CabeceraData, TopData } from "../../data/SillasGasmersMenos100"
 function sillasGamers () {
   return (
     <>
@@ -12,26 +12,26 @@ function sillasGamers () {
       <TablaContenido contenido={contenido} />
       <div className="container">
         <Cabecera
-          title={contenido[0].url}
-          img={ImgCabecera}
-          text={CabeceraText}
+          title={CabeceraData.title}
+          img={CabeceraData.img}
+          text={CabeceraData.text}
         />
 
-        {NumItems.map((NumItems, index) => (
+        {TopData.map((item) => (
           <div className="top">
             <TopBox
-              title={contenido[index + 1].url}
-              img={img[index].title}
-              width={img[index].width}
-              height={img[index].height}
-              url={AmazonURLS[index]}
-              text={TopText[index]}
+              title={item.title}
+              img={item.imgSrc}
+              width={item.width}
+              height={item.height}
+              url={item.AmazonURL}
+              text={item.text}
             />
             <Conclusiones
-              vtg={conclusiones[index].vtg}
-              dtg={conclusiones[index].dtg}
+              vtg={item.conclusiones.vtg}
+              dtg={item.conclusiones.dtg}
             />
-            <Buttom url={AmazonURLS[index]} label="Ver precio" />
+            <Buttom url={item.AmazonURL} label="Ver precio" />
           </div>
         ))}
       </div>

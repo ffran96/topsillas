@@ -3,7 +3,7 @@ import Image from "next/image";
 const index = (props) => {
   return (
     <>
-        <h1 id={props.title}>{props.title}</h1>
+      <h1 id={props.title}>{props.title}</h1>
       <div className="cabecera">
         <div className="figure">
           <Image
@@ -13,11 +13,7 @@ const index = (props) => {
             height={335.5}
           />
         </div>
-        <div className="cabecera-texto">
-          {props.text.map((text) => (
-            <p>{text}</p>
-          ))}
-        </div>
+        <div className="cabecera-texto">{props.text}</div>
       </div>
 
       <style jsx>{`
@@ -42,7 +38,6 @@ const index = (props) => {
             gap: 2em;
             margin-bottom: 3.5em;
           }
-        
 
           .cabecera-texto {
             max-width: 550px;

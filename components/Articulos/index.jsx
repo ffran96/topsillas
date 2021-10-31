@@ -39,6 +39,7 @@ export default function index(props) {
           margin-top: 1em;
           cursor: pointer;
           position: relative;
+          margin-bottom: 5em;
 
         }
         article {
@@ -66,7 +67,6 @@ export default function index(props) {
           text-align: center;
           border-radius: 49px;
           cursor: pointer;
-          margin-bottom: 50em;
         }
 
         a {

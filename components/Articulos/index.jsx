@@ -38,6 +38,8 @@ export default function index(props) {
           border-radius: 15px;
           margin-top: 1em;
           cursor: pointer;
+          position: relative;
+
         }
         article {
           margin: auto;
@@ -54,7 +56,8 @@ export default function index(props) {
           max-width: 700px;
         }
         .buttom {
-          margin-left: 90%;
+          position: absolute;
+          right: 20px;
           padding: 1em;
           background-color: #000000;
           color: #ffffff;

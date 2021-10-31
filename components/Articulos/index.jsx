@@ -66,6 +66,7 @@ export default function index(props) {
           text-align: center;
           border-radius: 49px;
           cursor: pointer;
+          margin-bottom: 50em;
         }
 
         a {

@@ -6,9 +6,9 @@ const index = (props) => {
           <strong>Contenido del artículo</strong>
         </div>
         <ul>
-          {props.contenido.map((contenido) => (
-            <a href={'#' + contenido.url}>
-              <li>{contenido.title}</li>
+          {props.contenido.map((item) => (
+            <a key={item.id} href={'#' + item.url}>
+              <li>{item.title}</li>
             </a>
           ))}
         </ul>

@@ -39,8 +39,7 @@ export default function index(props) {
           margin-top: 1em;
           cursor: pointer;
           position: relative;
-          margin-bottom: 5em;
-
+          margin-bottom: 4.5em;
         }
         article {
           margin: auto;
@@ -57,8 +56,6 @@ export default function index(props) {
           max-width: 700px;
         }
         .buttom {
-          position: absolute;
-          right: 20px;
           padding: 1em;
           background-color: #000000;
           color: #ffffff;
@@ -67,6 +64,8 @@ export default function index(props) {
           text-align: center;
           border-radius: 49px;
           cursor: pointer;
+          position: absolute;
+          right: 1.5em;
         }
 
         a {
@@ -91,8 +90,12 @@ export default function index(props) {
         @media only screen and (min-width: 990px) {
           .container {
             grid-template-columns: repeat(2, 1fr);
-            max-width: 862px;
+            max-width: 762px;
           }
+          h2{
+            padding-left:1.5em;
+          }
+
         }
 
         @media only screen and (min-width: 1200px) {

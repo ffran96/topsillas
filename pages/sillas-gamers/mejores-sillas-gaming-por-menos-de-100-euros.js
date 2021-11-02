@@ -17,7 +17,7 @@ function sillasGamers () {
         />
 
         {TopData.map((item) => (
-          <div className="top">
+          <div key={item.id} className="top">
             <TopBox
               title={item.title}
               img={item.imgSrc}

@@ -12,6 +12,7 @@ function sillasGamers () {
       <div className="container">
         <Cabecera
           title={CabeceraData.title}
+          titleId={CabeceraData.titleId}
           img={CabeceraData.img}
           text={CabeceraData.text}
         />
@@ -20,6 +21,7 @@ function sillasGamers () {
           <div key={item.id} className="top">
             <TopBox
               title={item.title}
+              titleId={item.titleId}
               img={item.imgSrc}
               width={item.width}
               height={item.height}

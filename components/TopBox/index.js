@@ -4,7 +4,7 @@ const index = (props) => {
   return (
     <>
       <a href={props.url} rel="nofollow noreferrer" target="_blank">
-        <h2>{props.title}</h2>
+        <h2 id={props.titleId}>{props.title}</h2>
       </a>
       <div className="top-box">
         <a href={props.url} rel="nofollow noreferrer" target="_blank">

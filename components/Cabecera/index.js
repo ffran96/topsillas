@@ -3,7 +3,7 @@ import Image from "next/image";
 const index = (props) => {
   return (
     <>
-      <h1 id={props.title}>{props.title}</h1>
+      <h1 id={props.titleId}>{props.title}</h1>
       <div className="cabecera">
         <div className="figure">
           <Image

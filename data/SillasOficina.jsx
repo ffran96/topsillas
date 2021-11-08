@@ -1,8 +1,8 @@
 export const CabeceraData = {
-  title: "MEJORES SILLAS DE OFICINA RELACIÓN CALIDAD PRECIO",
-  titleContentTable:
-    "Introducción. Mejores sillas de oficina relación calidad precio.",
-  img: "oficina",
+  title: "TOP SILLAS GAMING POR MENOS DE 100 EUROS",
+  titleId: "introducción",
+  titleContentTable: "Introducción. Mejores sillas gamers por menos de 100 euros.",
+  img: "silla gaming ergonomica",
   text: (
     <>
       <p>
@@ -32,6 +32,7 @@ export const TopData = [
   {
     id: 0,
     title: "🏆 TOP 1 – INTIMATE WM HEART",
+    titleId: "top-1",
     titleContentTable: "Top 1: Intimate WM Heart",
     imgSrc: "Silla Intimate WM Heart",
     width: 209.33,
@@ -71,6 +72,7 @@ export const TopData = [
   {
     id: 1,
     title: "TOP 2 – STMENG LIBERTY T1",
+    titleId: "top-2",
     titleContentTable: "Top 2: Stmeng Liberty T1",
     imgSrc: "Silla Stmeng Liberty T1",
     width: 236.5,
@@ -111,6 +113,7 @@ export const TopData = [
   {
     id: 2,
     title: "TOP 3 – SONGMICS OBG28BU",
+    titleId: "top-3",
     titleContentTable: "Top 3: Songmics OBG28BU",
     imgSrc: "Silla Songmics OBG28BU",
     width: 212.5,
@@ -154,6 +157,7 @@ export const TopData = [
   {
     id: 3,
     title: "TOP 4 – Songmics OBG56L",
+    titleId: "top-4",
     titleContentTable: "Top 4: Songmics OBG56L",
     imgSrc: "Silla Songmics OBG56L",
     width: 207,
@@ -198,6 +202,7 @@ export const TopData = [
   {
     id: 4,
     title: "TOP 5 – IntimaTe WM Heart Silla Gaming",
+    titleId: "top-5",
     titleContentTable: "Top 5: IntimaTe WM Heart Silla Gaming",
     imgSrc: "IntimaTe WM Heart Silla Gaming",
     width: 228,
@@ -242,32 +247,32 @@ export const TopData = [
 export const Contenido = [
   {
     id: 0,
-    url: CabeceraData.title,
+    url: CabeceraData.titleId,
     title: CabeceraData.titleContentTable,
   },
   {
     id: 1,
-    url: "🏆 TOP 1 – INTIMATE WM HEART",
+    url: TopData[0].titleId,
     title: "Top 1: Intimate WM Heart.",
   },
   {
     id: 2,
-    url: "TOP 2 – STMENG LIBERTY T1",
+    url: TopData[1].titleId,
     title: "Top 2: Stmeng Liberty T1.",
   },
   {
     id: 3,
-    url: "TOP 3 – SONGMICS OBG28BU",
+    url: TopData[2].titleId,
     title: "Top 3: Songmics OBG28BU.",
   },
   {
     id: 4,
-    url: "TOP 4 – Songmics OBG56L",
+    url: TopData[3].titleId,
     title: "Top 4: Songmics OBG56L.",
   },
   {
     id: 5,
-    url: "TOP 5 – IntimaTe WM Heart Silla Gaming",
+    url: TopData[4].titleId,
     title: "Top 5: IntimaTe WM Heart Silla Gaming",
   },
 ];

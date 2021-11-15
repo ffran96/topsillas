@@ -17,15 +17,13 @@ export default function index(props) {
                   height={335.5}
                 />
               </div>
-              <div className="text">
-                {item.text}
-              </div>
+              <div className="text">{item.text}</div>
             </article>
-                <Link href={item.link}>
-                  <a>
-                    <div className="buttom"> Leer más</div>
-                  </a>
-                </Link>
+            <Link href={item.link}>
+              <a>
+                <div className="buttom"> Leer más</div>
+              </a>
+            </Link>
           </div>
         </Link>
       ))}
@@ -34,12 +32,11 @@ export default function index(props) {
         .container {
           max-width: 320px;
           margin: auto;
-          background-color: #ffffff;
           border-radius: 15px;
           margin-top: 1em;
           cursor: pointer;
           position: relative;
-          margin-bottom: 4.5em;
+          padding-bottom: 4em;
         }
         article {
           margin: auto;
@@ -89,13 +86,8 @@ export default function index(props) {
         }
         @media only screen and (min-width: 990px) {
           .container {
-            grid-template-columns: repeat(2, 1fr);
-            max-width: 762px;
+            max-width: 700px;
           }
-          h2{
-            padding-left:1.5em;
-          }
-
         }
 
         @media only screen and (min-width: 1200px) {
@@ -115,7 +107,6 @@ export default function index(props) {
           .figure {
             display: block;
             min-width: 420px;
-          
           }
         }
         @media only screen and (min-width: 1600px) {

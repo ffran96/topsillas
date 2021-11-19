@@ -1,5 +1,5 @@
-import CategoriasBox from "/components/CategoriasBox";
-import { CategoyData, numItems } from "../../data/home";
+import { CategoriasBox } from "/components/Imports";
+import { CategoyData } from "../../data/home";
 
 const index = () => {
   return (
@@ -8,8 +8,9 @@ const index = () => {
         <h1>Categorías recomendadas por TopSillas</h1>
       </span>
       <div className="container">
-        {CategoyData.map(item => (
-          <CategoriasBox key={item.id}
+        {CategoyData.map((item) => (
+          <CategoriasBox
+            key={item.id}
             link={item.link}
             src={item.src}
             alt={item.alt}
@@ -54,11 +55,11 @@ const index = () => {
         .title-box {
           margin: 0 0 10px 10px;
         }
-        span h1{
+        span h1 {
           max-width: 320px;
           margin: auto;
           margin-top: 1.5em;
-          font-size:24px;
+          font-size: 24px;
         }
 
         @media only screen and (min-width: 600px) {
@@ -66,7 +67,7 @@ const index = () => {
             grid-template-columns: repeat(2, 1fr);
             max-width: 472px;
           }
-          span h1{
+          span h1 {
             max-width: 472px;
             font-size: 32px;
           }
@@ -77,7 +78,7 @@ const index = () => {
             grid-template-columns: repeat(2, 1fr);
             max-width: 640px;
           }
-          span h1{
+          span h1 {
             max-width: 640px;
             font-size: 32px;
           }
@@ -88,7 +89,7 @@ const index = () => {
             grid-template-columns: repeat(3, 1fr);
             max-width: 862px;
           }
-          span h1{
+          span h1 {
             max-width: 862px;
             font-size: 32px;
           }
@@ -101,7 +102,7 @@ const index = () => {
             margin: auto;
             margin-top: 1em;
           }
-          span h1{
+          span h1 {
             max-width: 1072px;
             font-size: 32px;
           }
@@ -112,7 +113,7 @@ const index = () => {
             grid-template-columns: repeat(4, 1fr);
             max-width: 1200px;
           }
-          span h1{
+          span h1 {
             max-width: 1200px;
             font-size: 32px;
           }

@@ -1,8 +1,11 @@
-import Navbar from "/components/Navbar";
-import Categories from "/components/Categories";
-import ArticulosRecomendados from "/components/ArticulosRecomendados"
-import Footer from "/components/Footer";
-import SEO from "/components/SEO";
+import {
+  Navbar,
+  Categories,
+  ArticulosRecomendados,
+  Footer,
+  SEO,
+} from "/components/Imports";
+
 export default function Home() {
   return (
     <>

@@ -1,5 +1,4 @@
-import { Navbar, SEO, Footer } from "/components/Imports";
-import Articulos from "/components/Articulos";
+import { Navbar, SEO, Footer, Articulos } from "/components/Imports";
 import { ArtsSillasOficina } from "../../data/ArticulosSillasOficina";
 
 function index() {

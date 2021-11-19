@@ -1,11 +1,16 @@
-import Navbar from '/components/Navbar'
-import SEO from '/components/SEO'
-import Footer from '/components/Footer'
-import Conclusiones from '/components/Conclusiones'
-import Cabecera from '/components/Cabecera'
-import Buttom from '/components/Buttom'
-import TopBox from '/components/TopBox'
-import TablaContenido from '/components/TablaContenido'
+import Navbar from "./Navbar";
+import SEO from "./SEO";
+import Footer from "./Footer";
+import Conclusiones from "./Conclusiones";
+import Cabecera from "./Cabecera";
+import Buttom from "./Buttom";
+import TopBox from "./TopBox";
+import TablaContenido from "./TablaContenido";
+import Dropdown from "./Dropdown";
+import Categories from "./Categories";
+import CategoriasBox from "./CategoriasBox";
+import ArticulosRecomendados from "./ArticulosRecomendados";
+import Articulos from "./Articulos";
 
 export {
   Navbar,
@@ -15,5 +20,10 @@ export {
   Cabecera,
   Buttom,
   TopBox,
-  TablaContenido
-}
+  TablaContenido,
+  Dropdown,
+  Categories,
+  CategoriasBox,
+  ArticulosRecomendados,
+  Articulos,
+};

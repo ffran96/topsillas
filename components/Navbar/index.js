@@ -46,6 +46,7 @@ export default function index() {
           </div>
         </nav>
       </div>
+      {click && <DropDownMobile />}
 
       <style jsx>{`
         * {

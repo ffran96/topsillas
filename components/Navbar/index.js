@@ -58,6 +58,8 @@ export default function index() {
           display: none;
         }
         .container {
+          position: sticky;
+          top: 0;
           background-color: #000000e6;
           height: 65px;
           z-index: 10;
@@ -87,6 +89,7 @@ export default function index() {
             display: block;
           }
           .container {
+            position: relative;
             height: 86px;
           }
           .nav {

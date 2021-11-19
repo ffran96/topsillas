@@ -29,14 +29,14 @@ export default function index() {
                 onMouseEnter={() => setDropdown(true)}
                 onMouseLeave={() => setDropdown(false)}
               >
-                <Link href="/categorias">
-                  <a>Categorías</a>
+                <Link href="#">
+                  <a>Categorías <i className="fas fa-caret-down" /></a>
                 </Link>
                 {dropdown && <Dropdown />}
               </li>
               <li>
-                <Link href="/favoritos">
-                  <a>Favoritos</a>
+                <Link href="#">
+                  <a>Marcas <i className="fas fa-caret-down" /></a>
                 </Link>
               </li>
             </ul>

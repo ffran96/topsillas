@@ -11,10 +11,10 @@ export default function index() {
         <nav className="nav">
           <div className="logo">
             <Link href="/">
-              <Image src="/logo.svg" alt="top sillas" width={250} height={35} />
+              <Image src="/logo.svg" alt="top sillas" width={170} height={35} />
             </Link>
           </div>
-          <div>
+          <div className="nav-links">
             <ul>
               <li>
                 <Link href="/">
@@ -37,48 +37,58 @@ export default function index() {
               </li>
             </ul>
           </div>
+          <div className="buttom-menu">
+            <Image 
+              src="/bars-solid.svg" 
+              width={35} 
+              height={35}
+              alt="menu buttom"
+            />
+          </div>
         </nav>
       </div>
 
       <style jsx>{`
+      *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      .nav-links{
+        display: none;
+      }
       .container{
         background-color: #000000E6;
-        z-index: 10000;
-        
+        height: 65px;        
       }
       .nav {
+        height: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        padding: 1.5em 0;
+        justify-content: space-between;
+        max-width: 85%;
+        margin: auto;
         }
 
         .logo {
-          margin-bottom: 1em;
           cursor: pointer;
         }
 
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          display: flex;
-        }
 
-        a {
-          text-decoration: none;
-          color: #FFFFFF;
-          font-weight: 700;
-          cursor: pointer;
-          padding: 1em 1em;
-          font-size: 18px;
-        }
 
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (min-width: 1600px) {
+          .buttom-menu{
+            display: none;
+          }
+          .nav-links{
+            display: block;
+          }
+          .container{
+            height: 86px;
+          }
           .nav{
-            flex-direction: row;
-            justify-content: space-between;
-            max-width: 1072px;
+            height: 100%;
+            max-width: 1200px;
             margin: auto;
           }
 
@@ -86,22 +96,23 @@ export default function index() {
             margin: 0;
           }
 
+          ul {
+            list-style-type: none;
+            display: flex;
+          }
+  
+          a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 1.7em 1em;
+            font-size: 18px;
+          }
+
           a:hover {
             background-color: #FFFFFF0D;
           }
-          
-          @media only screen and (min-width: 1600px) {
-            .nav {
-              max-width: 1200px;
-              margin: auto;
-            }
-
-            .logo {
-            }
-            a {
-              text-decoration: none;
-              padding: 1.7em 1em;
-            }
         }
       `}</style>
     </>

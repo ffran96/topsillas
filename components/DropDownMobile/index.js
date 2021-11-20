@@ -22,8 +22,9 @@ export default function index() {
             position: sticky;
             top: 65px;
             z-index:10;
+            border-top: 3px solid #323232;
             width: 100%;
-            background-color: #000000E6;
+            background-color: #171717FC;
             color: white;
             padding: 1em;
           }

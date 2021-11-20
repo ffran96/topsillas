@@ -60,7 +60,7 @@ export default function index() {
         .container {
           position: sticky;
           top: 0;
-          background-color: #000000e6;
+          background-color: #171717FC;
           height: 65px;
           z-index: 10;
         }

@@ -6,7 +6,8 @@ export default function index() {
       <div className="container">
           <ul>
               <li><a href="#">Inicio</a></li>
-              <li><a href="#">Categorías</a></li>
+              <li><a href="/sillas-gamers">Categorías</a></li>
+              <li><a href="/sillas-gamers/mejores-sillas-gaming-por-menos-de-100-euros">Marcas</a></li>
           </ul>
       </div>
 
@@ -18,12 +19,13 @@ export default function index() {
             padding: 0;
         }
           .container {
-            position: fixed;
+            position: sticky;
+            top: 65px;
+            z-index:10;
             width: 100%;
-            height: 100%;
-            background-color: #000000F2;
+            background-color: #000000E6;
             color: white;
-            z-index: 10;
+            padding: 1em;
           }
 
           .container ul{
@@ -36,13 +38,16 @@ export default function index() {
           .container ul li{
             list-style: none;
             justify-content: space-between;
+            padding: 0.5em;
  
           }
 
           a{
               color: white;
               text-decoration: none;
-              font-size: 22px;
+              font-size: 20px;
+              font-weight: bold;
+              padding: 0.5em 4.5em;
           }
         `}
       </style>

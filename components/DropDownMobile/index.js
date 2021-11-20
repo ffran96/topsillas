@@ -1,13 +1,14 @@
-import React from "react";
+import Link from "next/link"
 
 export default function index() {
   return (
     <>
       <div className="container">
           <ul>
-              <li><a href="/">Inicio</a></li>
-              <li><a href="/sillas-gamers">Categorías</a></li>
-              <li><a href="/sillas-gamers/mejores-sillas-gaming-por-menos-de-100-euros">Marcas</a></li>
+              <li><Link href="/"><a>Inicio</a></Link></li>
+              <li><Link href="/sillas-gamers"><a>Categorías</a></Link></li>
+              <li><Link href="/sillas-gamers/mejores-sillas-gaming-por-menos-de-100-euros"><a>Marcas</a></Link></li>
+             
           </ul>
       </div>
 
@@ -48,7 +49,7 @@ export default function index() {
               text-decoration: none;
               font-size: 20px;
               font-weight: bold;
-              padding: 0.5em 4.5em;
+              padding: 0.5em 6em;
           }
         `}
       </style>

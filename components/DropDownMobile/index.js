@@ -5,7 +5,7 @@ export default function index() {
     <>
       <div className="container">
           <ul>
-              <li><a href="#">Inicio</a></li>
+              <li><a href="/">Inicio</a></li>
               <li><a href="/sillas-gamers">Categorías</a></li>
               <li><a href="/sillas-gamers/mejores-sillas-gaming-por-menos-de-100-euros">Marcas</a></li>
           </ul>

@@ -50,7 +50,7 @@ export default function index() {
           margin: auto;
           display: flex;
           flex-direction: column;
-          align-items: start;
+          align-items: center;
           cursor: pointer;
         }
         .figure {
@@ -96,6 +96,14 @@ export default function index() {
           }
           span h2 {
             max-width: 472px;
+          }
+          .figure {
+            border-radius: 0;
+            overflow: visible;
+            margin: 16px;
+          }
+          h3{
+            text-align: start;
           }
         }
 

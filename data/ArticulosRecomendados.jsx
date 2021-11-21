@@ -1,22 +1,9 @@
 export const ArtsRecData = [
   {
     id: 0,
-    title: "Top sillas gaming por menos de 100 euros",
+    title: "Las mejores sillas gaming por menos de 100 euros",
     text: (
       <>
-        <p>
-          Si pasas muchas horas delante del ordenador o eres aficionado a los
-          videojuegos, la compra de{" "}
-          <b>una silla gamer es la mejor opción para ti.</b>
-        </p>
-        <p>
-          La comodidad que te ofrece una silla gaming, no la vas a lograr de
-          otra manera. Miles y miles de usuarios se decantan por una silla
-          gaming antes que una silla de oficina convencional, ya que una silla
-          gaming te permite pasar horas y horas jugando sin cansarte,{" "}
-          <b>evitando malas posturas y lesiones</b>, siempre que elijamos una
-          silla gaming ergonómica.
-        </p>
         <p>
           La elección de una silla gaming no es fácil, por ello, traemos esta
           comparativa entre las{" "}
@@ -39,17 +26,6 @@ export const ArtsRecData = [
           ex illum quod qui rerum. Repellendus amet odit asperiores placeat quia
           dolorum, fugiat voluptas, quaerat molestiae magnam eos veniam deleniti
           veritatis.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rerum
-          doloremque quibusdam minus pariatur quasi nihil fugit obcaecati quis,
-          sunt cupiditate omnis dolore perspiciatis eveniet voluptas ad nesciunt
-          eligendi adipisci aspernatur porro! Inventore ullam alias itaque!
-          Consectetur optio non laborum!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic atque
-          dolore velit ut, cupiditate modi inventore illum similique quos nisi.
         </p>
       </>
     ),

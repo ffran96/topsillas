@@ -12,7 +12,6 @@ export default function index() {
       {ArtsRecData.map((item) => (
         <Link href={item.link} key={item.id}>
           <div className="container">
-            <h3>{item.title}</h3>
             <article>
               <div className="figure">
                 <Image
@@ -20,9 +19,10 @@ export default function index() {
                   alt={item.alt}
                   width={598}
                   height={335.5}
-                />
+                  />
               </div>
               <div className="text">
+              <h3>{item.title}</h3>
                 {item.text}
                 <Link href={item.link}>
                   <a>
@@ -41,25 +41,25 @@ export default function index() {
           margin: auto;
           background-color: #ffffff;
           border-radius: 15px;
-          padding: 0.5em 2em 2em 2em;
           margin-bottom: 2em;
           margin-top: 1em;
-          box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
           cursor: pointer;
         }
         article {
           margin: auto;
           display: flex;
           flex-direction: column;
-          gap: 2em;
           align-items: start;
           cursor: pointer;
         }
         .figure {
-          display: none;
+          border-radius: 15px 15px 0 0;
+          overflow: hidden;
         }
         .text {
           max-width: 700px;
+          margin: 16px;
         }
         .buttom {
           float: right;
@@ -84,7 +84,10 @@ export default function index() {
           font-size: 22px;
         }
         h3 {
-          font-size: 18px;
+          font-size: 22px;
+          line-height: 1.3; 
+          text-align: center;
+          margin: 0;
         }
         @media only screen and (min-width: 600px) {
           .container {
@@ -133,7 +136,6 @@ export default function index() {
             background-color: #000000e6;
           }
           .figure {
-            display: block;
             min-width: 420px;
           }
         }

@@ -40,7 +40,7 @@ export default function index() {
           .container ul li{
             list-style: none;
             justify-content: space-between;
-            padding: 0.5em;
+            padding: 0.8em;
  
           }
 

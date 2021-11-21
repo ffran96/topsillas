@@ -7,6 +7,7 @@ export default function index(props) {
       <title>{props.title} | TopSillas</title>
       <meta name="description" content={props.description} />
       <meta name="theme-color" content="#000000E6" />
+      <meta name="google-site-verification" content="kemFhMXigsPX2nbXARC9C_mgBc9n0W9PQjXvTzM2kV4" />
       <link rel="icon" href="/favicon.ico" />
       <link
         rel="stylesheet"

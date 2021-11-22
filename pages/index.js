@@ -12,7 +12,7 @@ export default function Home() {
       <SEO
         url=""
         title="Inicio"
-        description="Ofertas 🛒, chollos 💸, primeras marcas 🔝, reseñas ✍, ... TODO lo que quieras saber sobre la silla que buscas lo tienes en Topsillas.info ▶ ¡No compres tu silla, sofá o sillón hasta conocer nuestra opinión 😁 !"
+        description="Ofertas 🛒, chollos 💸, primeras marcas 🔝, reseñas ✍... TODO lo que quieras saber sobre la silla que buscas lo tienes en Topsillas.info ▶ ¡No compres tu silla, sofá o sillón hasta conocer nuestra opinión 😁 !"
         img="https://www.topsillas.info/_next/image?url=%2Fsilla-comedor.jpg&w=384&q=75"
         width="644"
         height="1109"

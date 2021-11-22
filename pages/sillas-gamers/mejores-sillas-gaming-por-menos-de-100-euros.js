@@ -4,8 +4,9 @@ function sillasGamers () {
   return (
     <>
       <SEO
-        title="Sillas gamers"
-        description="¡Encuentra tu silla ideal al mejor precio y calidad!"
+        url="sillas-gamers/mejores-sillas-gaming-por-menos-de-100-euros"
+        title="Las mejores sillas gaming por menos de 100 euros"
+        description="En este artículo podrás encontrar las mejores sillas gaming del mercado por menos de 100 euros."
       />
       <Navbar />
       <TablaContenido contenido={Contenido} />

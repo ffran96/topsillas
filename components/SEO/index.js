@@ -8,12 +8,12 @@ export default function index(props) {
       
       <title>{props.title} | TopSillas</title>
       <meta name="description" content={props.description} />
-      <link rel="canonical" href="https://www.topsillas.info/" />
+      <link rel="canonical" href={"https://www.topsillas.info/"+props.url} />
       <meta property="og:locale" content="es_ES" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={props.title+" | TopSillas"} />
       <meta property="og:description" content={props.description} />
-      <meta property="og:url" content="https://www.topsillas.info/" />
+      <meta property="og:url" content={"https://www.topsillas.info/"+props.url} />
       <meta property="og:site_name" content="Topsillas.info" />
 
       <meta name="google-site-verification" content="kemFhMXigsPX2nbXARC9C_mgBc9n0W9PQjXvTzM2kV4" />

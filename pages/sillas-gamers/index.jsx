@@ -5,8 +5,9 @@ function index() {
   return (
     <>
       <SEO
-        title="Sillas de oficina"
-        description="¡Encuentra tu silla ideal al mejor precio y calidad!"
+        url="sillas-gamers"
+        title="Sillas Gamers"
+        description="¡Encuentra tu silla gaming ideal!"
       />
       <Navbar />
       <div className="container">

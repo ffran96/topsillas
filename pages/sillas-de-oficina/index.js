@@ -5,12 +5,13 @@ function index() {
   return (
     <>
       <SEO
+        url="sillas-de-oficina"
         title="Sillas de oficina"
-        description="¡Encuentra tu silla ideal al mejor precio y calidad!"
+        description="¡Encuentra tu silla de oficina ideal al mejor precio y calidad!"
       />
       <Navbar />
       <div className="container">
-        <Articulos Data={ArtsSillasOficina}/>
+        <Articulos Data={ArtsSillasOficina} />
       </div>
 
       <Footer />

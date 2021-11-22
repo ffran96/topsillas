@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <>
       <SEO
+        url=""
         title="Inicio"
         description="¡Encuentra tu silla ideal al mejor precio y calidad!"
       />

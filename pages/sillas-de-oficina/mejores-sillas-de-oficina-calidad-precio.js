@@ -4,8 +4,9 @@ function sillasGamers () {
   return (
     <>
       <SEO
-        title="Sillas gamers"
-        description="¡Encuentra tu silla ideal al mejor precio y calidad!"
+        url="sillas-de-oficina/mejores-sillas-de-oficina-calidad-precio"
+        title="Las mejores sillas de oficina relación calidad precio"
+        description="¡Encuentra tu silla de oficina ideal al mejor precio y calidad!"
       />
       <Navbar />
       <TablaContenido contenido={Contenido} />

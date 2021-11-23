@@ -1,6 +1,6 @@
-export const ArtsSillasOficina = [
+export const ArtsPuffs = [
     {
-        title: "Top 5 Mejores sillas de oficina relación calidad precio",
+        title: "Los mejores puffs baratos de 2021",
         text: (
           <>
             <p>
@@ -11,8 +11,8 @@ export const ArtsSillasOficina = [
             </p>
           </>
         ),
-        link: "/sillas-de-oficina/mejores-sillas-de-oficina-calidad-precio",
-        src: "oficina",
-        alt: "oficina con sillas de oficina",
+        link: "/puffs/los-mejores-puffs-baratos-de-2021",
+        src: "puff-sillon",
+        alt: "sillón puff",
       },      
 ]

@@ -53,6 +53,7 @@ export default function index(props) {
         .figure {
           overflow: hidden;
           cursor: pointer;
+          object-fit: cover;
         }
         .text {
           max-width: 700px;

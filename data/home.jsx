@@ -19,7 +19,7 @@ export const CategoyData = [
   },
   {
     id: 2,
-    link: '/',
+    link: '/puffs',
     src: '/puff.jpg',
     alt: 'puff rojo',
     title: 'Puffs',

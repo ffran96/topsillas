@@ -28,7 +28,7 @@ export const CategoyData = [
   },
   {
     id: 3,
-    link: '/',
+    link: '/sillas-de-comedor',
     src: '/silla-comedor.jpg',
     alt: 'silla de comedor de diseño',
     title: 'Sillas de comedor',

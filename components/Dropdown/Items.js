@@ -14,19 +14,19 @@ export const MenuItemsHogar = [
   {
     id: "item-hogar-03",
     title: "Sillas de exterior",
-    path: "/sillas-exterior",
+    path: "/sillas-de-exterior",
     cName: "dropdown-link",
   },
   {
     id: "item-hogar-04",
     title: "Sillas de comedor",
-    path: "/sillas-comedor",
+    path: "/sillas-de-comedor",
     cName: "dropdown-link",
   },
   {
     id: "item-hogar-05",
     title: "Sillones de masaje",
-    path: "/sillones-masaje",
+    path: "/sillones-de-masaje",
     cName: "dropdown-link",
   },
   {

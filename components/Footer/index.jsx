@@ -21,12 +21,12 @@ const index = () => {
                   <li>Sillas de oficina</li>
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/puffs">
                 <a>
                   <li>Puffs</li>
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/sillas-de-comedor">
                 <a>
                   <li>Sillas de comedor</li>
                 </a>

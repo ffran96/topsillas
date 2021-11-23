@@ -87,6 +87,9 @@ export default function index(props) {
           margin: 0;
           cursor: pointer;
         }
+        h3:hover{
+          text-decoration: underline;
+        }
         @media only screen and (min-width: 600px) {
           .container {
             grid-template-columns: repeat(1, 1fr);
@@ -99,6 +102,10 @@ export default function index(props) {
             border-radius: 0;
             overflow: visible;
             margin: 16px;
+            transition: all .5s ease;
+          }
+          .figure:hover{
+            opacity: 0.9;
           }
           h3 {
             text-align: start;
@@ -139,7 +146,7 @@ export default function index(props) {
           }
 
           .buttom:hover {
-            background-color: #000000e6;
+            background-color: #000000CC;
           }
           .figure {
             min-width: 420px;

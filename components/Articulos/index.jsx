@@ -5,35 +5,39 @@ export default function index(props) {
   return (
     <>
       {props.Data.map((item) => (
-          <div key={item.id} className="container">
-            <article>
+        <div key={item.id} className="container">
+          <article>
+            <Link href={item.link}>
               <div className="figure">
                 <Image
                   src={"/" + item.src + ".jpg"}
                   alt={item.alt}
                   width={598}
                   height={335.5}
-                  />
+                />
               </div>
-              <div className="text">
-              <h3>{item.title}</h3>
-                {item.text}
-                <Link href={item.link}>
-                  <a>
-                    <div className="buttom"> Leer más</div>
-                  </a>
-                </Link>
-              </div>
-            </article>
-          </div>
+            </Link>
+            <div className="text">
+              <Link href={item.link}>
+                <h3>{item.title}</h3>
+              </Link>
+              {item.text}
+              <Link href={item.link}>
+                <a>
+                  <div className="buttom"> Leer más</div>
+                </a>
+              </Link>
+            </div>
+          </article>
+        </div>
       ))}
 
       <style jsx>{`
-      *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
         .container {
           max-width: 320px;
           margin: auto;
@@ -48,6 +52,7 @@ export default function index(props) {
         }
         .figure {
           overflow: hidden;
+          cursor: pointer;
         }
         .text {
           max-width: 700px;
@@ -77,9 +82,10 @@ export default function index(props) {
         }
         h3 {
           font-size: 22px;
-          line-height: 1.3; 
+          line-height: 1.3;
           text-align: center;
           margin: 0;
+          cursor: pointer;
         }
         @media only screen and (min-width: 600px) {
           .container {
@@ -94,7 +100,7 @@ export default function index(props) {
             overflow: visible;
             margin: 16px;
           }
-          h3{
+          h3 {
             text-align: start;
           }
         }

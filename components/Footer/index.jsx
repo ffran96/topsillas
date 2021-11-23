@@ -77,7 +77,7 @@ const index = () => {
               <b>Legal</b>
             </span>
             <ul>
-              <Link href="/privacidad">
+              <Link href="/politica-privacidad">
                 <a>
                   <li>Política de privacidad</li>
                 </a>

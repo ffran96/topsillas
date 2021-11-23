@@ -114,7 +114,7 @@ const index = () => {
         </div>
         <div>
           <hr color="#505050"></hr>
-          <p>TopSillas.com | Copyright © 2021</p>
+          <p>TopSillas.info | Copyright © 2021</p>
         </div>
       </footer>
 

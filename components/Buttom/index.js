@@ -1,9 +1,16 @@
+import Image from "next/image"
+
 const index = (props) => {
   return (
     <>
       <div className="buttom">
         <a href={props.url} rel="nofollow noreferrer" target="_blank">
-          <i class="fas fa-tag" />
+          <Image
+            src="/tag-solid.svg"
+            alt="tag del butón"
+            width="16"
+            height="16"
+          />
           {props.label}
         </a>
       </div>

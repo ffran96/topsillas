@@ -1,4 +1,4 @@
-import { Navbar, SEO, Footer, Articulos } from "/components/Imports";
+import { Navbar, SEO, Footer, Articulos, Migas } from "/components/Imports";
 import { ArtsSillasOficina } from "../../data/ArticulosSillasOficina";
 
 function index() {
@@ -14,6 +14,10 @@ function index() {
       />
       <Navbar />
       <div className="container">
+      <Migas
+          category="Sillas de oficina"
+          categoryURL="/sillas-de-oficina"
+        />
         <Articulos Data={ArtsSillasOficina} />
       </div>
 

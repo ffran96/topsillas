@@ -1,5 +1,5 @@
 export const CabeceraData = {
-  title: "TOP SILLAS GAMING POR MENOS DE 100 EUROS",
+  title: "MEJORES SILLAS GAMING POR MENOS DE 100 EUROS",
   titleId: "introducción",
   titleContentTable: "Introducción. Mejores sillas gamers por menos de 100 euros.",
   img: "silla gaming ergonomica",

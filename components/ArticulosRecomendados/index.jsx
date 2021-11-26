@@ -19,10 +19,10 @@ export default function index() {
                   alt={item.alt}
                   width={598}
                   height={335.5}
-                  />
+                />
               </div>
               <div className="text">
-              <h3>{item.title}</h3>
+                <h3>{item.title}</h3>
                 {item.text}
                 <Link href={item.link}>
                   <a>
@@ -54,7 +54,7 @@ export default function index() {
           cursor: pointer;
         }
         .figure {
-          border-radius: 15px 15px 0 0;
+          border-radius: 15px 15px 0px 0px;
           overflow: hidden;
         }
         .text {
@@ -85,7 +85,7 @@ export default function index() {
         }
         h3 {
           font-size: 22px;
-          line-height: 1.3; 
+          line-height: 1.3;
           text-align: center;
           margin: 0;
         }
@@ -102,7 +102,7 @@ export default function index() {
             overflow: visible;
             margin: 16px;
           }
-          h3{
+          h3 {
             text-align: start;
           }
         }
@@ -129,6 +129,9 @@ export default function index() {
           span h2 {
             max-width: 1072px;
             font-size: 32px;
+          }
+          .buttom {
+            margin-right: 45px;
           }
           h3 {
             font-size: 28px;

@@ -1,28 +1,29 @@
 export const CabeceraData = {
-  title: "TOP SILLAS GAMING POR MENOS DE 100 EUROS",
+  title: "MEJORES SILLAS DE OFICINA RELACIÓN CALIDAD PRECIO",
   titleId: "introducción",
-  titleContentTable: "Introducción. Mejores sillas gamers por menos de 100 euros.",
-  img: "silla gaming ergonomica",
+  titleContentTable:
+    "Introducción. Mejores sillas de oficina relación calidad precio",
+  img: "oficina",
   text: (
     <>
       <p>
-        Si pasas muchas horas delante del ordenador o eres aficionado a los
-        videojuegos, la compra de{" "}
-        <b>una silla gamer es la mejor opción para ti.</b>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus amet
+        earum exercitationem ullam, facere sequi nesciunt obcaecati iure
+        quibusdam cumque ipsam voluptatibus fuga cupiditate eaque atque illo ad
+        corporis rerum.
       </p>
       <p>
-        La comodidad que te ofrece una silla gaming, no la vas a lograr de otra
-        manera. Miles y miles de usuarios se decantan por una silla gaming antes
-        que una silla de oficina convencional, ya que una silla gaming te
-        permite pasar horas y horas jugando sin cansarte,{" "}
-        <b>evitando malas posturas y lesiones</b>, siempre que elijamos una
-        silla gaming ergonómica.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad doloribus,
+        sunt beatae sit, consectetur laudantium ut ullam alias illum iste
+        eveniet voluptatibus obcaecati explicabo quidem. Nobis error harum ut
+        accusamus, architecto omnis minus expedita ipsa tenetur sint molestiae
+        dolor eaque natus cum eius. Voluptates deleniti ipsa ullam eius quod
+        nihil!
       </p>
       <p>
-        La elección de una silla gaming no es fácil, por ello, traemos esta
-        comparativa entre las{" "}
-        <b>mejores sillas gaming económicas por menos de 100 euros.</b> ¿Quién
-        dijo que la calidad y el bolsillo no van de la mano? 😁
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
+        atque numquam modi assumenda, eveniet optio possimus! Harum corporis
+        voluptate nobis!
       </p>
     </>
   ),
@@ -31,7 +32,7 @@ export const CabeceraData = {
 export const TopData = [
   {
     id: 0,
-    title: "🏆 TOP 1 – INTIMATE WM HEART",
+    title: "🏆 TOP 1 – Lorem, ipsum dolor.",
     titleId: "top-1",
     titleContentTable: "Top 1: Intimate WM Heart",
     imgSrc: "Silla Intimate WM Heart",
@@ -71,7 +72,7 @@ export const TopData = [
   },
   {
     id: 1,
-    title: "TOP 2 – STMENG LIBERTY T1",
+    title: "TOP 2 – Lorem, ipsum dolor.",
     titleId: "top-2",
     titleContentTable: "Top 2: Stmeng Liberty T1",
     imgSrc: "Silla Stmeng Liberty T1",
@@ -112,7 +113,7 @@ export const TopData = [
   },
   {
     id: 2,
-    title: "TOP 3 – SONGMICS OBG28BU",
+    title: "TOP 3 – Lorem, ipsum dolor.",
     titleId: "top-3",
     titleContentTable: "Top 3: Songmics OBG28BU",
     imgSrc: "Silla Songmics OBG28BU",
@@ -156,7 +157,7 @@ export const TopData = [
   },
   {
     id: 3,
-    title: "TOP 4 – Songmics OBG56L",
+    title: "TOP 4 – Lorem, ipsum dolor.",
     titleId: "top-4",
     titleContentTable: "Top 4: Songmics OBG56L",
     imgSrc: "Silla Songmics OBG56L",
@@ -201,7 +202,7 @@ export const TopData = [
   },
   {
     id: 4,
-    title: "TOP 5 – IntimaTe WM Heart Silla Gaming",
+    title: "TOP 5 – Lorem, ipsum dolor.",
     titleId: "top-5",
     titleContentTable: "Top 5: IntimaTe WM Heart Silla Gaming",
     imgSrc: "IntimaTe WM Heart Silla Gaming",

@@ -35,6 +35,7 @@ const index = (props) => {
           .cabecera {
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 2em;
             margin-bottom: 3.5em;
           }

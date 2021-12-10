@@ -18,24 +18,22 @@ export default function index(props) {
       </span>
       <style jsx>{`
       .migas {
-        font-size: 9px;
+        font-size: 10.5px;
         font-weight: 600;
+        color: #c0392b;
       }
       .migas a {
         text-decoration: none;
-        color: #000000;
+        color: #c0392b;
       }
       .migas a:hover {
         text-decoration: underline;
       }
-
       @media only screen and (min-width: 768px) {
         .migas {
             font-size: 14px;
           }
       }
-
-
       
       `}</style>
     </>

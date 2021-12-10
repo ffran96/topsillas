@@ -14,7 +14,7 @@ function index() {
       />
       <Navbar />
       <div className="container">
-        <Migas category="Sillas gamers" categoryURL="/sillas-gamers" />
+      <Migas category="Sillas gamers" categoryURL="/sillas-gamers" />
         <Articulos Data={ArtsSillasGamers} />
       </div>
 

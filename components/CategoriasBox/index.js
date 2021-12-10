@@ -35,7 +35,7 @@ const index = (props) => {
           display: flex;
           justify-content: center;
           flex-direction: column;
-          box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
           transition: transform 0.2s;
         }
 

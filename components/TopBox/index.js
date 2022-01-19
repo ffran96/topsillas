@@ -17,7 +17,7 @@ const index = (props) => {
             />
           </div>
         </a>
-        <div className="top-text">{props.text}</div>
+        <div className="top-text"><p>{props.text}</p></div>
       </div>
 
       <style jsx>{`

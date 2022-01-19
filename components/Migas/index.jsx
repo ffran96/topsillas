@@ -24,7 +24,7 @@ export default function index(props) {
       }
       .migas a {
         text-decoration: none;
-        color: #c0392b;
+        color: #000000;
       }
       .migas a:hover {
         text-decoration: underline;

@@ -164,7 +164,7 @@ const index = () => {
 
           .col ul li:hover {
             cursor: pointer;
-            background-color: #ffffff1a;
+            text-decoration: underline;
           }
         }
       `}</style>

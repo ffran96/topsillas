@@ -17,16 +17,13 @@ const index = (props) => {
             />
           </div>
         </a>
-        <div className="top-text"><p>{props.text}</p></div>
+        <div className="top-text">{props.text}</div>
       </div>
 
       <style jsx>{`
         a {
           color: #000000;
           text-decoration: none;
-        }
-        p {
-          text-align: justify;
         }
 
         h2 {
@@ -53,6 +50,11 @@ const index = (props) => {
           .top-text {
             max-width: 500px;
           }
+        }
+      `}</style>
+      <style jsx global>{`
+        p {
+          text-align: justify;
         }
       `}</style>
     </>

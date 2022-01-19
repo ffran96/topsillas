@@ -13,15 +13,10 @@ const index = (props) => {
             height={335.5}
           />
         </div>
-        <div className="cabecera-texto">
-          <p>{props.text}</p>
-        </div>
+        <div className="cabecera-texto">{props.text}</div>
       </div>
 
       <style jsx>{`
-        p {
-          text-align: justify;
-        }
 
         h1 {
           text-align: center;
@@ -49,6 +44,11 @@ const index = (props) => {
           .figure {
             margin-top: 1.3em;
           }
+        }
+      `}</style>
+            <style jsx global>{`
+        p {
+          text-align: justify;
         }
       `}</style>
     </>

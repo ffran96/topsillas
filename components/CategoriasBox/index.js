@@ -23,10 +23,10 @@ const index = (props) => {
       </Link>
 
       <style jsx>{`
-      a{
-        color: #000000;
-        text-decoration: none;
-      }
+        a {
+          color: #000000;
+          text-decoration: none;
+        }
         .box {
           background-color: #ffffff;
           border-radius: 15px;

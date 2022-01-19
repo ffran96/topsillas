@@ -13,7 +13,9 @@ const index = (props) => {
             height={335.5}
           />
         </div>
-        <div className="cabecera-texto">{props.text}</div>
+        <div className="cabecera-texto">
+          <p>{props.text}</p>
+        </div>
       </div>
 
       <style jsx>{`

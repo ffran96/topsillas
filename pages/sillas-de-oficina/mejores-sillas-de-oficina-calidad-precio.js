@@ -21,7 +21,7 @@ import {
           url="sillas-gamers/mejores-sillas-gaming-por-menos-de-100-euros"
           title="Las mejores sillas gaming por menos de 100 euros"
           description="En este artículo podrás encontrar las mejores sillas gaming del mercado por menos de 100 euros."
-          img="https://www.topsillas.info/_next/image?url=%2Fsilla-comedor.jpg&w=384&q=75"
+          img="https://www.topsillas.info/_next/image?url=%2Foficina.jpg&w=640&q=75"
           width="644"
           height="1109"
         />

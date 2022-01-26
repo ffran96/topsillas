@@ -7,9 +7,9 @@ const index = (props) => {
         </div>
         <ul>
           {props.contenido.map((item) => (
-            <a key={item.id} href={'#' + item.url}>
-              <li>{item.title}</li>
-            </a>
+            <li key={item.id}>
+              <a href={"#" + item.url}>{item.title}</a>
+            </li>
           ))}
         </ul>
       </div>
@@ -33,7 +33,7 @@ const index = (props) => {
             margin-top: 1.5em;
             padding: 5px;
             border-radius: 15px;
-            background-color: #FFFFFF;
+            background-color: #ffffff;
           }
           .title {
             text-align: center;
@@ -72,13 +72,12 @@ const index = (props) => {
           scroll-behavior: smooth;
         }
 
-
         * {
           box-sizing: border-box;
         }
       `}</style>
     </>
-  )
-}
+  );
+};
 
-export default index
+export default index;

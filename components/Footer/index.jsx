@@ -1,5 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import {
+  MenuItemsHogar,
+  MenuItemsBebe,
+  ArticulosRecomendados,
+  Legal,
+  Contactar,
+} from "../Dropdown/Items";
 
 const index = () => {
   return (
@@ -8,49 +15,34 @@ const index = () => {
         <div className="container">
           <div className="col">
             <span className="title">
-              <b>Categorías recomendadas</b>
+              <b>Categorías para el hogar</b>
             </span>
             <ul>
-              <li>
-                <Link href="/sillas-gamers">
-                  <a>Sillas gaming</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/sillas-de-oficina">
-                  <a>Sillas de oficina</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/puffs">
-                  <a>Puffs</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/sillas-de-comedor">
-                  <a>Sillas de comedor</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/">
-                  <a>Sillas de exterior</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/">
-                  <a>Taburetes para barra/cocina</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/">
-                  <a>Sillones de masaje</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/">
-                  <a>Sillas mecedoras</a>
-                </Link>
-              </li>
+              {MenuItemsHogar.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <Link href={item.path}>
+                      <a>{item.title}</a>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="col">
+            <span className="title">
+              <b>Categorías para nuestro bebé</b>
+            </span>
+            <ul>
+              {MenuItemsBebe.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <Link href={item.path}>
+                      <a>{item.title}</a>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="col">
@@ -58,16 +50,15 @@ const index = () => {
               <b>Artículos recomendados</b>
             </span>
             <ul>
-              <li>
-                <Link href="/sillas-gamers/mejores-sillas-gaming-por-menos-de-100-euros">
-                  <a>Top sillas gaming por menos de 100 euros</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/sillas-de-oficina/mejores-sillas-de-oficina-calidad-precio">
-                  <a>Top 5 mejores sillas de oficina relación calidad precio</a>
-                </Link>
-              </li>
+              {ArticulosRecomendados.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <Link href={item.path}>
+                      <a>{item.title}</a>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="col">
@@ -75,21 +66,15 @@ const index = () => {
               <b>Legal</b>
             </span>
             <ul>
-              <li>
-                <Link href="/politica-privacidad">
-                  <a>Política de privacidad</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/cookies">
-                  <a>Política de cookies</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/aviso-legal">
-                  <a>Aviso legal</a>
-                </Link>
-              </li>
+              {Legal.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <Link href={item.path}>
+                      <a>{item.title}</a>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="col">
@@ -97,16 +82,15 @@ const index = () => {
               <b>Contactar</b>
             </span>
             <ul>
-              <Link href="/sobre-nosotros">
-                <a>
-                  <li>Sobre nosotros</li>
-                </a>
-              </Link>
-              <Link href="/contacto">
-                <a>
-                  <li>Contacto</li>
-                </a>
-              </Link>
+              {Contactar.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <Link href={item.path}>
+                      <a>{item.title}</a>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -144,7 +128,7 @@ const index = () => {
           .container {
             display: flex;
             justify-content: space-between;
-            max-width: 900px;
+            max-width: 1200px;
             margin: auto;
             padding: 2em;
           }

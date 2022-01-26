@@ -88,3 +88,47 @@ export const MenuItemsBebe = [
   },
 ];
 
+export const ArticulosRecomendados = [
+  {
+    id: "article-01",
+    title: "Top sillas gaming por menos de 100 euros",
+    path: "/sillas-gamers/mejores-sillas-gaming-por-menos-de-100-euros",
+  },
+  {
+    id: "article-02",
+    title: "Top 5 mejores sillas de oficina relación calidad precio",
+    path: "/sillas-de-oficina/mejores-sillas-de-oficina-calidad-precio",
+  },
+]
+
+export const Legal = [
+  {
+    id: "legal-01",
+    title: "Política de privacidad",
+    path: "/politica-privacidad",
+  },
+  {
+    id: "legal-02",
+    title: "Política de cookies",
+    path: "/politica-cookies",
+  },
+  {
+    id: "legal-03",
+    title: "Aviso legal",
+    path: "/aviso-legal",
+  },
+]
+
+export const Contactar = [
+  {
+    id: "contactar-01",
+    title: "Sobre nosotros",
+    path: "/sobre-nosotros",
+  },
+  {
+    id: "contactar-02",
+    title: "Contacto",
+    path: "/contacto",
+  },
+]
+

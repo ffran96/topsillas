@@ -21,9 +21,7 @@ export default function index(props) {
       <meta property="og:image" content={props.img} />
       <meta property="og:image:width" content={props.width} />
       <meta property="og:image:height" content={props.height} />
-      
-      <meta name="google-site-verification" content="kemFhMXigsPX2nbXARC9C_mgBc9n0W9PQjXvTzM2kV4" />
-      
+            
       <meta name="theme-color" content="#000000" />
       <link rel="icon" href="/favicon.ico" />
       

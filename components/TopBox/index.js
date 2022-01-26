@@ -3,9 +3,12 @@ import Image from "next/image";
 const index = (props) => {
   return (
     <>
-      <a href={props.url} rel="nofollow noreferrer" target="_blank">
-        <h2 id={props.titleId}>{props.title}</h2>
-      </a>
+      <h2 id={props.titleId}>
+        <a href={props.url} rel="nofollow noreferrer" target="_blank">
+          {props.title}
+        </a>
+      </h2>
+
       <div className="top-box">
         <a href={props.url} rel="nofollow noreferrer" target="_blank">
           <div className="top-image">
@@ -21,9 +24,13 @@ const index = (props) => {
       </div>
 
       <style jsx>{`
-        a {
+        h2 a {
           color: #000000;
           text-decoration: none;
+        }
+
+        h2 a:hover{
+          text-decoration: underline;
         }
 
         h2 {

@@ -9,8 +9,8 @@ const index = (props) => {
         </div>
         <ul>
           {props.contenido.map((item) => (
-            <li>
-              <a key={item.id} href={"#" + item.url}>
+            <li key={item.id}> 
+              <a href={"#" + item.url}>
                 {item.title}
               </a>
             </li>

@@ -144,7 +144,7 @@ const index = () => {
             color: #ffffff;
           }
 
-          .col ul li:hover {
+          .col a:hover {
             cursor: pointer;
             text-decoration: underline;
           }

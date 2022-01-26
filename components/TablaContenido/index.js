@@ -1,3 +1,5 @@
+import link from "next/link";
+
 const index = (props) => {
   return (
     <>
@@ -7,8 +9,10 @@ const index = (props) => {
         </div>
         <ul>
           {props.contenido.map((item) => (
-            <li key={item.id}>
-              <a href={"#" + item.url}>{item.title}</a>
+            <li>
+              <a key={item.id} href={"#" + item.url}>
+                {item.title}
+              </a>
             </li>
           ))}
         </ul>
@@ -43,10 +47,6 @@ const index = (props) => {
             font-size: 14px;
             margin-bottom: 0.5em;
           }
-          a {
-            color: #000000;
-            text-decoration: none;
-          }
 
           ul li {
             list-style: none;
@@ -55,8 +55,14 @@ const index = (props) => {
             font-weight: 600;
           }
 
-          ul li:hover {
-            background-color: #0000001a;
+          a {
+            color: #000000;
+            text-decoration: none;
+          }
+          
+          a:hover {
+            text-decoration: underline;
+            cursor: pointer;
           }
         }
       `}</style>

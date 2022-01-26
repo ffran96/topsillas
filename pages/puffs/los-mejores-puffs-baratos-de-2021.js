@@ -1,6 +1,16 @@
-import { Navbar, SEO, Footer, Conclusiones, Cabecera, Buttom, TopBox, TablaContenido } from '/components/Imports'
-import { CabeceraData, TopData, Contenido } from "../../data/PuffsBaratos"
-function sillasGamers () {
+import {
+  Navbar,
+  SEO,
+  Footer,
+  Conclusiones,
+  Cabecera,
+  Buttom,
+  TopBox,
+  TablaContenido,
+  Migas,
+} from "/components/Imports";
+import { CabeceraData, TopData, Contenido } from "../../data/PuffsBaratos";
+function sillasGamers() {
   return (
     <>
       <SEO
@@ -14,6 +24,11 @@ function sillasGamers () {
       <Navbar />
       <TablaContenido contenido={Contenido} />
       <div className="container">
+        <Migas
+          category="Puffs"
+          categoryURL="/puffs"
+          article="Los mejores puffs baratos de 2021"
+        />
         <Cabecera
           title={CabeceraData.title}
           titleId={CabeceraData.titleId}
@@ -47,7 +62,7 @@ function sillasGamers () {
         .container {
           margin: 0;
           padding: 1em;
-          background-color: #FFFFFF;
+          background-color: #ffffff;
         }
 
         .top {
@@ -64,7 +79,6 @@ function sillasGamers () {
         @media only screen and (min-width: 768px) {
           .container {
             max-width: 640px;
-
           }
         }
 
@@ -77,7 +91,7 @@ function sillasGamers () {
         @media only screen and (min-width: 1200px) {
           .container {
             max-width: 1072px;
-            background-color: #FFFFFF;
+            background-color: #ffffff;
             padding: 2em 3em;
           }
 
@@ -102,7 +116,6 @@ function sillasGamers () {
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
           background-color: #ebedef;
-
         }
 
         * {
@@ -110,7 +123,7 @@ function sillasGamers () {
         }
       `}</style>
     </>
-  )
+  );
 }
 
-export default sillasGamers
+export default sillasGamers;

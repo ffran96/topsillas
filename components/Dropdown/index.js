@@ -15,9 +15,11 @@ export default function index() {
             <ul>
               {MenuItemsHogar.map((item) => {
                 return (
-                  <Link href={item.path} key={item.id} onClick={() => setDropdown(false)}>
-                    <a><li>{item.title}</li></a>
-                  </Link>
+                  <li key={item.id}>
+                    <Link href={item.path} onClick={() => setDropdown(false)}>
+                      <a>{item.title}</a>
+                    </Link>
+                  </li>
                 );
               })}
             </ul>
@@ -26,11 +28,11 @@ export default function index() {
             <ul>
               {MenuItemsBebe.map((item) => {
                 return (
-                  <Link href={item.path} key={item.id} onClick={() => setDropdown(false)}>
-                    <a>
-                      <li>{item.title}</li>
-                    </a>
-                  </Link>
+                  <li key={item.id}>
+                    <Link href={item.path} onClick={() => setDropdown(false)}>
+                      <a>{item.title}</a>
+                    </Link>
+                  </li>
                 );
               })}
             </ul>
@@ -40,11 +42,11 @@ export default function index() {
 
       <style jsx>
         {`
-        *{
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-        }
+          * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+          }
           a {
             color: #ffffff;
             text-decoration: none;
@@ -69,7 +71,7 @@ export default function index() {
             padding: 2em;
             margin: auto;
           }
-          .col{
+          .col {
             margin: 0 16px;
           }
           .col ul li {

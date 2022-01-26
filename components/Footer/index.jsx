@@ -11,46 +11,46 @@ const index = () => {
               <b>Categorías recomendadas</b>
             </span>
             <ul>
-              <Link href="/sillas-gamers">
-                <a>
-                  <li>Sillas gaming</li>
-                </a>
-              </Link>
-              <Link href="/sillas-de-oficina">
-                <a>
-                  <li>Sillas de oficina</li>
-                </a>
-              </Link>
-              <Link href="/puffs">
-                <a>
-                  <li>Puffs</li>
-                </a>
-              </Link>
-              <Link href="/sillas-de-comedor">
-                <a>
-                  <li>Sillas de comedor</li>
-                </a>
-              </Link>
-              <Link href="/">
-                <a>
-                  <li>Sillas de exterior</li>
-                </a>
-              </Link>
-              <Link href="/">
-                <a>
-                  <li>Taburetes para barra/cocina</li>
-                </a>
-              </Link>
-              <Link href="/">
-                <a>
-                  <li>Sillones de masaje</li>
-                </a>
-              </Link>
-              <Link href="/">
-                <a>
-                  <li>Sillas mecedoras</li>
-                </a>
-              </Link>
+              <li>
+                <Link href="/sillas-gamers">
+                  <a>Sillas gaming</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/sillas-de-oficina">
+                  <a>Sillas de oficina</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/puffs">
+                  <a>Puffs</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/sillas-de-comedor">
+                  <a>Sillas de comedor</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Sillas de exterior</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Taburetes para barra/cocina</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Sillones de masaje</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Sillas mecedoras</a>
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="col">
@@ -58,18 +58,16 @@ const index = () => {
               <b>Artículos recomendados</b>
             </span>
             <ul>
-              <Link href="/sillas-gamers/mejores-sillas-gaming-por-menos-de-100-euros">
-                <a>
-                  <li>Top sillas gaming por menos de 100 euros</li>
-                </a>
-              </Link>
-              <Link href="/sillas-de-oficina/mejores-sillas-de-oficina-calidad-precio">
-                <a>
-                  <li>
-                    Top 5 mejores sillas de oficina relación calidad precio
-                  </li>
-                </a>
-              </Link>
+              <li>
+                <Link href="/sillas-gamers/mejores-sillas-gaming-por-menos-de-100-euros">
+                  <a>Top sillas gaming por menos de 100 euros</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/sillas-de-oficina/mejores-sillas-de-oficina-calidad-precio">
+                  <a>Top 5 mejores sillas de oficina relación calidad precio</a>
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="col">
@@ -77,21 +75,21 @@ const index = () => {
               <b>Legal</b>
             </span>
             <ul>
-              <Link href="/politica-privacidad">
-                <a>
-                  <li>Política de privacidad</li>
-                </a>
-              </Link>
-              <Link href="/cookies">
-                <a>
-                  <li>Política de cookies</li>
-                </a>
-              </Link>
-              <Link href="/aviso-legal">
-                <a>
-                  <li>Aviso legal</li>
-                </a>
-              </Link>
+              <li>
+                <Link href="/politica-privacidad">
+                  <a>Política de privacidad</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/cookies">
+                  <a>Política de cookies</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/aviso-legal">
+                  <a>Aviso legal</a>
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="col">
@@ -114,7 +112,7 @@ const index = () => {
         </div>
         <div>
           <hr color="#505050"></hr>
-          <p>TopSillas.info | Copyright © 2021</p>
+          <p>TopSillas.info | Copyright © 2022</p>
         </div>
       </footer>
 
@@ -125,6 +123,7 @@ const index = () => {
         }
         a {
           text-decoration: none;
+          color: #ffffffe6;
         }
         .container {
           display: none;
@@ -153,7 +152,6 @@ const index = () => {
             margin-top: 1.2em;
           }
           .col ul li {
-            color: #ffffffe6;
             list-style: none;
             padding: 0.3em;
             max-width: 250px;

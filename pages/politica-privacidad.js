@@ -73,7 +73,7 @@ export default function Custom404() {
           ordenador para declinar las cookies. Si se declinan es posible que no
           pueda utilizar algunos de nuestros servicios.
         </p>
-        <h3>Enlaces a Terceros</h3>
+        <h2>Enlaces a Terceros</h2>
         <p>
           Este sitio web pudiera contener en laces a otros sitios que pudieran
           ser de su interés. Una vez que usted de clic en estos enlaces y
@@ -84,7 +84,7 @@ export default function Custom404() {
           privacidad por lo cual es recomendable que los consulte para confirmar
           que usted está de acuerdo con estas.
         </p>
-        <h3>Control de su información personal</h3>
+        <h2>Control de su información personal</h2>
         <p>
           En cualquier momento usted puede restringir la recopilación o el uso
           de la información personal que es proporcionada a nuestro sitio web.
@@ -113,6 +113,7 @@ export default function Custom404() {
           min-height: 720px;
           padding: 1em;
           background-color: #ffffff;
+          text-align: justify;
         }
 
         @media only screen and (min-width: 600px) {
@@ -135,7 +136,7 @@ export default function Custom404() {
             max-width: 1200px;
             margin: auto;
             background-color: #ffffff;
-            padding: 2em 3em;
+            padding: 2em 5em;
           }
         }
 

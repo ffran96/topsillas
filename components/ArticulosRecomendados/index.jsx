@@ -80,7 +80,7 @@ export default function index() {
         span h2 {
           max-width: 320px;
           margin: auto;
-          margin-top: 1.5em;
+          margin-top: 1em;
           font-size: 22px;
         }
         h3 {

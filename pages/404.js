@@ -1,4 +1,5 @@
 import { Navbar, SEO, Footer } from "/components/Imports";
+import Image from "next/image";
 
 export default function Custom404() {
   return (
@@ -9,7 +10,14 @@ export default function Custom404() {
       />
       <Navbar />
       <div className="container">
-        <h1>Error 404 - Página no encontrada 😥</h1>
+        <div className="gif">
+          <Image
+            src="/404.gif"
+            alt="pagina no encontrada error 404"
+            width={640}
+            height={640}
+          ></Image>
+        </div>
       </div>
 
       <Footer />
@@ -17,34 +25,24 @@ export default function Custom404() {
       <style jsx>{`
         .container {
           margin: 0;
-          min-height: 720px;
+          width: 1200px;
           padding: 1em;
           background-color: #ffffff;
         }
 
-        @media only screen and (min-width: 600px) {
-          .container {
-          }
+        .gif {
+          max-width: 640px;
+          max-height: 640px;
+          margin: auto;
         }
 
-        @media only screen and (min-width: 768px) {
-          .container {
-          }
-        }
-
-        @media only screen and (min-width: 990px) {
-          .container {
-          }
-        }
-
+      
         @media only screen and (min-width: 1200px) {
           .container {
             max-width: 1200px;
             margin: auto;
             background-color: #ffffff;
-            padding: 2em 3em;
           }
-
         }
 
         @media only screen and (min-width: 1600px) {

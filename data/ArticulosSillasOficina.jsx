@@ -1,5 +1,6 @@
 export const ArtsSillasOficina = [
   {
+    id: 0,
     title: "Top 5 Mejores sillas de oficina relación calidad precio",
     text: (
       <>

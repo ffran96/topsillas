@@ -58,7 +58,7 @@ const index = () => {
         span h1 {
           max-width: 320px;
           margin: auto;
-          margin-top: 1.5em;
+          margin-top: 0.7em;
           font-size: 24px;
         }
 

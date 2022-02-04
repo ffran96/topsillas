@@ -1,7 +1,7 @@
 export default function handler(req, res) {
   res.status(200).json([
     {
-      id: "01",
+      id: 0,
       title: "title 1",
       src: "/silla-gaming.jpg",
       alt: "oficina con sillas de oficina",
@@ -9,7 +9,7 @@ export default function handler(req, res) {
       link: "/sillas-gamers",
     },
     {
-      id: "02",
+      id: 1,
       title: "title 2",
       src: "/silla-exterior.jpg",
       alt: "oficina con sillas de oficina",
@@ -17,7 +17,7 @@ export default function handler(req, res) {
       link: "/sillas-gamers",
     },
     {
-      id: "03",
+      id: 2,
       title: "title 3",
       src: "/silla-mecedora.jpg",
       alt: "oficina con sillas de oficina",
@@ -25,7 +25,7 @@ export default function handler(req, res) {
       link: "/sillas-gamers",
     },
     {
-      id: "04",
+      id: 3,
       title: "title 4",
       src: "/silla-comedor.jpg",
       alt: "oficina con sillas de oficina",
@@ -33,7 +33,7 @@ export default function handler(req, res) {
       link: "/sillas-gamers",
     },
     {
-      id: "05",
+      id: 4,
       title: "title 5",
       src: "/silla-oficina.jpg",
       alt: "oficina con sillas de oficina",

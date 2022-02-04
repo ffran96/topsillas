@@ -2,7 +2,7 @@ export const MenuItemsHogar = [
   {
     id: "item-hogar-01",
     title: "Sillas gaming",
-    path: "/sillas-gamers",
+    path: "/sillas-para-gamers",
   },
   {
     id: "item-hogar-02",
@@ -78,7 +78,7 @@ export const ArticulosRecomendados = [
   {
     id: "article-01",
     title: "Top sillas gaming por menos de 100 euros",
-    path: "/sillas-gamers/mejores-sillas-gaming-por-menos-de-100-euros",
+    path: "/sillas-para-gamers/mejores-sillas-gaming-por-menos-de-100-euros",
   },
   {
     id: "article-02",

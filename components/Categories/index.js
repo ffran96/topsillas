@@ -11,9 +11,9 @@ const index = () => {
         {CategoyData.map((item) => (
           <CategoriasBox
             key={item.id}
-            link={item.link}
-            src={item.src}
-            alt={item.alt}
+            link={URL(item.title)}
+            src={SRC(item.title)}
+            alt={ALT(item.title)}
             title={item.title}
             width={item.width}
             height={item.height}
@@ -124,3 +124,21 @@ const index = () => {
 };
 
 export default index;
+
+function URL(title) {
+  let URL = title.toLowerCase();
+  URL = URL.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  URL = "/" + URL.split(" ").join("-");
+  return URL;
+}
+function SRC(title) {
+  let SRC = title.toLowerCase();
+  SRC = SRC.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  SRC = "/" + SRC.split(" ").join("-") + ".jpg";
+  return SRC;
+}
+
+function ALT(title) {
+  let ALT = title.toLowerCase();
+  return ALT;
+}

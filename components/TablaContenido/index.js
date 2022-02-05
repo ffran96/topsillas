@@ -1,5 +1,3 @@
-import link from "next/link";
-
 const index = (props) => {
   return (
     <>
@@ -9,10 +7,8 @@ const index = (props) => {
         </div>
         <ul>
           {props.contenido.map((item) => (
-            <li key={item.id}> 
-              <a href={"#" + item.url}>
-                {item.title}
-              </a>
+            <li key={item.id}>
+              <a href={"#" + item.url}>{item.title}</a>
             </li>
           ))}
         </ul>
@@ -28,7 +24,7 @@ const index = (props) => {
           display: none;
         }
 
-        @media only screen and (min-width: 1920px) {
+        @media only screen and (min-width: 1200px) {
           .TablaContenido {
             display: block;
             position: fixed;
@@ -59,27 +55,11 @@ const index = (props) => {
             color: #000000;
             text-decoration: none;
           }
-          
+
           a:hover {
             text-decoration: underline;
             cursor: pointer;
           }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-          scroll-behavior: smooth;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </>

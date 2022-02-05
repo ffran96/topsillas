@@ -15,6 +15,7 @@ import Migas from "./Migas";
 import Buscador from "./Buscador";
 import Container from "./Container";
 import ContainerTop from "./ContainerTop";
+import CentrarDiv from "./CentrarDiv";
 
 export {
   Navbar,
@@ -34,4 +35,5 @@ export {
   Buscador,
   Container,
   ContainerTop,
+  CentrarDiv,
 };

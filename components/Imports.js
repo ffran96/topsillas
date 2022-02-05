@@ -12,8 +12,9 @@ import CategoriasBox from "./CategoriasBox";
 import ArticulosRecomendados from "./ArticulosRecomendados";
 import Articulos from "./Articulos";
 import Migas from "./Migas";
-import Buscador from "./Buscador"
-
+import Buscador from "./Buscador";
+import Container from "./Container";
+import ContainerTop from "./ContainerTop";
 
 export {
   Navbar,
@@ -31,4 +32,6 @@ export {
   Articulos,
   Migas,
   Buscador,
+  Container,
+  ContainerTop,
 };

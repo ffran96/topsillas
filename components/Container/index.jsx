@@ -1,25 +1,7 @@
-import { Navbar, SEO, Footer, Articulos, Migas } from "/components/Imports";
-import { ArtsSillasGamers } from "../../data/ArticulosSillasGamers";
-
-function index() {
+export default function index({ children }) {
   return (
     <>
-      <SEO
-        url="sillas-gamers"
-        title="Sillas Gamers"
-        description="¡Encuentra tu silla gaming ideal!"
-        img="https://www.topsillas.info/_next/image?url=%2Fsilla-gaming.jpg&w=256&q=75"
-        width="644"
-        height="1109"
-      />
-      <Navbar />
-      <div className="container">
-      <Migas category="Sillas gamers" categoryURL="/sillas-gamers" />
-        <Articulos Data={ArtsSillasGamers} />
-      </div>
-
-      <Footer />
-
+      <div className="container">{children}</div>
       <style jsx>{`
         .container {
           margin: 0;
@@ -29,23 +11,26 @@ function index() {
 
         @media only screen and (min-width: 600px) {
           .container {
+            max-width: 472px;
+            margin: auto;
           }
         }
 
         @media only screen and (min-width: 768px) {
           .container {
+            max-width: 640px;
           }
         }
 
         @media only screen and (min-width: 990px) {
           .container {
+            max-width: 862px;
           }
         }
 
         @media only screen and (min-width: 1200px) {
           .container {
-            max-width: 1200px;
-            margin: auto;
+            max-width: 1072px;
             background-color: #ffffff;
             padding: 2em 3em;
           }
@@ -53,6 +38,7 @@ function index() {
 
         @media only screen and (min-width: 1600px) {
           .container {
+            max-width: 1200px;
           }
         }
       `}</style>
@@ -75,5 +61,3 @@ function index() {
     </>
   );
 }
-
-export default index;

@@ -9,7 +9,7 @@ export default function index() {
   return (
     <>
       <header className="header">
-        <div className="container">
+        <nav className="container">
           <div className="header-superior">
             <div className="logo">
               <Link href="/">
@@ -41,7 +41,7 @@ export default function index() {
               ))}
             </ul>
           </div>
-        </div>
+        </nav>
       </header>
       <style jsx>{`
         * {

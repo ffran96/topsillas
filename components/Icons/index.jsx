@@ -1,6 +1,7 @@
 const Lupa = () => (
   <svg
     viewBox="0 0 24 24"
+    alt= "buscar"
     style={{
       width: "25px",
       height: "25px",

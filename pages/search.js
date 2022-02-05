@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { Navbar, SEO, Footer, Articulos } from "/components/Imports";
+import { Navbar, SEO, Footer, Articulos, Container } from "/components/Imports";
 
 const posts = [
   {
@@ -95,7 +95,6 @@ const posts = [
 ];
 
 export default function Search() {
-
   const router = useRouter();
   const { term } = router.query;
 
@@ -113,56 +112,11 @@ export default function Search() {
     <>
       <SEO title={term} description="Resultados encontrados" />
       <Navbar />
-      <div className="container">
+      <Container>
         <h2>{aviso}</h2>
         <Articulos Data={filterPosts} />
-      </div>
+      </Container>
       <Footer />
-
-      <style jsx>{`
-        .container {
-          margin: 0;
-          width: 1200px;
-          min-height: 700px;
-          padding: 1em 5em;
-          background-color: #ffffff;
-        }
-
-        .gif {
-          max-width: 640px;
-          max-height: 640px;
-          margin: auto;
-        }
-
-        @media only screen and (min-width: 1200px) {
-          .container {
-            max-width: 1200px;
-            margin: auto;
-            background-color: #ffffff;
-          }
-        }
-
-        @media only screen and (min-width: 1600px) {
-          .container {
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-          background-color: #ebedef;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
     </>
   );
 }

@@ -7,6 +7,7 @@ export default function index({ children }) {
           margin: 0;
           padding: 1em;
           background-color: #ffffff;
+          min-height: 800px;
         }
 
         @media only screen and (min-width: 600px) {

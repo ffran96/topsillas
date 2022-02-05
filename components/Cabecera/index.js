@@ -46,11 +46,7 @@ const index = (props) => {
           }
         }
       `}</style>
-            <style jsx global>{`
-        p {
-          text-align: justify;
-        }
-      `}</style>
+
     </>
   );
 };

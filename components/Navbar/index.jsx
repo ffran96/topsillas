@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Buscador } from "../Imports";
 import { MenuItemsHogar, MenuItemsBebe } from "../Dropdown/Items";
+import { Arrow } from "../Icons"
 
 const Items = MenuItemsHogar.concat(MenuItemsBebe);
 
@@ -27,7 +28,8 @@ export default function index() {
               <Buscador />
             </div>
             <div className="btn-grad">
-              Menú <i className="fas fa-caret-down" />
+              <div>Menú</div>
+              <div><Arrow width="20px" height="20px"/></div>
             </div>
           </div>
           <div className="header-inferior">
@@ -82,14 +84,17 @@ export default function index() {
           );
         }
         .btn-grad {
-          padding: 10px;
-          text-align: center;
+          width: 80px;
+          height: 40px;
           transition: 0.5s;
           background-size: 200% auto;
           color: white;
           border-radius: 5px;
           cursor: pointer;
           font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .btn-grad:hover {

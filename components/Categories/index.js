@@ -1,5 +1,6 @@
 import { CategoriasBox } from "/components/Imports";
 import { CategoyData } from "../../data/home";
+import { URL, SRC, ALT } from "../../Functions";
 
 const index = () => {
   return (
@@ -125,20 +126,4 @@ const index = () => {
 
 export default index;
 
-function URL(title) {
-  let URL = title.toLowerCase();
-  URL = URL.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  URL = "/" + URL.split(" ").join("-");
-  return URL;
-}
-function SRC(title) {
-  let SRC = title.toLowerCase();
-  SRC = SRC.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  SRC = "/" + SRC.split(" ").join("-") + ".jpg";
-  return SRC;
-}
 
-function ALT(title) {
-  let ALT = title.toLowerCase();
-  return ALT;
-}

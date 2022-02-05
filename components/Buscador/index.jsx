@@ -34,7 +34,7 @@ export default function index() {
           id="search"
           placeholder="Buscar..."
         />
-        <button type="submit">
+        <button type="submit" aria-label="Buscar">
           <Lupa />
         </button>
       </form>

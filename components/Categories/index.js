@@ -9,15 +9,15 @@ const index = () => {
         <h1>Categorías recomendadas por TopSillas</h1>
       </span>
       <div className="container">
-        {CategoyData.map((item) => (
+        {CategoyData.map(({id, title, width, height}) => (
           <CategoriasBox
-            key={item.id}
-            link={URL(item.title)}
-            src={SRC(item.title)}
-            alt={ALT(item.title)}
-            title={item.title}
-            width={item.width}
-            height={item.height}
+            key={id}
+            link={URL(title)}
+            src={SRC(title)}
+            alt={ALT(title)}
+            title={title}
+            width={width}
+            height={height}
           />
         ))}
       </div>

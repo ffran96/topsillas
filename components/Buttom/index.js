@@ -1,17 +1,17 @@
 import Image from "next/image"
 
-const index = (props) => {
+const index = ({url,label}) => {
   return (
     <>
       <div className="buttom">
-        <a href={props.url} rel="nofollow noreferrer" target="_blank">
+        <a href={url} rel="nofollow noreferrer" target="_blank">
           <Image
             src="/tag-solid.svg"
             alt="tag del butón"
             width="16"
             height="16"
           />
-          {props.label}
+          {label}
         </a>
       </div>
       <style jsx>{`

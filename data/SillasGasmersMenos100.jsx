@@ -20,6 +20,61 @@ export const CabeceraData = {
         silla gaming ergonómica.
       </p>
       <p>
+        Como ya se ha dicho, si pasas mucho tiempo sentado en un escritorio, tu
+        postura puede afectar a cómo se siente tu espalda. Esto es algo por lo
+        que pasan todos los jugadores online o de consola, algunos más que
+        otros. Esto se agrava para aquellos que pasan mucho tiempo sentados
+        mientras juegan a videojuegos que implican mucho movimiento de la parte
+        superior del cuerpo.{" "}
+        <b>
+          ¿Qué se puede hacer para evitar los dolores al jugar a videojuegos?
+        </b>{" "}
+        La mayoría de las sillas gaming ergonómicas tienen varias
+        características que permiten obtener una posición de asiento perfecta
+        prácticamente en todo momento.
+      </p>
+      <p>
+        Hay seis principios fundamentales de las sillas de gaming ergonómicas
+        que las hacen excelentes para sentarse durante largos periodos de tiempo
+        mientras se está inmerso en mundos de juego online, viendo vídeos de
+        YouTube. Estos principios se analizarán con más detalle a lo largo del
+        artículo.
+      </p>
+      <ul>
+        <li>
+          Las sillas de oficina están diseñadas para distribuir el peso de forma
+          uniforme y proporcionar apoyo.
+        </li>
+        <li>
+          Los materiales con los que se construyen las sillas de oficina para
+          juegos son de alta calidad y duran mucho tiempo.
+        </li>
+        <li>
+          Casi todos los componentes de la silla son ajustables, desde los
+          reposabrazos hasta la profundidad del asiento, el control de la
+          tensión y los reposacabezas: puede adaptar la silla a sus
+          preferencias.
+        </li>
+        <li>
+          Las sillas de oficina ergonómicas, al igual que el resto de equipos
+          ergonómicos, como teclados, almohadillas de control y pantallas, están
+          diseñadas para formar parte de un entorno de estación de juego
+          multipunto.
+        </li>
+        <li>
+          Independientemente de su configuración de juego, cada silla está
+          pensada para tener un aspecto elegante y estéticamente agradable. A
+          diferencia de las sillas de juego de estilo de competición, que pueden
+          desentonar con la decoración de su habitación debido a sus colores
+          vivos y brillantes.
+        </li>
+        <li>
+          Cuando se incluye en el coste de su configuración de juego completa,
+          las sillas de oficina son un buen valor para las características y la
+          durabilidad que proporcionan.
+        </li>
+      </ul>
+      <p>
         La elección de una silla gaming no es fácil, por ello, traemos esta
         comparativa entre las{" "}
         <b>mejores sillas gaming económicas por menos de 100 euros.</b> ¿Quién
@@ -83,24 +138,6 @@ export const TopData = [
     height: 340.75,
     text: (
       <>
-        <p>
-          De la mano del mismo fabricante que la anterior, Songmics se mantiene
-          en el podio, apostando por una silla gaming con un diseño ergonómico,
-          muy parecido a la STMENG LIBERTY T1.
-        </p>
-        <p>
-          Hablamos de una <b>silla gaming cómoda y funcional</b>, cuenta con una
-          rejilla central para evitar el exceso de calor y apoyabrazos de cuero
-          sintético resistentes al uso diario.
-        </p>
-        <p>
-          Por menos de 100 euros, esta silla gaming es una opción a valorar.{" "}
-          <b>
-            Los usuarios aseguran que su espuma de alta densidad proporciona una
-            comodidad poco común en este rango de precios.
-          </b>{" "}
-          También cuenta con mecanismo de inclinación y asiento elevable.
-        </p>
         <p>
           Obviamente, una de las consideraciones más importantes a la hora de
           comprar una nueva silla gaming es la rapidez con la que se puede

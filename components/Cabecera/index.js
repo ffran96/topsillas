@@ -9,15 +9,14 @@ const index = (props) => {
           <Image
             src={"/" + props.img + ".jpg"}
             alt={props.img}
-            width={598}
-            height={335.5}
+            width={480}
+            height={300}
           />
         </div>
         <div className="cabecera-texto">{props.text}</div>
       </div>
 
       <style jsx>{`
-
         h1 {
           text-align: center;
         }
@@ -26,24 +25,19 @@ const index = (props) => {
         }
 
         @media only screen and (min-width: 1200px) {
+
           h1 {
             font-size: 52px;
           }
           .cabecera {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2em;
             margin-bottom: 3.5em;
           }
 
-          .cabecera-texto {
-            max-width: 550px;
+          .figure {
+            float: left;
+            padding-right: 30px;
           }
 
-          .figure {
-            margin-top: 1.3em;
-          }
         }
       `}</style>
 

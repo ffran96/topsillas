@@ -43,25 +43,34 @@ const index = (props) => {
         }
 
         @media only screen and (min-width: 1200px) {
+     
           .top-box {
-            display: flex;
             max-width: 1000px;
             margin: auto;
             justify-content: center;
             align-items: center;
           }
           .top-image {
+            float: left;
             min-width: 320px;
           }
 
           .top-text {
-            max-width: 500px;
           }
         }
       `}</style>
       <style jsx global>{`
         p {
           text-align: justify;
+          font-size: 18px;
+          line-height : 32px;
+        }
+        li{
+          text-align: justify;
+          font-size: 18px;
+          line-height : 30px;
+          padding-bottom: 10px;
+
         }
       `}</style>
     </>

@@ -76,7 +76,7 @@ const posts = [
   },
   {
     id: 4,
-    title: "Top 5 Mejores sillas de oficina relación calidad precio",
+    title: "Mecedoras ryke chupla pius",
     text: (
       <>
         <p>
@@ -95,8 +95,10 @@ const posts = [
 ];
 
 export default function Search() {
-  const router = useRouter();
-  const { term } = router.query;
+  const router = useRouter()
+  const { term } = router.query
+  const splitedTerm = term.split(" ")
+  console.log(splitedTerm)
 
   const filterPosts = posts.filter((post) => post.tags.includes(term));
 

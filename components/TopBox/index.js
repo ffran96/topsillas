@@ -70,7 +70,6 @@ const index = (props) => {
           font-size: 18px;
           line-height : 32px;
           padding-bottom: 10px;
-
         }
       `}</style>
     </>

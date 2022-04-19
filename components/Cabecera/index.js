@@ -9,7 +9,7 @@ const index = (props) => {
           <Image
             src={"/" + props.img + ".jpg"}
             alt={props.img}
-            width={480}
+            width={500}
             height={300}
           />
         </div>

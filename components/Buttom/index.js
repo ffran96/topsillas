@@ -25,7 +25,7 @@ const index = ({url,label}) => {
           padding: 15px;
           color: #ffffff;
           background-color: #E84D0E;
-          border-radius: 15px;
+          border-radius: 4px;
           font-weight: 700;
           cursor: pointer;
           color: white;

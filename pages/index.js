@@ -55,6 +55,12 @@ export default function Home() {
 
         <meta name="theme-color" content="#000000" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Navbar />
       <Categories />
@@ -68,7 +74,9 @@ export default function Home() {
           padding: 0;
           margin: 0;
           box-sizing: border-box;
-          font-family: 'Open Sans', sans-serif;
+          font-family: "Open Sans", sans-serif;
+          font-size: 18px;
+          color: #303030;
           background-color: #ebedef;
         }
       `}</style>

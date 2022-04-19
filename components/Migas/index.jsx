@@ -20,11 +20,10 @@ export default function index(props) {
       .migas {
         font-size: 10.5px;
         font-weight: 600;
-        color: #000000;
       }
       .migas a {
         text-decoration: none;
-        color: #000000;
+        color: #303030;
       }
       .migas a:hover {
         text-decoration: underline;

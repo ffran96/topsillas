@@ -280,21 +280,42 @@ export const TopData = [
     height: 323,
     text: (
       <>
-        <p>
-          Sin ninguna duda, estamos ante la campeona de los pesos pesados en
-          relación calidad-precio.
+ <p>
+          Esta es la mejor opción si estás buscando la mejor silla de juego por
+          menos de 100 Euros. Para empezar, posee uno de los asientos más
+          duraderos disponibles en el mercado. Tiene un marco de acero de 1,8 mm
+          que brinda mucho apoyo y estabilidad. Este modelo también está
+          construido íntegramente en acero, lo que lo diferencia de otros
+          modelos en este rango de precios. Ganará durabilidad gracias al acero
+          añadido, una ganga.
         </p>
         <p>
-          Cuando vimos las especificaciones de esta silla gaming no lo podíamos
-          creer. ¡Lo tiene todo! Comodidad, respaldo reclinable a cualquier
-          altura, buenos materiales de construcción y sobre todo durabilidad.
-          Todo esto la convierte en{" "}
-          <b>la silla gaming mejor valorada en Amazon</b> dentro del rango de
-          precio entre 50 y 100 euros.
+          Otra característica que ayuda a distinguir esta silla es su capacidad
+          de carga máxima. Esta silla puede soportar fácilmente hasta 120 kg ,
+          gracias en parte a su estructura de acero. El asiento y el respaldo
+          también son lo suficientemente espaciosos para acomodar a jugadores de
+          cualquier tamaño.
         </p>
         <p>
-          Si estás buscando una silla gaming para cualquier altura, resistente y
-          con una estética elegante, <b>¡esta es tu silla gamer!</b>
+          Esta silla también aporta mucha comodidad. Este modelo no solo cuenta
+          con cojines lumbares y de apoyo para el cuello, sino también con
+          espuma de alta densidad en el respaldo y el asiento. Incluso después
+          de un uso excesivo, esta espuma mantendrá su forma.
+        </p>
+        <p>
+          Las ruedas de esta silla también son de excelente calidad. Esta silla
+          gaming tiene ruedas recubiertas de goma, a diferencia de algunas
+          otras, que solo poseen ruedas de plástico. Las ruedas anchas facilitan
+          la maniobra, y el revestimiento de goma evita que raye las
+          superficies.
+        </p>
+        <p>
+          Como la mayoría de los asientos para juegos, se puede mover hacia
+          arriba y hacia abajo para adaptarse a diferentes alturas. Si bien
+          esta, es una característica útil para mover la silla completa, los
+          reposabrazos no están incluidos. Debido a que estos soportes tienen
+          siempre la misma altura, pueden resultar incómodos para algunos
+          jugadores.
         </p>
       </>
     ),

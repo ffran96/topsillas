@@ -122,6 +122,19 @@ export default function index() {
           border-radius: 5px;
         }
       `}</style>
+
+<style jsx global>{`
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 18px;
+          color: #303030;
+          background-color: #ebedef;
+        }
+      `}</style>
     </>
   );
 }

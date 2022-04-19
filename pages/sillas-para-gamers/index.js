@@ -26,6 +26,8 @@ export default function index() {
       </Container>
 
       <Footer />
+
+      
     </>
   );
 }

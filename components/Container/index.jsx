@@ -33,7 +33,7 @@ export default function index({ children }) {
           .container {
             max-width: 1072px;
             background-color: #ffffff;
-            padding: 2em 6em;
+            padding: 2em 8em;
           }
         }
 

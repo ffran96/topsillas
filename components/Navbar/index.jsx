@@ -25,7 +25,6 @@ export default function index() {
               </Link>
             </div>
             <div className="buscador">
-              <Buscador />
             </div>
             <div className="btn-grad">
               <div>Menú</div>

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Buscador } from "../Imports";
 import { MenuItemsHogar, MenuItemsBebe } from "../Dropdown/Items";
 import { Arrow } from "../Icons"
 

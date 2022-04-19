@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 const index = (props) => {
   return (
     <>
@@ -61,14 +62,13 @@ const index = (props) => {
       `}</style>
       <style jsx global>{`
         p {
-          text-align: justify;
           font-size: 18px;
           line-height : 32px;
         }
         li{
-          text-align: justify;
+        
           font-size: 18px;
-          line-height : 30px;
+          line-height : 32px;
           padding-bottom: 10px;
 
         }

@@ -24,7 +24,7 @@ const index = ({url,label}) => {
         .buttom a {
           padding: 15px;
           color: #ffffff;
-          background-color: #c0392b;
+          background-color: #E84D0E;
           border-radius: 15px;
           font-weight: 700;
           cursor: pointer;

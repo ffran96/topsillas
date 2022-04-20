@@ -33,7 +33,7 @@ export default function sillasGamers() {
       <Container>
         <Migas
           category="Sillas gamers"
-          categoryURL="/sillas-gamers"
+          categoryURL="/sillas-para-gamers"
           article="Mejores sillas gaming por menos de 100 euros"
         />
         <Cabecera
@@ -41,6 +41,8 @@ export default function sillasGamers() {
           titleId={CabeceraData.titleId}
           img={CabeceraData.img}
           text={CabeceraData.text}
+          width={478.4}
+          height={268.4}
         />
 
         {TopData.map((item) => (

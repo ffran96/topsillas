@@ -20,59 +20,39 @@ export const CabeceraData = {
         silla gaming ergonómica.
       </p>
       <p>
-        Como ya se ha dicho, si pasas mucho tiempo sentado en un escritorio, tu
-        postura puede afectar a cómo se siente tu espalda. Esto es algo por lo
-        que pasan todos los jugadores online o de consola, algunos más que
-        otros. Esto se agrava para aquellos que pasan mucho tiempo sentados
-        mientras juegan a videojuegos que implican mucho movimiento de la parte
-        superior del cuerpo.{" "}
+        Si pasas mucho tiempo frente a al escritorio, tu postura puede afectar a
+        cómo se siente tu espalda. Esto es algo por lo que pasan todos los
+        jugadores de PC o consola, algunos más que otros. Esto se agrava para
+        aquellos que pasan mucho tiempo sentados mientras juegan a videojuegos
+        que implican mucho movimiento de la parte superior del cuerpo.{" "}
         <b>
           ¿Qué se puede hacer para evitar los dolores al jugar a videojuegos?
         </b>{" "}
-        La mayoría de las sillas gaming ergonómicas tienen varias
-        características que permiten obtener una posición de asiento perfecta
-        prácticamente en todo momento.
+        La mayoría de sillas gaming ergonómicas tienen varias características
+        que permiten obtener una posición de asiento perfecta prácticamente en
+        todo momento.
       </p>
       <p>
-        Hay seis principios fundamentales de las sillas de gaming ergonómicas
-        que las hacen excelentes para sentarse durante largos periodos de tiempo
-        mientras se está inmerso en mundos de juego online, viendo vídeos de
-        YouTube. Estos principios se analizarán con más detalle a lo largo del
-        artículo.
+        Hay una serie de principios fundamentales para las sillas gaming
+        ergonómicas que las hacen excelentes para sentarse durante largos
+        periodos de tiempo mientras se está inmerso en mundos de juego online o
+        viendo vídeos de YouTube.
       </p>
       <div className="Lista">
         <ul>
           <li>
-            Las sillas de oficina están diseñadas para distribuir el peso de
-            forma uniforme y proporcionar apoyo.
+            Las sillas gaming están diseñadas para distribuir el peso de forma
+            uniforme y proporcionar apoyo.
           </li>
           <li>
-            Los materiales con los que se construyen las sillas de oficina para
-            juegos son de alta calidad y duran mucho tiempo.
+            Los materiales con los que se construyen las sillas gaming son de
+            alta calidad y duran mucho tiempo.
           </li>
           <li>
             Casi todos los componentes de la silla son ajustables, desde los
             reposabrazos hasta la profundidad del asiento, el control de la
-            tensión y los reposacabezas: puede adaptar la silla a sus
+            tensión y los reposacabezas: puede adaptar la silla a tus
             preferencias.
-          </li>
-          <li>
-            Las sillas de oficina ergonómicas, al igual que el resto de equipos
-            ergonómicos, como teclados, almohadillas de control y pantallas,
-            están diseñadas para formar parte de un entorno de estación de juego
-            multipunto.
-          </li>
-          <li>
-            Independientemente de su configuración de juego, cada silla está
-            pensada para tener un aspecto elegante y estéticamente agradable. A
-            diferencia de las sillas de juego de estilo de competición, que
-            pueden desentonar con la decoración de su habitación debido a sus
-            colores vivos y brillantes.
-          </li>
-          <li>
-            Cuando se incluye en el coste de su configuración de juego completa,
-            las sillas de oficina son un buen valor para las características y
-            la durabilidad que proporcionan.
           </li>
         </ul>
       </div>

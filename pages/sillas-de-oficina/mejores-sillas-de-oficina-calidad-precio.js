@@ -41,6 +41,8 @@ export default function sillasGamers() {
           titleId={CabeceraData.titleId}
           img={CabeceraData.img}
           text={CabeceraData.text}
+          width={478.4}
+          height={268.4}
         />
 
         {TopData.map((item) => (

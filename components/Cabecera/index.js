@@ -9,8 +9,8 @@ const index = (props) => {
           <Image
             src={"/" + props.img + ".jpg"}
             alt={props.img}
-            width={500}
-            height={300}
+            width={props.width}
+            height={props.height}
           />
         </div>
         <div className="cabecera-texto">{props.text}</div>

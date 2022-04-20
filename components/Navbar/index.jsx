@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { MenuItemsHogar, MenuItemsBebe } from "../Dropdown/Items";
-import { Arrow } from "../Icons"
+import { Arrow } from "../Icons";
 
 const Items = MenuItemsHogar.concat(MenuItemsBebe);
 
@@ -23,11 +23,12 @@ export default function index() {
                 </a>
               </Link>
             </div>
-            <div className="buscador">
-            </div>
+            <div className="buscador"></div>
             <div className="btn-grad">
               <div>Menú</div>
-              <div><Arrow width="20px" height="20px"/></div>
+              <div>
+                <Arrow width="20px" height="20px" />
+              </div>
             </div>
           </div>
           <div className="header-inferior">
@@ -59,7 +60,7 @@ export default function index() {
           gap: 15px;
           flex-direction: column;
           justify-content: space-between;
-          max-width: 1200px;
+          max-width: 350px;
           margin: auto;
         }
         .header-superior {
@@ -123,21 +124,47 @@ export default function index() {
           border-radius: 5px;
         }
 
-        
-        @media only screen and (min-width: 768px) {
-          .header-inferior {
+        @media only screen and (min-width: 600px) {
+          .header-inferior{
             display: block;
+          }
+          .container {
+            max-width: 472px;
+          }
+        }
+
+        @media only screen and (min-width: 768px) {
+          .container {
+            max-width: 640px;
+          }
+        }
+
+        @media only screen and (min-width: 990px) {
+          .container {
+            max-width: 862px;
+          }
+        }
+
+        @media only screen and (min-width: 1200px) {
+          .container {
+            max-width: 1072px;
+          }
+        }
+
+        @media only screen and (min-width: 1600px) {
+          .container {
+            max-width: 1200px;
           }
         }
       `}</style>
 
-<style jsx global>{`
+      <style jsx global>{`
         html,
         body {
           padding: 0;
           margin: 0;
           box-sizing: border-box;
-          font-family: 'Open Sans', sans-serif;
+          font-family: "Open Sans", sans-serif;
           font-size: 18px;
           color: #303030;
           background-color: #ebedef;

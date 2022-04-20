@@ -124,9 +124,94 @@ export const TopData = [
   },
   {
     id: 1,
-    title: "TOP 4 – Songmics OBG56L",
+    title: "TOP 4 – SONGMICS OBG28BU",
+    titleId: "top-3",
+    titleContentTable: "Top 3: Songmics OBG28BU",
+    imgSrc: "Silla Songmics OBG28BU",
+    width: 212.5,
+    height: 351.5,
+    text: (
+      <>
+        <p>
+          No es casualidad que la marca <b>Songmics</b> aparezca en esta lista.
+          Esta empresa lleva años fabricando sillas gaming con una excelente
+          relación calidad - precio.
+        </p>
+        <p>
+          Contamos con una silla gaming resistente, amplia y con espumas de alta
+          densidad que garantizan la comodidad.
+        </p>
+        <p>
+          Si hablamos de estética, no se queda atrás, ya que esta silla gaming
+          está cubierta de <b>cuero sintético.</b> Cuenta con{" "}
+          <b>
+            apoyabrazos abatibles, asiento elevable y ruedas PU de alta calidad
+          </b>
+          , resistencia y comodidad a un precio inmejorable.
+        </p>
+      </>
+    ),
+    conclusiones: {
+      vtg: [
+        "Duradera y robusta",
+        "Apoyabrazos abatibles",
+        "Estética elegante",
+        "Fácil montaje",
+      ],
+      dtg: [
+        "Abatible únicamente a 110°",
+        "No apta para pesos superiores a 100kg",
+      ],
+    },
+    AmazonURL:
+      "https://www.amazon.es/SONGMICS-Oficina-Alta-Altura-Ajustable-Apoyabrazos-Abatibles-Azul-OBG28BU/dp/B0827SQ4K2/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=SONGMICS%2BOBG28BU&qid=1634498687&qsid=260-0704692-3716067&sr=8-1&sres=B0827SQ4K2%2CB07C2T696S%2CB07PS1TTFF%2CB086MBLBJB%2CB077MYVDQY%2CB01HNXGLFO%2CB07GNDDNMW%2CB00UTBFWNU%2CB07ZCM9YH1%2CB079GLTJTY%2CB071G2ZKGR%2CB079RYS5XN%2CB07BKQPJ1M%2CB081HX9SRM%2CB0768WHG6L%2CB071J8T44L%2CB077RV85ZB%2CB0769SCRXR%2CB097B7PNS7%2CB07J3DGH8M&srpt=CHAIR&th=1",
+  },
+  {
+    id: 2,
+    title: "TOP 3 – STMENG LIBERTY T1",
+    titleId: "top-2",
+    titleContentTable: "Top 2: Stmeng Liberty T1",
+    imgSrc: "Silla Stmeng Liberty T1",
+    width: 236.5,
+    height: 375,
+    text: (
+      <>
+        <p>
+          Si hablamos de sillas gaming calidad – precio, STmeng es la marca
+          indicada.
+        </p>
+        <p>
+          Con una estética elegante, muy parecida a la anteriormente mencionada,
+          esta silla gaming cuenta con superficie de PU de alta calidad y un
+          acolchado grueso tanto en el asiento como en los reposabrazos.
+          Comodidad absoluta. 👌
+        </p>
+        <p>
+          Se trata de una silla gaming{" "}
+          <b> ergonómica, abatible y ajustable a cualquier altura.</b> Además,
+          cuenta con un cupón de 20% de descuento, convirtiéndola en una de las
+          sillas más vendidas de Amazon debido a su gran precio. ¡No se puede
+          pedir más!
+        </p>
+      </>
+    ),
+    conclusiones: {
+      vtg: [
+        "Acolchada y cómoda",
+        "Regulable a cualquier altura",
+        "Materiales de construcción",
+        "Estética elegante",
+      ],
+      dtg: ["Apoyabrazos ligeramente altos", "Abatible únicamente 110º"],
+    },
+    AmazonURL:
+      "https://www.amazon.es/STmeng-Computadora-Ergon%C3%B3mico-Ajustable-Giratorio/dp/B087RC5JV4/ref=sr_1_2?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=STMENG%2BLIBERTY%2BT1&qid=1634498637&qsid=260-0704692-3716067&sr=8-2&sres=B087RC5JV4%2CB09HZDZFZK%2CB07RZTRZTB%2CB00UTBFWNU%2CB01HNXGIRK%2CB00TBF407E%2CB089Y8PM5Y%2CB08FC5H383%2CB08524CRGT%2CB01EIXO56O%2CB07WXYXW2K%2CB07K7FCK36%2CB07VB65V1Z%2CB074MKPVS5&srpt=HEADPHONES&th=1",
+  },
+  {
+    id: 3,
+    title: "TOP 2 – Songmics OBG56BR",
     titleId: "top-4",
-    titleContentTable: "Top 4: Songmics OBG56L",
+    titleContentTable: "Top 4: Songmics OBG56BR",
     imgSrc: "Silla Songmics OBG56L",
     width: 207,
     height: 340.75,
@@ -177,101 +262,16 @@ export const TopData = [
       ],
     },
     AmazonURL:
-      "https://www.amazon.es/SONGMICS-Racing-Escritorio-computadora-reposabrazos/dp/B01HNXGIRK/ref=sr_1_3?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Songmics%2BOBG56L&qid=1634498727&qsid=260-0704692-3716067&sr=8-3&sres=B01HNXGIRK%2CB0769SCRXR%2CB07S2XCK3P%2CB07V5184HD%2CB077MYVDQY%2CB07GNDDNMW%2CB01HAVJUNO%2CB086M537BB%2CB017IAKF8Q%2CB01I4HT452%2CB07PS1TTFF%2CB00UTBFWNU%2CB079GLTJTY%2CB071G2ZKGR%2CB07ZCM9YH1%2CB07BKQPJ1M%2CB079RYS5XN%2CB081HX9SRM%2CB0768WHG6L%2CB071J8T44L&srpt=CHAIR&th=1",
-  },
-  {
-    id: 3,
-    title: "TOP 3 – SONGMICS OBG28BU",
-    titleId: "top-3",
-    titleContentTable: "Top 3: Songmics OBG28BU",
-    imgSrc: "Silla Songmics OBG28BU",
-    width: 212.5,
-    height: 351.5,
-    text: (
-      <>
-        <p>
-          No es casualidad que la marca <b>Songmics</b> aparezca en esta lista.
-          Esta empresa lleva años fabricando sillas gaming con una excelente
-          relación calidad - precio.
-        </p>
-        <p>
-          Contamos con una silla gaming resistente, amplia y con espumas de alta
-          densidad que garantizan la comodidad.
-        </p>
-        <p>
-          Si hablamos de estética, no se queda atrás, ya que esta silla gaming
-          está cubierta de <b>cuero sintético.</b> Cuenta con{" "}
-          <b>
-            apoyabrazos abatibles, asiento elevable y ruedas PU de alta calidad
-          </b>
-          , resistencia y comodidad a un precio inmejorable.
-        </p>
-      </>
-    ),
-    conclusiones: {
-      vtg: [
-        "Duradera y robusta",
-        "Apoyabrazos abatibles",
-        "Estética elegante",
-        "Fácil montaje",
-      ],
-      dtg: [
-        "Abatible únicamente a 110°",
-        "No apta para pesos superiores a 100kg",
-      ],
-    },
-    AmazonURL:
-      "https://www.amazon.es/SONGMICS-Oficina-Alta-Altura-Ajustable-Apoyabrazos-Abatibles-Azul-OBG28BU/dp/B0827SQ4K2/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=SONGMICS%2BOBG28BU&qid=1634498687&qsid=260-0704692-3716067&sr=8-1&sres=B0827SQ4K2%2CB07C2T696S%2CB07PS1TTFF%2CB086MBLBJB%2CB077MYVDQY%2CB01HNXGLFO%2CB07GNDDNMW%2CB00UTBFWNU%2CB07ZCM9YH1%2CB079GLTJTY%2CB071G2ZKGR%2CB079RYS5XN%2CB07BKQPJ1M%2CB081HX9SRM%2CB0768WHG6L%2CB071J8T44L%2CB077RV85ZB%2CB0769SCRXR%2CB097B7PNS7%2CB07J3DGH8M&srpt=CHAIR&th=1",
+      "https://www.amazon.es/dp/B07NY8HLVC/ref=twister_B07TXW4SGQ?_encoding=UTF8&th=1",
   },
   {
     id: 4,
-    title: "TOP 2 – STMENG LIBERTY T1",
-    titleId: "top-2",
-    titleContentTable: "Top 2: Stmeng Liberty T1",
-    imgSrc: "Silla Stmeng Liberty T1",
-    width: 236.5,
-    height: 375,
-    text: (
-      <>
-        <p>
-          Si hablamos de sillas gaming calidad – precio, STmeng es la marca
-          indicada.
-        </p>
-        <p>
-          Con una estética elegante, muy parecida a la anteriormente mencionada,
-          esta silla gaming cuenta con superficie de PU de alta calidad y un
-          acolchado grueso tanto en el asiento como en los reposabrazos.
-          Comodidad absoluta. 👌
-        </p>
-        <p>
-          Se trata de una silla gaming{" "}
-          <b> ergonómica, abatible y ajustable a cualquier altura.</b> Además,
-          cuenta con un cupón de 20% de descuento, convirtiéndola en una de las
-          sillas más vendidas de Amazon debido a su gran precio. ¡No se puede
-          pedir más!
-        </p>
-      </>
-    ),
-    conclusiones: {
-      vtg: [
-        "Acolchada y cómoda",
-        "Regulable a cualquier altura",
-        "Materiales de construcción",
-        "Estética elegante",
-      ],
-      dtg: ["Apoyabrazos ligeramente altos", "Abatible únicamente 110º"],
-    },
-    AmazonURL:
-      "https://www.amazon.es/STmeng-Computadora-Ergon%C3%B3mico-Ajustable-Giratorio/dp/B087RC5JV4/ref=sr_1_2?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=STMENG%2BLIBERTY%2BT1&qid=1634498637&qsid=260-0704692-3716067&sr=8-2&sres=B087RC5JV4%2CB09HZDZFZK%2CB07RZTRZTB%2CB00UTBFWNU%2CB01HNXGIRK%2CB00TBF407E%2CB089Y8PM5Y%2CB08FC5H383%2CB08524CRGT%2CB01EIXO56O%2CB07WXYXW2K%2CB07K7FCK36%2CB07VB65V1Z%2CB074MKPVS5&srpt=HEADPHONES&th=1",
-  },
-  {
-    id: 5,
-    title: "🏆 TOP 1 – INTIMATE WM HEART",
+    title: "🏆 TOP 1 – Woxter Stinger Station Alien V2.0 Azul",
     titleId: "top-1",
-    titleContentTable: "Top 1: Intimate WM Heart",
-    imgSrc: "Silla Intimate WM Heart",
-    width: 209.33,
-    height: 323,
+    titleContentTable: "Top 1: Woxter Stinger Station Alien V2.0 Azul",
+    imgSrc: "Silla Woxter Stinger Station Alien V2.0 Azul",
+    width: 305.33333,
+    height: 476,
     text: (
       <>
         <p>
@@ -323,7 +323,7 @@ export const TopData = [
       dtg: ["Apoyabrazos ligeramente altos"],
     },
     AmazonURL:
-      "https://www.amazon.es/IntimaTe-WM-Heart-Escritorio-Giratorio/dp/B01EIXO56O/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=IntimaTe%2BWM%2BHeart%2BSilla%2BGaming%2BErgon%C3%B3mica%2C%2BSilla%2Bde%2BEscritorio%2Bde%2BOficina%2C%2BRacing%2BSilla%2BComputadora%2C%2BAsiento%2BGiratorio%2Bdel%2BEscritorio%2Bdel%2BOrdenador%2C%2BSilla%2Bde%2BTrabajo%2BAjustable%2BPU&qid=1634248066&qsid=260-0704692-3716067&s=kitchen&sr=1-1&sres=B01EIXO56O%2CB07K7FCK36%2CB077MYVDQY%2CB07DK8JC3F%2CB01N4AEDAF%2CB01HNXGLFO%2CB082TWZZGJ%2CB07F8S742Q%2CB01EIXO424%2CB0978R5661%2CB07VB65V1Z%2CB092DCB92S%2CB087RLN7HG%2CB07V5184HD%2CB015VDJ33U%2CB08X65GL8C%2CB084T2SQL4%2CB07J3DGH8M%2CB07YWB48T5%2CB08MQ2HRDZ&srpt=CHAIR&th=1",
+      "https://www.amazon.es/Woxter-Stinger-Station-Blue-Levantamiento/dp/B077JMVDBT/ref=zg_bs_17341285031_27/259-2113611-9323707?pd_rd_i=B09R88R7X7&th=1",
   },
 ];
 

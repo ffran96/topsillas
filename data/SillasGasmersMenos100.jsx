@@ -40,46 +40,60 @@ export const CabeceraData = {
         YouTube. Estos principios se analizarán con más detalle a lo largo del
         artículo.
       </p>
-      <ul>
-        <li>
-          Las sillas de oficina están diseñadas para distribuir el peso de forma
-          uniforme y proporcionar apoyo.
-        </li>
-        <li>
-          Los materiales con los que se construyen las sillas de oficina para
-          juegos son de alta calidad y duran mucho tiempo.
-        </li>
-        <li>
-          Casi todos los componentes de la silla son ajustables, desde los
-          reposabrazos hasta la profundidad del asiento, el control de la
-          tensión y los reposacabezas: puede adaptar la silla a sus
-          preferencias.
-        </li>
-        <li>
-          Las sillas de oficina ergonómicas, al igual que el resto de equipos
-          ergonómicos, como teclados, almohadillas de control y pantallas, están
-          diseñadas para formar parte de un entorno de estación de juego
-          multipunto.
-        </li>
-        <li>
-          Independientemente de su configuración de juego, cada silla está
-          pensada para tener un aspecto elegante y estéticamente agradable. A
-          diferencia de las sillas de juego de estilo de competición, que pueden
-          desentonar con la decoración de su habitación debido a sus colores
-          vivos y brillantes.
-        </li>
-        <li>
-          Cuando se incluye en el coste de su configuración de juego completa,
-          las sillas de oficina son un buen valor para las características y la
-          durabilidad que proporcionan.
-        </li>
-      </ul>
+      <div className="Lista">
+        <ul>
+          <li>
+            Las sillas de oficina están diseñadas para distribuir el peso de
+            forma uniforme y proporcionar apoyo.
+          </li>
+          <li>
+            Los materiales con los que se construyen las sillas de oficina para
+            juegos son de alta calidad y duran mucho tiempo.
+          </li>
+          <li>
+            Casi todos los componentes de la silla son ajustables, desde los
+            reposabrazos hasta la profundidad del asiento, el control de la
+            tensión y los reposacabezas: puede adaptar la silla a sus
+            preferencias.
+          </li>
+          <li>
+            Las sillas de oficina ergonómicas, al igual que el resto de equipos
+            ergonómicos, como teclados, almohadillas de control y pantallas,
+            están diseñadas para formar parte de un entorno de estación de juego
+            multipunto.
+          </li>
+          <li>
+            Independientemente de su configuración de juego, cada silla está
+            pensada para tener un aspecto elegante y estéticamente agradable. A
+            diferencia de las sillas de juego de estilo de competición, que
+            pueden desentonar con la decoración de su habitación debido a sus
+            colores vivos y brillantes.
+          </li>
+          <li>
+            Cuando se incluye en el coste de su configuración de juego completa,
+            las sillas de oficina son un buen valor para las características y
+            la durabilidad que proporcionan.
+          </li>
+        </ul>
+      </div>
       <p>
         La elección de una silla gaming no es fácil, por ello, traemos esta
         comparativa entre las{" "}
         <b>mejores sillas gaming económicas por menos de 100 euros.</b> ¿Quién
         dijo que la calidad y el bolsillo no van de la mano? 😁
       </p>
+
+      <style jsx>{`
+        p {
+          font-size: 18px;
+          line-height: 32px;
+        }
+        .Lista ul li {
+          font-size: 18px;
+          line-height: 32px;
+          padding-bottom: 10px;
+        }
+      `}</style>
     </>
   ),
 };
@@ -280,7 +294,7 @@ export const TopData = [
     height: 323,
     text: (
       <>
- <p>
+        <p>
           Esta es la mejor opción si estás buscando la mejor silla de juego por
           menos de 100 Euros. Para empezar, posee uno de los asientos más
           duraderos disponibles en el mercado. Tiene un marco de acero de 1,8 mm

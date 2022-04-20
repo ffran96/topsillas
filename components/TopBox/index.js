@@ -57,19 +57,8 @@ const index = (props) => {
           }
 
           .top-text {
+            
           }
-        }
-      `}</style>
-      <style jsx global>{`
-        p {
-          font-size: 18px;
-          line-height : 32px;
-        }
-        li{
-        
-          font-size: 18px;
-          line-height : 32px;
-          padding-bottom: 10px;
         }
       `}</style>
     </>

@@ -43,12 +43,12 @@ export default function index(props) {
           margin: auto;
           margin-bottom: 2em;
           margin-top: 1em;
+
         }
         article {
           margin: auto;
           display: flex;
           flex-direction: column;
-          align-items: center;
         }
         .figure {
           overflow: hidden;
@@ -65,7 +65,6 @@ export default function index(props) {
           background-color: #000000;
           color: #ffffff;
           font-weight: 700;
-          width: 100px;
           text-align: center;
           border-radius: 49px;
           cursor: pointer;

@@ -31,6 +31,7 @@ const index = (props) => {
           padding: 0;
         }
         .conclusiones {
+          clear: both;
           display: flex;
           flex-direction: column;
           align-items: center;

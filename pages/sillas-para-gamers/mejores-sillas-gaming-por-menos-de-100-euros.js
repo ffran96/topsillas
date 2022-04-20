@@ -64,7 +64,6 @@ export default function sillasGamers() {
       </Container>
 
       <Footer />
-      
     </>
   );
 }

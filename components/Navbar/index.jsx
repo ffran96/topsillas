@@ -101,6 +101,7 @@ export default function index() {
         }
 
         .header-inferior {
+          display: none;
         }
         .lista {
           display: flex;
@@ -120,6 +121,13 @@ export default function index() {
           background-color: #ffffff33;
           padding: 3px;
           border-radius: 5px;
+        }
+
+        
+        @media only screen and (min-width: 768px) {
+          .header-inferior {
+            display: block;
+          }
         }
       `}</style>
 

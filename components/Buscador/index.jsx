@@ -2,7 +2,7 @@ import { Lupa } from "../Icons";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-export default function index() {
+export default function Buscador() {
   const router = useRouter();
   const [keyword, setKeyword] = useState("");
 
@@ -32,7 +32,7 @@ export default function index() {
           type="search"
           value={keyword}
           id="search"
-          placeholder="Buscar..."
+          placeholder="Busca el mejor producto"
         />
         <button type="submit" aria-label="Buscar">
           <Lupa />
@@ -46,11 +46,12 @@ export default function index() {
           display: flex;
         }
         input {
-          width: 850px;
+          width: 600px;
           height: 40px;
-          padding: 0 10px;
+          padding: 0 25px;
+          font-size: 14px;
           border: 0;
-          border-radius: 5px 0px 0px 5px;
+          border-radius: 32px 0px 0px 32px;
         }
         input:focus {
           outline: none !important;
@@ -60,7 +61,7 @@ export default function index() {
           height: 40px;
           cursor: pointer;
           border: 0;
-          border-radius: 0px 5px 5px 0px;
+          border-radius: 0px 32px 32px 0px;
         }
       `}</style>
     </>

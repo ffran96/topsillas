@@ -1,46 +1,38 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MenuItemsHogar, MenuItemsBebe } from "../Dropdown/Items";
-import { Arrow } from "../Icons";
-
-const Items = MenuItemsHogar.concat(MenuItemsBebe);
+import { Buscador } from "/components/Imports";
 
 export default function index() {
   return (
     <>
       <header className="header">
         <nav className="container">
-          <div className="header-superior">
-            <div className="logo">
-              <Link href="/">
-                <a>
-                  <Image
-                    src="/logo.svg"
-                    alt="top sillas"
-                    width={150}
-                    height={35}
-                  />
-                </a>
-              </Link>
-            </div>
-            <div className="buscador"></div>
-            <div className="btn-grad">
-              <div>Menú</div>
-              <div>
-                <Arrow width="20px" height="20px" />
-              </div>
-            </div>
+          <div className="logo">
+            <Link href="/">
+              <a>
+                <Image
+                  src="/logo.svg"
+                  alt="top sillas"
+                  width={150}
+                  height={35}
+                />
+              </a>
+            </Link>
           </div>
-          <div className="header-inferior">
-            <ul className="lista">
-              {Items.map((item) => (
-                <li key={item.id} className="item-lista">
-                  <Link href={item.path}>
-                    <a>{item.title}</a>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          <div className="buscador">
+            <Buscador />
+          </div>
+          <div className="Lista">
+            <div className="Categorias">
+              <span>CATEGORÍAS</span>
+            </div>
+            <Link href="/sobre-nosotros">
+              <a>
+                <div className="About">
+                  <span>SOBRE NOSOTROS</span>
+                </div>
+              </a>
+            </Link>
           </div>
         </nav>
       </header>
@@ -51,81 +43,52 @@ export default function index() {
           box-sizing: border-box;
         }
         .header {
-          background-color: #000000;
-          padding-top: 15px;
-          padding-bottom: 10px;
+          background-color: #2C3E50;
+          height: 70px;
         }
         .container {
           display: flex;
-          gap: 15px;
-          flex-direction: column;
-          justify-content: space-between;
-          max-width: 350px;
+          height: 70px;
           margin: auto;
-        }
-        .header-superior {
-          display: flex;
           align-items: center;
           justify-content: space-between;
+          max-width: 350px;
         }
+
         .logo {
           cursor: pointer;
         }
         .buscador {
         }
 
-        .btn-grad {
-          background-image: linear-gradient(
-            to right,
-            #232526 0%,
-            #414345 51%,
-            #232526 100%
-          );
+        .Lista {
+          display: flex;
         }
-        .btn-grad {
-          width: 80px;
-          height: 40px;
-          transition: 0.5s;
-          background-size: 200% auto;
+        .Lista {
           color: white;
-          border-radius: 5px;
+          font-size: 14px;
+          font-weight: 700;
+        }
+        .Lista .Categorias {
+          padding: 25px 20px;
+          display: flex;
+          align-items: center;
           cursor: pointer;
-          font-weight: bold;
+        }
+        .Lista .About {
+          padding: 25px 20px;
           display: flex;
           align-items: center;
-          justify-content: center;
+          cursor: pointer;
         }
+        a{
+          color: #FFF;
+          text-decoration:none;
 
-        .btn-grad:hover {
-          background-position: right center;
-          color: #fff;
-        }
-
-        .header-inferior {
-          display: none;
-        }
-        .lista {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-        .item-lista {
-        }
-        li {
-          list-style: none;
-        }
-        .item-lista a {
-          text-decoration: none;
-          color: #ffffff;
-          font-size: 12.5px;
-          font-weight: 500;
-          background-color: #ffffff33;
-          padding: 3px;
-          border-radius: 5px;
         }
 
         @media only screen and (min-width: 600px) {
-          .header-inferior{
+          .header-inferior {
             display: block;
           }
           .container {
@@ -155,19 +118,6 @@ export default function index() {
           .container {
             max-width: 1200px;
           }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          box-sizing: border-box;
-          font-family: "Open Sans", sans-serif;
-          font-size: 18px;
-          color: #303030;
-          background-color: #ebedef;
         }
       `}</style>
     </>

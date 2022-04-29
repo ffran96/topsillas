@@ -12,7 +12,7 @@ const index = () => {
   return (
     <>
       <footer>
-        <div className="containerr">
+        <div className="container">
           <div className="col">
             <span className="title">
               <b>Categorías para el hogar</b>
@@ -95,8 +95,8 @@ const index = () => {
           </div>
         </div>
         <div>
-          <hr color="#ECF0F1"></hr>
-          <p className="Copy"><b>TopSillas.info | Copyright © 2022</b></p>
+          <hr color="#505050"></hr>
+          <p>TopSillas.info | Copyright © 2022</p>
         </div>
       </footer>
 
@@ -108,16 +108,14 @@ const index = () => {
         a {
           text-decoration: none;
           color: #ffffffe6;
-          font-size: 13px;
-          font-weight: 500;
         }
-        .containerr {
+        .container {
           display: none;
         }
 
         footer {
           bottom: 0;
-          background-color: #2C3E50;
+          background-color: #000000e6;
         }
         p {
           margin-top: 1.5em;
@@ -125,12 +123,9 @@ const index = () => {
           text-align: center;
           padding: 0 0 2em 0em;
         }
-        .Copy{
-          font-size: 14px;
-        }
 
         @media only screen and (min-width: 1200px) {
-          .containerr {
+          .container {
             display: flex;
             justify-content: space-between;
             max-width: 1200px;
@@ -142,7 +137,7 @@ const index = () => {
           }
           .col ul li {
             list-style: none;
-            padding: 0.1em;
+            padding: 0.3em;
             max-width: 250px;
           }
           .title {

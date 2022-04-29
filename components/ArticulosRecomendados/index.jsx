@@ -10,7 +10,7 @@ export default function index() {
       </span>
 
       {ArtsRecData.map((item) => (
-        <Link href={item.link} key={item.id}>
+        <Link href={item.link} key={item.id} passHref>
           <div className="container">
             <article>
               <div className="figure">
@@ -63,14 +63,16 @@ export default function index() {
         }
         .buttom {
           float: right;
-          padding: 1em;
-          background-color: #000000;
+          padding: 0.8em;
+          background-color: #2C3E50;
           color: #ffffff;
           font-weight: 700;
-          width: 100px;
           text-align: center;
           border-radius: 49px;
           cursor: pointer;
+          transition: all 0.2s ease-in;
+          border: 2px solid transparent;
+
         }
 
         a {
@@ -144,7 +146,9 @@ export default function index() {
           }
 
           .buttom:hover {
-            background-color: #000000e6;
+            background-color: transparent;
+            color: #2C3E50;
+            border: 2px solid #2C3E50;
           }
           .figure {
             min-width: 420px;

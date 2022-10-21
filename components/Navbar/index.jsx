@@ -18,10 +18,6 @@ export default function index() {
                 />
               </a>
             </Link>
-          {/**</div>
-          <div className="buscador">
-            <Buscador />
-          </div>**/}
           <div className="Lista">
             <div className="Categorias">
               <span>CATEGORÍAS</span>

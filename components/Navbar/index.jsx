@@ -19,9 +19,9 @@ export default function index() {
               </a>
             </Link>
           </div>
-          <div className="buscador">
+{/*           <div className="buscador">
             <Buscador />
-          </div>
+          </div> */}
           <div className="Lista">
             <div className="Categorias">
               <span>CATEGORÍAS</span>
@@ -43,7 +43,7 @@ export default function index() {
           box-sizing: border-box;
         }
         .header {
-          background-color: #2C3E50;
+          background-color: #2c3e50;
           height: 70px;
         }
         .container {
@@ -53,6 +53,12 @@ export default function index() {
           align-items: center;
           justify-content: space-between;
           max-width: 350px;
+        }
+        .Categorias:hover {
+          text-decoration: underline;
+        }
+        .About:hover {
+          text-decoration: underline;
         }
 
         .logo {
@@ -81,10 +87,9 @@ export default function index() {
           align-items: center;
           cursor: pointer;
         }
-        a{
-          color: #FFF;
-          text-decoration:none;
-
+        a {
+          color: #fff;
+          text-decoration: none;
         }
 
         @media only screen and (min-width: 600px) {

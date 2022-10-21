@@ -52,15 +52,6 @@ export default function Home() {
         <meta property="og:image" content={props.img} />
         <meta property="og:image:width" content={props.width} />
         <meta property="og:image:height" content={props.height} />
-
-        <meta name="theme-color" content="#000000" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <Navbar />
       <Categories />

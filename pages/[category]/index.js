@@ -31,35 +31,12 @@ export default function Articulos({ articles, slug_category }) {
 }
 
 export async function getStaticPaths() {
-  const GET_CATEGORIES = gql`
-    query Categories {
-      pages {
-        nodes {
-          slug
-        }
-      }
-    }
-  `;
-
-  const response = await client.query({
-    query: GET_CATEGORIES,
-  });
-
-  const categories = response?.data?.pages?.nodes;
-  const paths = categories.map(({ slug }) => {
-    return {
-      params: {
-        category: slug,
-      },
-    };
-  });
-
+  const paths = [];
   return {
     paths,
-    fallback: false,
+    fallback: "blocking",
   };
 }
-
 
 export async function getStaticProps({ params }) {
   const GET_CATEGORIES = gql`

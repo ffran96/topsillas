@@ -72,6 +72,15 @@ export default function Articulo({ post, slugs }) {
   );
 }
 
+export async function getStaticPaths() {
+  const paths = [];
+  return {
+    paths,
+    fallback: "blocking",
+  };
+}
+
+
 export async function getStaticProps({ params }) {
   const slugs = {
     categoria: params.category,
@@ -156,10 +165,3 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export async function getStaticPaths() {
-  const paths = [];
-  return {
-    paths,
-    fallback: "blocking",
-  };
-}

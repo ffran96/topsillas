@@ -31,14 +31,6 @@ export default function Articulos({ articles, slug_category }) {
 }
 
 export async function getStaticPaths() {
-  const paths = [];
-  return {
-    paths,
-    fallback: "blocking",
-  };
-}
-
-/*export async function getStaticPaths() {
   const GET_CATEGORIES = gql`
     query Categories {
       pages {
@@ -54,17 +46,21 @@ export async function getStaticPaths() {
   });
 
   const categories = response?.data?.pages?.nodes;
-
-  const paths = categories.map((category) => ({
-    params: { categories: category.slug },
-  }));
+  const paths = categories.map(({ slug }) => {
+    return {
+      params: {
+        category: slug,
+      },
+    };
+  });
 
   return {
     paths,
     fallback: false,
   };
 }
- */
+
+
 export async function getStaticProps({ params }) {
   const GET_CATEGORIES = gql`
     query Categories {

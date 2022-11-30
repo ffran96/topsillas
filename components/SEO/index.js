@@ -29,13 +29,6 @@ export default function index(props) {
       <meta property="og:image:height" content={props.height} />
 
       <meta name="theme-color" content="#000000" />
-      <link rel="icon" href="/favicon.ico" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-        rel="stylesheet"
-      />
     </Head>
   );
 }

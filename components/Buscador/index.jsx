@@ -10,7 +10,7 @@ export default function Buscador() {
     evt.preventDefault();
 
     if (!keyword) return;
-    
+
     router.push({
       pathname: "/search",
       query: {
@@ -46,7 +46,7 @@ export default function Buscador() {
           display: flex;
         }
         input {
-          width: 600px;
+          width: 200px;
           height: 40px;
           padding: 0 25px;
           font-size: 14px;
@@ -62,6 +62,36 @@ export default function Buscador() {
           cursor: pointer;
           border: 0;
           border-radius: 0px 32px 32px 0px;
+        }
+
+        @media only screen and (min-width: 600px) {
+          input {
+            width: 250px;
+          }
+        }
+
+        @media only screen and (min-width: 768px) {
+          input {
+            width: 250px;
+          }
+        }
+
+        @media only screen and (min-width: 990px) {
+          input {
+            width: 450px;
+          }
+        }
+
+        @media only screen and (min-width: 1200px) {
+          input {
+            width: 550px;
+          }
+        }
+
+        @media only screen and (min-width: 1600px) {
+          input {
+            width: 600px;
+          }
         }
       `}</style>
     </>

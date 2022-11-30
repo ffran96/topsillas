@@ -1,23 +1,22 @@
 import { CategoriasBox } from "/components/Imports";
-import { CategoyData } from "../../data/home";
 import { URL, SRC, ALT } from "../../Functions";
 
-const index = () => {
+import React from "react";
+
+export default function Categories({ props }) {
   return (
     <>
-      <span>
-        <h1>Categorías recomendadas por TopSillas</h1>
-      </span>
+      <h1>Categorías recomendadas por TopSillas</h1>
       <div className="container">
-        {CategoyData.map(({id, title, width, height}) => (
+        {props.map((i, index) => (
           <CategoriasBox
-            key={id}
-            link={URL(title)}
-            src={SRC(title)}
-            alt={ALT(title)}
-            title={title}
-            width={width}
-            height={height}
+            key={index}
+            link={"/"+i.slug}
+            src={i.acfImagen.imagen.sourceUrl}
+            alt={i.acfImagen.imagen.altText}
+            title={i.title}
+            width={i.acfImagen.imagen.mediaDetails.width}
+            height={i.acfImagen.imagen.mediaDetails.height}
           />
         ))}
       </div>
@@ -56,7 +55,7 @@ const index = () => {
         .title-box {
           margin: 0 0 10px 10px;
         }
-        span h1 {
+         h1 {
           max-width: 320px;
           margin: auto;
           margin-top: 0.7em;
@@ -68,7 +67,7 @@ const index = () => {
             grid-template-columns: repeat(2, 1fr);
             max-width: 472px;
           }
-          span h1 {
+           h1 {
             max-width: 472px;
             font-size: 32px;
           }
@@ -79,7 +78,7 @@ const index = () => {
             grid-template-columns: repeat(2, 1fr);
             max-width: 640px;
           }
-          span h1 {
+           h1 {
             max-width: 640px;
             font-size: 32px;
           }
@@ -90,7 +89,7 @@ const index = () => {
             grid-template-columns: repeat(3, 1fr);
             max-width: 862px;
           }
-          span h1 {
+           h1 {
             max-width: 862px;
             font-size: 32px;
           }
@@ -103,7 +102,7 @@ const index = () => {
             margin: auto;
             margin-top: 1em;
           }
-          span h1 {
+           h1 {
             max-width: 1072px;
             font-size: 32px;
           }
@@ -114,7 +113,7 @@ const index = () => {
             grid-template-columns: repeat(4, 1fr);
             max-width: 1200px;
           }
-          span h1 {
+           h1 {
             max-width: 1200px;
             font-size: 32px;
           }
@@ -122,8 +121,4 @@ const index = () => {
       `}</style>
     </>
   );
-};
-
-export default index;
-
-
+}

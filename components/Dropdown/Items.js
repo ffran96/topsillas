@@ -2,7 +2,7 @@ export const MenuItemsHogar = [
   {
     id: "item-hogar-01",
     title: "Sillas gaming",
-    path: "/sillas-para-gamers",
+    path: "/sillas-gaming",
   },
   {
     id: "item-hogar-02",
@@ -45,17 +45,17 @@ export const MenuItemsBebe = [
   {
     id: "item-bebes-01",
     title: "Carritos bugaboo",
-    path: "/cochecitos-bugaboo",
+    path: "/carritos-bugaboo",
   },
   {
     id: "item-bebes-02",
     title: "Sillas de coche",
-    path: "/sillas-coche",
+    path: "/sillas-de-coche",
   },
   {
     id: "item-bebes-03",
     title: "Sillas de paseo",
-    path: "/sillas-paseo",
+    path: "/sillas-de-paseo",
   },
   {
     id: "item-bebes-04",
@@ -70,7 +70,7 @@ export const MenuItemsBebe = [
   {
     id: "item-bebes-06",
     title: "Cunas de viaje",
-    path: "/cunas-viaje",
+    path: "/cunas-de-viaje",
   },
 ];
 
@@ -78,7 +78,7 @@ export const ArticulosRecomendados = [
   {
     id: "article-01",
     title: "Top sillas gaming por menos de 100 euros",
-    path: "/sillas-para-gamers/mejores-sillas-gaming-por-menos-de-100-euros",
+    path: "/sillas-gaming/la-mejor-silla-gaming-por-menos-de-100-euros",
   },
   {
     id: "article-02",
@@ -96,7 +96,7 @@ export const Legal = [
   {
     id: "legal-02",
     title: "Política de cookies",
-    path: "/politica-cookies",
+    path: "/cookies",
   },
   {
     id: "legal-03",

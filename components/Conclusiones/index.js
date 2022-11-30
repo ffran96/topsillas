@@ -8,7 +8,7 @@ const index = (props) => {
           </div>
           <ul>
             {props.vtg.map((item, index) => (
-              <li key={index}>💚 {item}.</li>
+              <li key={index}>💚 {item.ventaja}</li>
             ))}
           </ul>
         </div>
@@ -19,7 +19,7 @@ const index = (props) => {
           </div>
           <ul>
             {props.dtg.map((item, index) => (
-              <li key={index}>💔 {item}.</li>
+              <li key={index}>💔 {item.desventaja}</li>
             ))}
           </ul>
         </div>

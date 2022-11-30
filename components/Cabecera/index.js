@@ -7,25 +7,27 @@ const index = (props) => {
       <div className="cabecera">
         <div className="figure">
           <Image
-            src={"/" + props.img + ".jpg"}
+            src={props.img}
             alt={props.img}
             width={props.width}
             height={props.height}
           />
         </div>
-        <div className="cabecera-texto">{props.text}</div>
+        <div className="cabecera-texto" dangerouslySetInnerHTML={{__html: props.text}} />
       </div>
 
       <style jsx>{`
         h1 {
           text-align: center;
+          text-transform: uppercase;
+
         }
         .cabecera {
           margin-bottom: 2.5em;
         }
+        
 
         @media only screen and (min-width: 1200px) {
-
           h1 {
             font-size: 52px;
           }
@@ -37,10 +39,8 @@ const index = (props) => {
             float: left;
             padding-right: 30px;
           }
-
         }
       `}</style>
-
     </>
   );
 };

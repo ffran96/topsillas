@@ -14,14 +14,14 @@ const index = (props) => {
         <a href={props.url} rel="nofollow noreferrer" target="_blank">
           <div className="top-image">
             <Image
-              src={"/" + props.img + ".jpg"}
+              src={props.img}
               alt={props.img}
-              width={props.width}
-              height={props.height}
+              width={250}
+              height={400}
             />
           </div>
         </a>
-        <div className="top-text">{props.text}</div>
+        <div className="top-text" dangerouslySetInnerHTML={{__html: props.text}} />
       </div>
 
       <style jsx>{`

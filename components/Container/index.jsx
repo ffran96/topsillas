@@ -33,7 +33,7 @@ export default function index({ children }) {
           .container {
             max-width: 1072px;
             background-color: #ffffff;
-            padding: 2em 8em;
+            padding: 2em 6em;
           }
         }
 
@@ -46,13 +46,14 @@ export default function index({ children }) {
       `}</style>
 
       <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: 'Open Sans', sans-serif;
-          color: #303030;
-          background-color: #ebedef;
+        .container p {
+          font-size: 18px;
+          line-height: 32px;
+        }
+
+        .container li {
+          font-size: 18px;
+          line-height: 32px;
         }
 
         * {

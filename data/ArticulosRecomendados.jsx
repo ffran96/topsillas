@@ -12,7 +12,7 @@ export const ArtsRecData = [
         </p>
       </>
     ),
-    link: "/sillas-para-gamers/mejores-sillas-gaming-por-menos-de-100-euros",
+    link: "/sillas-gaming/la-mejor-silla-gaming-por-menos-de-100-euros",
     src: "silla gaming ergonomica",
     alt: "set-up gamer",
   },

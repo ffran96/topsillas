@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Buscador } from "/components/Imports";
 
 export default function index() {
@@ -19,9 +21,11 @@ export default function index() {
               </a>
             </Link>
           </div>
-{/*           <div className="buscador">
-            <Buscador />
-          </div> */}
+          <div className="buscador">
+            {
+              // <Buscador />
+            }
+          </div>
           <div className="Lista">
             <div className="Categorias">
               <span>CATEGORÍAS</span>
@@ -54,12 +58,6 @@ export default function index() {
           justify-content: space-between;
           max-width: 350px;
         }
-        .Categorias:hover {
-          text-decoration: underline;
-        }
-        .About:hover {
-          text-decoration: underline;
-        }
 
         .logo {
           cursor: pointer;
@@ -86,10 +84,6 @@ export default function index() {
           display: flex;
           align-items: center;
           cursor: pointer;
-        }
-        a {
-          color: #fff;
-          text-decoration: none;
         }
 
         @media only screen and (min-width: 600px) {

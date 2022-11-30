@@ -11,8 +11,8 @@ const index = (props) => {
               <Image
                 src={props.src}
                 alt={props.alt}
-                width={260}
-                height={260}
+                width={props.width}
+                height={props.height}
               />
             </div>
             <div className="title-box">

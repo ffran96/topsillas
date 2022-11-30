@@ -3,37 +3,38 @@ import Link from "next/link";
 export default function index(props) {
   return (
     <>
-      <span className="migas">
+      <div className="migas">
         <Link href="/">
           <a>Inicio</a>
-        </Link>{" "}
-        /{" "}
-        <Link href={props.categoryURL}>
+        </Link>
+        {" "}/{" "}
+        <Link href={props.categoryURL} passHref>
           <a>{props.category}</a>
         </Link>{" "}
-        /{" "}
-        <Link href="">
-          <a>{props.article}</a>
-        </Link>
-      </span>
+        / <span className="select"> {props.article}</span>
+      </div>
       <style jsx>{`
-      .migas {
-        font-size: 10.5px;
-        font-weight: 600;
-      }
-      .migas a {
-        text-decoration: none;
-        color: #303030;
-      }
-      .migas a:hover {
-        text-decoration: underline;
-      }
-      @media only screen and (min-width: 768px) {
         .migas {
+          font-size: 10.5px;
+          font-weight: 600;
+        }
+        .migas a {
+          text-decoration: none;
+          color: #303030;
+        }
+        .migas a:hover {
+          text-decoration: underline;
+        }
+        .select{
+          font-weight: bold;
+          color: #2c3e50;
+          cursor: pointer;
+        }
+        @media only screen and (min-width: 768px) {
+          .migas {
             font-size: 14px;
           }
-      }
-      
+        }
       `}</style>
     </>
   );

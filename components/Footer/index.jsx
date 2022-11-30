@@ -108,7 +108,7 @@ const index = () => {
         a {
           text-decoration: none;
           color: #ffffffe6;
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 500;
         }
         .containerr {

@@ -7,7 +7,7 @@ export default function index({ children }) {
         .centrar {
           display: grid;
           place-content: center;
-          min-height: 100vh;
+          /*min-height: 100vh;*/
         }
       `}</style>
     </>

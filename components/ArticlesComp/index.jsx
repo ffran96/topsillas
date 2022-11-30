@@ -1,28 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function index(props) {
+export default function index({Data, Category}) {
   return (
     <>
-      {props.Data.map((item) => (
+      {Data.map((item) => (
         <div key={item.id} className="container">
           <article>
-            <Link href={item.link}>
+            <Link href={"/"+Category+"/"+item.slug} passHref>
               <div className="figure">
                 <Image
-                  src={"/" + item.src + ".jpg"}
-                  alt={item.alt}
+                  src={item.acfArticulo.cabecera.portada.mediaItemUrl}
+                  alt={item.acfArticulo.cabecera.portada.altText}
                   width={598}
                   height={335.5}
                 />
               </div>
             </Link>
             <div className="text">
-              <Link href={item.link}>
+              <Link href={"/"+Category+"/"+item.slug} passHref>
                 <h3>{item.title}</h3>
               </Link>
-              {item.text}
-              <Link href={item.link}>
+              <div dangerouslySetInnerHTML={{ __html: item.excerpt }} />
+              <Link href={"/"+Category+"/"+item.slug}>
                 <a>
                   <div className="buttom"> Leer más</div>
                 </a>
@@ -61,13 +61,15 @@ export default function index(props) {
         }
         .buttom {
           float: right;
-          padding: 1em;
-          background-color: #000000;
+          padding: 0.8em;
+          background-color: #2C3E50;
           color: #ffffff;
           font-weight: 700;
           text-align: center;
           border-radius: 49px;
           cursor: pointer;
+          transition: all 0.2s ease-in;
+          border: 2px solid transparent;
         }
 
         a {
@@ -146,8 +148,11 @@ export default function index(props) {
           }
 
           .buttom:hover {
-            background-color: #000000CC;
+            background-color: transparent;
+            color: #2C3E50;
+            border: 2px solid #2C3E50;
           }
+          
           .figure {
             min-width: 420px;
           }

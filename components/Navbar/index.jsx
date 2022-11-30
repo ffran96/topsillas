@@ -20,15 +20,12 @@ export default function index() {
                 />
               </a>
             </Link>
-<<<<<<< HEAD
           </div>
           <div className="buscador">
             {
               // <Buscador />
             }
           </div>
-=======
->>>>>>> 5b4f65b4ba680d544b3dd4479feeb6bc2008f194
           <div className="Lista">
             <div className="Categorias">
               <span>CATEGORÍAS</span>
@@ -36,7 +33,7 @@ export default function index() {
             <Link href="/sobre-nosotros">
               <a>
                 <div className="About">
-                  <span>SOBRE NOSOTROS</span>
+                  <span></span>
                 </div>
               </a>
             </Link>

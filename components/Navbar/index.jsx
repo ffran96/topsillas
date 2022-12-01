@@ -27,16 +27,15 @@ export default function index() {
             }
           </div>
           <div className="Lista">
-            <div className="Categorias">
-              <span>CATEGORÍAS</span>
-            </div>
-            <Link href="/sobre-nosotros">
-              <a>
-                <div className="About">
-                  <span></span>
-                </div>
-              </a>
-            </Link>
+            <a
+              href="https://wp.topsillas.info"
+              rel="nofollow noreferrer"
+              target="_blank"
+            >
+              <div className="Categorias">
+                <span>Login</span>
+              </div>
+            </a>
           </div>
         </nav>
       </header>

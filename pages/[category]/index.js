@@ -31,7 +31,7 @@ export default function Articulos({ articles, slug_category }) {
 }
 
 export async function getStaticPaths() {
-  const paths = [{ params: { category: "sillas-gaming" } }];
+  const paths = [];
   return {
     paths,
     fallback: "blocking",

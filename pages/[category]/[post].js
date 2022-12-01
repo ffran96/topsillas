@@ -71,14 +71,7 @@ export default function Articulo({ post, slugs }) {
   );
 }
 export async function getStaticPaths() {
-  const paths = [
-    {
-      params: {
-        category: "sillas-gaming",
-        post: "mejores-sillas-gaming-por-menos-de-100-euros",
-      },
-    },
-  ];
+  const paths = [];
   return {
     paths,
     fallback: "blocking",

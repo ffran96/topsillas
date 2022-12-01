@@ -12,8 +12,7 @@ import {
   Container,
   ContainerTop,
 } from "/components/Imports";
-import { slugToTitle } from "/Functions"
-
+import { slugToTitle } from "/Functions";
 
 export default function Articulo({ post, slugs }) {
   const p = post.postBy;
@@ -71,15 +70,20 @@ export default function Articulo({ post, slugs }) {
     </>
   );
 }
-
 export async function getStaticPaths() {
-  const paths = [];
+  const paths = [
+    {
+      params: {
+        category: "sillas-gaming",
+        post: "mejores-sillas-gaming-por-menos-de-100-euros",
+      },
+    },
+  ];
   return {
     paths,
     fallback: "blocking",
   };
 }
-
 
 export async function getStaticProps({ params }) {
   const slugs = {
@@ -164,4 +168,3 @@ export async function getStaticProps({ params }) {
     revalidate: 10, // In seconds
   };
 }
-

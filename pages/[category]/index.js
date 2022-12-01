@@ -2,13 +2,13 @@ import React from "react";
 import { client } from "/lib/apollo";
 import { gql } from "@apollo/client";
 import { Container, ArticlesComp, SEO, Migas } from "/components/Imports";
-import { slugToTitle } from "/Functions"
+import { slugToTitle } from "/Functions";
 
 export default function Articulos({ articles, slug_category }) {
   return (
     <>
       <Container>
-      <Migas
+        <Migas
           category={slugToTitle(slug_category)}
           categoryURL={"/" + slug_category}
           article={""}
@@ -31,7 +31,7 @@ export default function Articulos({ articles, slug_category }) {
 }
 
 export async function getStaticPaths() {
-  const paths = [];
+  const paths = [{ params: { category: "sillas-gaming" } }];
   return {
     paths,
     fallback: "blocking",

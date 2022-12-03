@@ -71,11 +71,10 @@ export default function Articulo({ post, slugs }) {
   );
 }
 export async function getStaticPaths() {
-  const paths = [];
   return {
-    paths,
-    fallback: "blocking",
-  };
+    paths: [],
+    fallback: false, // can also be true or 'blocking'
+  }
 }
 
 export async function getStaticProps({ params }) {

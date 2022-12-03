@@ -1,13 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function index({Data, Category}) {
+export default function index({ Data, Category }) {
   return (
     <>
       {Data.map((item) => (
         <div key={item.id} className="container">
           <article>
-            <Link href={"/"+Category+"/"+item.slug} passHref>
+            <Link
+              href={"[category]/[post]"}
+              as={"/" + Category + "/" + item.slug}
+              passHref
+            >
               <div className="figure">
                 <Image
                   src={item.acfArticulo.cabecera.portada.mediaItemUrl}
@@ -18,11 +22,18 @@ export default function index({Data, Category}) {
               </div>
             </Link>
             <div className="text">
-              <Link href={"/"+Category+"/"+item.slug} passHref>
+              <Link
+                href={"[category]/[post]"}
+                as={"/" + Category + "/" + item.slug}
+                passHref
+              >
                 <h3>{item.title}</h3>
               </Link>
               <div dangerouslySetInnerHTML={{ __html: item.excerpt }} />
-              <Link href={"/"+Category+"/"+item.slug}>
+              <Link
+                href={"[category]/[post]"}
+                as={"/" + Category + "/" + item.slug}
+              >
                 <a>
                   <div className="buttom"> Leer más</div>
                 </a>
@@ -43,7 +54,6 @@ export default function index({Data, Category}) {
           margin: auto;
           margin-bottom: 2em;
           margin-top: 1em;
-
         }
         article {
           margin: auto;
@@ -62,7 +72,7 @@ export default function index({Data, Category}) {
         .buttom {
           float: right;
           padding: 0.8em;
-          background-color: #2C3E50;
+          background-color: #2c3e50;
           color: #ffffff;
           font-weight: 700;
           text-align: center;
@@ -89,7 +99,7 @@ export default function index({Data, Category}) {
           margin: 0;
           cursor: pointer;
         }
-        h3:hover{
+        h3:hover {
           text-decoration: underline;
         }
         @media only screen and (min-width: 600px) {
@@ -104,9 +114,9 @@ export default function index({Data, Category}) {
             border-radius: 0;
             overflow: visible;
             margin: 16px;
-            transition: all .5s ease;
+            transition: all 0.5s ease;
           }
-          .figure:hover{
+          .figure:hover {
             opacity: 0.9;
           }
           h3 {
@@ -149,10 +159,10 @@ export default function index({Data, Category}) {
 
           .buttom:hover {
             background-color: transparent;
-            color: #2C3E50;
-            border: 2px solid #2C3E50;
+            color: #2c3e50;
+            border: 2px solid #2c3e50;
           }
-          
+
           .figure {
             min-width: 420px;
           }

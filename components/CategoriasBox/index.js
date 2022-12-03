@@ -4,7 +4,7 @@ import Image from "next/image";
 const index = (props) => {
   return (
     <>
-      <Link href={props.link}>
+      <Link href={"/[category]"} as={props.link}>
         <a>
           <div className="box">
             <div className="image">

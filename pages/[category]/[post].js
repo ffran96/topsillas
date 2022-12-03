@@ -12,7 +12,6 @@ import {
   Container,
   ContainerTop,
 } from "/components/Imports";
-import { slugToTitle } from "/Functions";
 
 export default function Articulo({ post, slugs }) {
   const p = post.postBy;

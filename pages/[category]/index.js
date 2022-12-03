@@ -2,7 +2,6 @@ import React from "react";
 import { client } from "/lib/apollo";
 import { gql } from "@apollo/client";
 import { Container, ArticlesComp, SEO, Migas } from "/components/Imports";
-import { slugToTitle } from "/Functions";
 
 export default function Articulos({ articles, slug_category }) {
   return (
@@ -15,7 +14,7 @@ export default function Articulos({ articles, slug_category }) {
         />
         <SEO
           url={slug_category}
-          title={slugToTitle(slug_category)}
+          title={"Category"}
           description="En este artículo podrás encontrar las mejores sillas gaming del mercado por menos de 100 euros."
           img="https://www.topsillas.info/_next/image?url=%2Fsilla-gaming.jpg&w=256&q=75"
           width="644"

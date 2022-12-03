@@ -9,7 +9,7 @@ export default function Articulos({ articles, slug_category }) {
     <>
       <Container>
         <Migas
-          category={slugToTitle(slug_category)}
+          category={"Category"}
           categoryURL={"/" + slug_category}
           article={""}
         />

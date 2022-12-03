@@ -16,10 +16,11 @@ function ALT(title) {
   return ALT;
 }
 
+/*
 function slugToTitle(slug) {
   var cat = slug.replaceAll("-", " ");
   const category = cat[0].toUpperCase() + cat.substring(1);
   return category;
 }
-
-export { URL, SRC, ALT, slugToTitle };
+*/
+export { URL, SRC, ALT };

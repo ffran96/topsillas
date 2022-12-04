@@ -30,9 +30,32 @@ export default function Articulos({ articles, slug_category }) {
 }
 
 export async function getStaticPaths() {
+  const GET_CATEGORIES = gql`
+    query getCategorySlugs {
+      pages {
+        nodes {
+          slug
+        }
+      }
+    }
+  `;
+  const response = await client.query({
+    query: GET_CATEGORIES,
+  });
+
+  const categories = response?.data?.pages?.nodes;
+
+  const paths = categories.map(({ slug }) => {
+    return {
+      params: {
+        category: slug,
+      },
+    };
+  });
+
   return {
-    paths: [{ params: { category: "sillas-gaming" } }],
-    fallback: false, // can also be true or 'blocking'
+    paths,
+    fallback: false,
   };
 }
 

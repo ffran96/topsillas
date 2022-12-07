@@ -93,7 +93,7 @@ query getSlugs {
   const paths = slugs.map(({ slug, categories }) => {
     return {
       params: {
-        category: 'a' ,
+        category: 'sillas-gaming' ,
         post: slug
       },
     };

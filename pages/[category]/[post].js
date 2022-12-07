@@ -70,10 +70,33 @@ export default function Articulo({ post, slugs }) {
   );
 }
 export async function getStaticPaths() {
+  const GET_ALL_SLUGS = gql`
+    query getAllSlugs {
+      posts {
+        nodes {
+          slug
+        }
+      }
+      pages {
+        nodes {
+          slug
+        }
+      }
+    }
+  `;
+  const response = await client.query({
+    query: GET_ALL_SLUGS,
+  });
+
+  const categories = response?.data?.pages?.nodes;
+  const posts = response?.data?.posts?.nodes;
+
+  const paths = [];
+
   return {
-    paths: [],
-    fallback: false, // can also be true or 'blocking'
-  }
+    paths,
+    fallback: true,
+  };
 }
 
 export async function getStaticProps({ params }) {

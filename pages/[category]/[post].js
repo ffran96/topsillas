@@ -71,31 +71,38 @@ export default function Articulo({ post, slugs }) {
 }
 export async function getStaticPaths() {
   const GET_ALL_SLUGS = gql`
-    query getAllSlugs {
-      posts {
-        nodes {
-          slug
-        }
-      }
-      pages {
+query getSlugs {
+  posts {
+    nodes {
+      slug
+      categories {
         nodes {
           slug
         }
       }
     }
+  }
+}
   `;
   const response = await client.query({
     query: GET_ALL_SLUGS,
   });
 
-  const categories = response?.data?.pages?.nodes;
-  const posts = response?.data?.posts?.nodes;
+  const slugs = response?.data?.posts?.nodes;
 
-  const paths = [];
+  const paths = slugs.map(({ slug, categories }) => {
+    return {
+      params: {
+        category: 'a' ,
+        post: slug
+      },
+    };
+  });
+
 
   return {
     paths,
-    fallback: true,
+    fallback: false,
   };
 }
 

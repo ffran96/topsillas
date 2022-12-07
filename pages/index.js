@@ -9,7 +9,7 @@ export default function Home({ categories }) {
       <SEO
         url="sillas-gamers/mejores-sillas-gaming-por-menos-de-100-euros"
         title="Inicio"
-        description="En este artículo podrás encontrar las mejores sillas gaming del mercado por menos de 100 euros."
+        description="▶ Las mejores ofertas y chollos los encontrarás en Top Sillas🔥 TODO lo que quieras saber sobre la silla que buscas lo tienes en Topsillas.info"
         img="https://www.topsillas.info/_next/image?url=%2Fsilla-gaming.jpg&w=256&q=75"
         width="644"
         height="1109"

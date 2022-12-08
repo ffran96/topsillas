@@ -29,16 +29,6 @@ export default function index(props) {
       <meta property="og:image:height" content={props.height} />
 
       <meta name="theme-color" content="#000000" />
-
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-FJ4E81T7VQ"
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || []; function gtag()
-        {dataLayer.push(arguments)}
-        gtag('js', new Date()); gtag('config', 'G-FJ4E81T7VQ');
-      </script>
     </Head>
   );
 }

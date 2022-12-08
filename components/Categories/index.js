@@ -1,5 +1,4 @@
 import { CategoriasBox } from "/components/Imports";
-import { URL, SRC, ALT } from "../../Functions";
 
 import React from "react";
 

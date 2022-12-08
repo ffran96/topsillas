@@ -30,7 +30,7 @@ export default function Articulo({ post, slugs }) {
        */}
       <Container>
         <Migas
-          category={"Category"}
+          category={p.categories.nodes[0].name}
           categoryURL={"/" + slugs.categoria}
           article={p.title}
         />

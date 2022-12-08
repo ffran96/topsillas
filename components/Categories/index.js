@@ -6,7 +6,7 @@ import React from "react";
 export default function Categories({ props }) {
   return (
     <>
-      <h1>Categorías recomendadas por TopSillas</h1>
+      <h1>Categorías recomendadas por Top Sillas 🔥</h1>
       <div className="container">
         {props.map((i, index) => (
           <CategoriasBox

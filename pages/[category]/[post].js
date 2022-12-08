@@ -71,18 +71,18 @@ export default function Articulo({ post, slugs }) {
 }
 export async function getStaticPaths() {
   const GET_ALL_SLUGS = gql`
-query getSlugs {
-  posts {
-    nodes {
-      slug
-      categories {
+    query getSlugs {
+      posts {
         nodes {
           slug
+          categories {
+            nodes {
+              slug
+            }
+          }
         }
       }
     }
-  }
-}
   `;
   const response = await client.query({
     query: GET_ALL_SLUGS,
@@ -93,12 +93,11 @@ query getSlugs {
   const paths = slugs.map(({ slug, categories }) => {
     return {
       params: {
-        category: 'sillas-gaming' ,
-        post: slug
+        category: categories.nodes[0].slug,
+        post: slug,
       },
     };
   });
-
 
   return {
     paths,

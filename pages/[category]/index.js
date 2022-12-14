@@ -3,7 +3,7 @@ import { client } from "/lib/apollo";
 import { gql } from "@apollo/client";
 import { Container, ArticlesComp, SEO, Migas } from "/components/Imports";
 
-export default function Articulos({ articles, slug_category }) {
+export default function Articulos({ postResume, slug_category }) {
   return (
     <>
       <Container>
@@ -20,7 +20,7 @@ export default function Articulos({ articles, slug_category }) {
           width="644"
           height="1109"
         />
-        <ArticlesComp Data={articles} Category={slug_category} />
+        <ArticlesComp Data={postResume} Category={slug_category} />
         {/*
           <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
          */}
@@ -55,59 +55,48 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: 'blocking',
+    fallback: "blocking",
   };
 }
 
 export async function getStaticProps({ params }) {
-  const GET_CATEGORIES = gql`
-    query Categories {
-      pages {
-        nodes {
-          slug
-        }
-      }
-    }
-  `;
-
-  const res = await client.query({
-    query: GET_CATEGORIES,
-  });
-
-  const categories = res?.data?.pages?.nodes;
-
   const GET_ARTICLES = gql`
-  query ArticlesByCategory {
-    posts(where: {categoryName: "${params.category}"}) {
-      nodes {
-        id
-        title
-        excerpt
-        slug
-        content
-        acfArticulo {
-          cabecera {
-            portada {
-              mediaItemUrl
-              altText
+    query ArticlesByCategory {
+      posts(where: {categoryName: "${params.category}"}) {
+        nodes {
+          id
+          title
+          excerpt
+          slug
+          content
+          acfArticulo {
+            cabecera {
+              portada {
+                mediaItemUrl
+                altText
+              }
+            }
+          }
+          categories {
+            nodes {
+              name
+              slug
             }
           }
         }
       }
     }
-  }
 `;
 
   const response = await client.query({
     query: GET_ARTICLES,
   });
-  const articles = response?.data?.posts?.nodes;
+  const postResume = response?.data?.posts?.nodes;
   const slug_category = params.category;
 
   return {
     props: {
-      articles,
-      categories,
+      postResume,
       slug_category,
     },
     revalidate: 10, // In seconds

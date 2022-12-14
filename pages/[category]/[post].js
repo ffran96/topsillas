@@ -26,8 +26,7 @@ export default function Articulo({ post, slugs }) {
         width="644"
         height="1109"
       />
-      {/*        <TablaContenido contenido={Contenido} />
-       */}
+      {/* <TablaContenido contenido={Contenido} /> */}
       <Container>
         <Migas
           category={p.categories.nodes[0].name}
@@ -69,6 +68,7 @@ export default function Articulo({ post, slugs }) {
     </>
   );
 }
+
 export async function getStaticPaths() {
   const GET_ALL_SLUGS = gql`
     query getSlugs {
@@ -188,3 +188,4 @@ export async function getStaticProps({ params }) {
     revalidate: 10, // In seconds
   };
 }
+

@@ -129,7 +129,7 @@ const index = () => {
           font-size: 14px;
         }
 
-        @media only screen and (min-width: 1200px) {
+{/*         @media only screen and (min-width: 1200px) {
           .containerr {
             display: flex;
             justify-content: space-between;
@@ -153,7 +153,7 @@ const index = () => {
             cursor: pointer;
             text-decoration: underline;
           }
-        }
+        } */}
       `}</style>
     </>
   );

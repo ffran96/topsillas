@@ -20,7 +20,10 @@ export default function Articulos({ postResume }) {
           width="644"
           height="1109"
         />
-        <ArticlesComp Data={postResume} Category={postResume[0].categories.nodes[0].slug} />
+        <ArticlesComp
+          Data={postResume}
+          Category={postResume[0].categories.nodes[0].slug}
+        />
         {/*
           <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
          */}
@@ -55,7 +58,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: false,
+    fallback: "blocking",
   };
 }
 

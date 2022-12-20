@@ -3,24 +3,24 @@ import { client } from "/lib/apollo";
 import { gql } from "@apollo/client";
 import { Container, ArticlesComp, SEO, Migas } from "/components/Imports";
 
-export default function Articulos({ postResume, slug_category }) {
+export default function Articulos({ postResume }) {
   return (
     <>
       <Container>
         <Migas
-          category={"Category"}
-          categoryURL={"/" + slug_category}
+          category={postResume[0].categories.nodes[0].name}
+          categoryURL={"/" + postResume[0].categories.nodes[0].slug}
           article={""}
         />
         <SEO
-          url={slug_category}
-          title={"Category"}
+          url={postResume[0].categories.nodes[0].slug}
+          title={postResume[0].categories.nodes[0].name}
           description="En este artículo podrás encontrar las mejores sillas gaming del mercado por menos de 100 euros."
           img="https://www.topsillas.info/_next/image?url=%2Fsilla-gaming.jpg&w=256&q=75"
           width="644"
           height="1109"
         />
-        <ArticlesComp Data={postResume} Category={slug_category} />
+        <ArticlesComp Data={postResume} Category={postResume[0].categories.nodes[0].slug} />
         {/*
           <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
          */}
@@ -55,7 +55,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: "blocking",
+    fallback: false,
   };
 }
 

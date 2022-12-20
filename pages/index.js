@@ -3,7 +3,7 @@ import { client } from "../lib/apollo";
 import { gql } from "@apollo/client";
 import { Categories, ArticulosRecomendados, SEO } from "/components/Imports";
 
-export default function Home({ categories }) {
+export default function Home({ categories, recommendedArticles }) {
   return (
     <>
       <SEO
@@ -15,7 +15,7 @@ export default function Home({ categories }) {
         height="240"
       />
       <Categories props={categories} />
-      <ArticulosRecomendados />
+      <ArticulosRecomendados props={recommendedArticles} />
     </>
   );
 }
@@ -47,10 +47,43 @@ export async function getStaticProps() {
   });
   const categories = response?.data?.pages?.nodes;
 
+  const GET_RECOMMENDED_ARTICLES = gql`
+    query getRecommendedArticles {
+      posts(first: 10) {
+        nodes {
+          title
+          slug
+          id
+          categories {
+            nodes {
+              name
+              slug
+            }
+          }
+          excerpt
+          acfArticulo {
+            cabecera {
+              portada {
+                sourceUrl
+                altText
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const secondResponse = await client.query({
+    query: GET_RECOMMENDED_ARTICLES,
+  });
+  const recommendedArticles = secondResponse?.data?.posts?.nodes;
+
   return {
     props: {
       categories,
+      recommendedArticles,
     },
-    revalidate: 10, // In seconds
+    revalidate: 60, // In seconds
   };
 }

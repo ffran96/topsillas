@@ -99,6 +99,6 @@ export async function getStaticProps({ params }) {
       postResume,
       slug_category,
     },
-    revalidate: 10, // In seconds
+    revalidate: 60, // In seconds
   };
 }

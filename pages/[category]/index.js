@@ -96,12 +96,17 @@ export async function getStaticProps({ params }) {
   });
   const postResume = response?.data?.posts?.nodes;
   const slug_category = params.category;
-
-  return {
-    props: {
-      postResume,
-      slug_category,
-    },
-    revalidate: 60, // In seconds
-  };
+  if (Object.keys(postResume).length !== 0) {
+    return {
+      props: {
+        postResume,
+        slug_category,
+      },
+      revalidate: 60,
+    };
+  } else {
+    return {
+      notFound: true,
+    };
+  }
 }

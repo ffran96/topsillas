@@ -177,14 +177,17 @@ export async function getStaticProps({ params }) {
 
   const post = response?.data;
 
-  return {
-    props: {
-      post,
-      slugs,
-    },
-    // Next.js will attempt to re-generate the page:
-    // - When a request comes in
-    // - At most once every 10 seconds
-    revalidate: 60, // In seconds
-  };
+  if (post.postBy === null) {
+    return {
+      notFound: true,
+    };
+  } else {
+    return {
+      props: {
+        post,
+        slugs,
+      },
+      revalidate: 60,
+    };
+  }
 }

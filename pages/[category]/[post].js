@@ -12,9 +12,21 @@ import {
   Container,
   ContainerTop,
 } from "/components/Imports";
+import FboxSpaceBetween from "/components/FboxSpaceBetween";
+import DateAuthor from "/components/DateAuthor";
 
 export default function Articulo({ post, slugs }) {
   const p = post.postBy;
+
+  let formattedDate = new Date(p.date).toLocaleDateString("es-ES", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  });
 
   return (
     <>
@@ -28,11 +40,12 @@ export default function Articulo({ post, slugs }) {
       />
       {/* <TablaContenido contenido={Contenido} /> */}
       <Container>
-        <Migas
-          category={p.categories.nodes[0].name}
-          categoryURL={"/" + slugs.categoria}
-          article={p.title}
-        />
+          <Migas
+            category={p.categories.nodes[0].name}
+            categoryURL={"/" + slugs.categoria}
+            article={p.title}
+          />
+
         <Cabecera
           key={p.id}
           title={p.title}
@@ -41,6 +54,10 @@ export default function Articulo({ post, slugs }) {
           text={p.acfArticulo.cabecera.introduccion}
           width={478.4}
           height={268.4}
+          dateTime={p.date}
+          date={formattedDate}
+          nameAvatar={p.author.node.name}
+          authorAvatar={p.author.node.avatar.url}
         />
 
         {p.acfArticulo.top.map((i, index) => (
@@ -62,9 +79,22 @@ export default function Articulo({ post, slugs }) {
             <Buttom url={i.boton.enlace} label={i.boton.label} />
           </ContainerTop>
         ))}
-        <div dangerouslySetInnerHTML={{ __html: p.acfArticulo.veredicto }} />
-        <div dangerouslySetInnerHTML={{ __html: p.acfArticulo.otros }} />
+        <div
+          className="container"
+          dangerouslySetInnerHTML={{ __html: p.acfArticulo.veredicto }}
+        />
+        <div
+          className="container"
+          dangerouslySetInnerHTML={{ __html: p.acfArticulo.otros }}
+        />
       </Container>
+      <style jsx>{`
+        @media only screen and (min-width: 1200px) {
+          .container {
+            padding: 1em 6em;
+          }
+        }
+      `}</style>
     </>
   );
 }
@@ -125,6 +155,7 @@ export async function getStaticProps({ params }) {
                 height
                 width
               }
+
             }
             introduccion
           }
@@ -161,7 +192,16 @@ export async function getStaticProps({ params }) {
           }
         }
         title
+        date
         id
+        author {
+          node {
+            avatar {
+              url
+            }
+          name
+      }
+    }
       }
       tags {
         nodes {

@@ -79,6 +79,7 @@ export async function getStaticProps({ params }) {
                 altText
               }
             }
+            otros
           }
           categories {
             nodes {

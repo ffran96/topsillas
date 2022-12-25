@@ -7,7 +7,7 @@ export default function index({ children }) {
           margin: 0;
           padding: 1em;
           background-color: #ffffff;
-          min-height: 800px;
+          min-height: 100vh;
         }
 
         @media only screen and (min-width: 600px) {
@@ -33,7 +33,6 @@ export default function index({ children }) {
           .container {
             max-width: 1072px;
             background-color: #ffffff;
-            padding: 2em 6em;
           }
         }
 

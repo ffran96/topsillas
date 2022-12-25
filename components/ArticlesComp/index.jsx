@@ -152,6 +152,7 @@ export default function index({ Data, Category }) {
           }
           .container {
             max-width: 1072px;
+            margin: 1em 3em 0em 3em;
           }
           article {
             flex-direction: row;
@@ -164,7 +165,10 @@ export default function index({ Data, Category }) {
           }
 
           .figure {
-            min-width: 420px;
+            width: 400px;
+          }
+          .text {
+            width: 600px;
           }
         }
         @media only screen and (min-width: 1600px) {

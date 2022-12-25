@@ -15,6 +15,7 @@ export default function index(props) {
       </div>
       <style jsx>{`
         .migas {
+          padding: 1em;
           font-size: 10.5px;
           font-weight: 600;
         }

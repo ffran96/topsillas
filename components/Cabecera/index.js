@@ -30,6 +30,14 @@ const index = (props) => {
         </div>
       </div>
       <style jsx>{`
+        .figure {
+          max-width: 478.4px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 0.1em;
+          margin: auto;
+        }
         h1 {
           text-align: center;
           text-transform: uppercase;

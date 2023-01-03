@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["wp.topsillas.info","secure.gravatar.com"],
+    domains: ["wp.topsillas.info","secure.gravatar.com","www.topsillas.info/"],
     // loader: 'akamai',
     // path: '',
   },

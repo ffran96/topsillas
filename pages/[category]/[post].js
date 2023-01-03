@@ -12,8 +12,6 @@ import {
   Container,
   ContainerTop,
 } from "/components/Imports";
-import FboxSpaceBetween from "/components/FboxSpaceBetween";
-import DateAuthor from "/components/DateAuthor";
 
 export default function Articulo({ post, slugs }) {
   const p = post.postBy;
@@ -33,18 +31,18 @@ export default function Articulo({ post, slugs }) {
       <SEO
         url={slugs.categoria + "/" + slugs.post}
         title={p.title}
-        description="En este artículo podrás encontrar las mejores sillas gaming del mercado por menos de 100 euros."
-        img="https://www.topsillas.info/_next/image?url=%2Fsilla-gaming.jpg&w=256&q=75"
-        width="644"
-        height="1109"
+        description={p.acfArticulo.descriptionseoacf}
+        img={p.featuredImage.node.sourceUrl}
+        width="250"
+        height="250"
       />
       {/* <TablaContenido contenido={Contenido} /> */}
       <Container>
-          <Migas
-            category={p.categories.nodes[0].name}
-            categoryURL={"/" + slugs.categoria}
-            article={p.title}
-          />
+        <Migas
+          category={p.categories.nodes[0].name}
+          categoryURL={"/" + slugs.categoria}
+          article={p.title}
+        />
 
         <Cabecera
           key={p.id}
@@ -185,6 +183,7 @@ export async function getStaticProps({ params }) {
           }
           veredicto
           otros
+          descriptionseoacf
         }
         categories {
           nodes {
@@ -200,8 +199,13 @@ export async function getStaticProps({ params }) {
               url
             }
           name
-      }
-    }
+          }
+        }
+        featuredImage {
+          node {
+            sourceUrl
+          }
+        }
       }
       tags {
         nodes {

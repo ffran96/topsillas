@@ -5,8 +5,8 @@ import React from "react";
 export default function Categories({ props }) {
   return (
     <>
-      <div className="cover">
         <h1>Top Sillas | Las mejores reseñas y comparativas sobre sillas</h1>
+{/*       <div className="cover">
         <p>
           <b>¡Bienvenido a Topsillas.info!</b> Somos un blog enfocado en
           proporcionar<b> reseñas y comparativas de sillas</b> disponibles en
@@ -28,8 +28,7 @@ export default function Categories({ props }) {
           disfrutes de tu visita a Topsillas.info y no dudes en contactarnos con
           cualquier pregunta o sugerencia!
         </p>
-      </div>
-      <h2>Categorías</h2>
+      </div> */}
       <div className="container">
         {props.map((i, index) => (
           <CategoriasBox
@@ -47,12 +46,15 @@ export default function Categories({ props }) {
       <style jsx>{`
         .cover {
           padding: 10px;
-          background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://assets.architecturaldigest.in/photos/60083ce108ae763b9ae852fa/master/w_1920,h_1080,c_limit/dlf-magnolias-gurugram-penthouse-featured-image.jpg");
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.7),
+              rgba(0, 0, 0, 0.7)
+            ),
+            url("https://assets.architecturaldigest.in/photos/60083ce108ae763b9ae852fa/master/w_1920,h_1080,c_limit/dlf-magnolias-gurugram-penthouse-featured-image.jpg");
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
           height: calc(100vh - 70px);
-
         }
 
         .container {
@@ -89,7 +91,7 @@ export default function Categories({ props }) {
           margin: 0 010 10px;
         }
         h1 {
-          color: #FFF;
+          color: #000;
           max-height: calc(100vh - 70px);
           margin: auto;
           margin-top: 0.7em;
@@ -102,8 +104,8 @@ export default function Categories({ props }) {
           margin-top: 0.7em;
         }
 
-        p { 
-          color: #FFF;
+        p {
+          color: #fff;
           max-width: 320px;
           margin: auto;
           margin-top: 0.7em;

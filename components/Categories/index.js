@@ -91,6 +91,7 @@ export default function Categories({ props }) {
           margin: 0 010 10px;
         }
         h1 {
+          max-width: 320px;
           color: #000;
           max-height: calc(100vh - 70px);
           margin: auto;

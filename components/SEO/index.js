@@ -9,7 +9,7 @@ export default function index(props) {
         content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
       />
 
-      <title>{props.title} | Top Sillas</title>
+      <title>{props.title}</title>
       <meta name="description" content={props.description} />
 
       <link rel="canonical" href={"https://www.topsillas.info/" + props.url} />

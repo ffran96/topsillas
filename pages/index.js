@@ -8,7 +8,7 @@ export default function Home({ categories, recommendedArticles }) {
     <>
       <SEO
         url=""
-        title="Las mejores reseñas y comparativas sobre sillas"
+        title="Las mejores reseñas y comparativas sobre sillas | Top Sillas"
         description="Las mejores ofertas, precios y chollos los encontrarás en Top Sillas. Todo lo que quieras saber sobre la silla que buscas lo tienes en Topsillas.info"
         img="https://www.topsillas.info/_next/image?url=https%3A%2F%2Fwp.topsillas.info%2Fwp-content%2Fuploads%2F2022%2F11%2Fsillas-gaming.jpg&w=256&q=75"
         width="240"

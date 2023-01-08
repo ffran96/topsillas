@@ -30,7 +30,7 @@ export default function Articulo({ post, slugs }) {
     <>
       <SEO
         url={slugs.categoria + "/" + slugs.post}
-        title={p.title+" | Top Sillas"}
+        title={`Top Sillas - ${p.title}`}
         description={p.acfArticulo.descriptionseoacf}
         img={p.featuredImage.node.sourceUrl}
         width="250"

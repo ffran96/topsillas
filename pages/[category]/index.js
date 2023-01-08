@@ -14,7 +14,7 @@ export default function Articulos({ postResume }) {
         />
         <SEO
           url={postResume[0].categories.nodes[0].slug}
-          title={postResume[0].categories.nodes[0].name+" | Top Sillas"}
+          title={`Top Sillas - ${postResume[0].categories.nodes[0].name}`}
           description="En este artículo podrás encontrar las mejores sillas gaming del mercado por menos de 100 euros."
           img="https://www.topsillas.info/_next/image?url=%2Fsilla-gaming.jpg&w=256&q=75"
           width="644"

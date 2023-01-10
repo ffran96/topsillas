@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.7.0",
+    "@bradgarropy/next-google-analytics": "^1.0.2",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",

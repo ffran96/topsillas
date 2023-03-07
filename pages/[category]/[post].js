@@ -50,8 +50,8 @@ export default function Articulo({ post, slugs }) {
           titleId={p.id}
           img={p.acfArticulo.cabecera.portada.mediaItemUrl}
           text={p.acfArticulo.cabecera.introduccion}
-          width={478.4}
-          height={268.4}
+          width={500}
+          height={300}
           dateTime={p.date}
           date={formattedDate}
           nameAvatar={p.author.node.name}
@@ -64,8 +64,8 @@ export default function Articulo({ post, slugs }) {
               title={i.titulo}
               titleId={i.titulo}
               img={i.imagenDelTop.sourceUrl}
-              width={256}
-              height={434}
+              widthTop={i.imagenDelTop.mediaDetails.width}
+              heightTop={i.imagenDelTop.mediaDetails.height}
               url={i.boton.enlace}
               text={i.contenidoDelTop}
             />

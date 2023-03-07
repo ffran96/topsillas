@@ -16,8 +16,8 @@ const index = (props) => {
             <Image
               src={props.img}
               alt={props.img}
-              width={250}
-              height={400}
+              width={props.widthTop}
+              height={props.heightTop}
             />
           </div>
         </a>

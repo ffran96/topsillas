@@ -134,6 +134,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+  
   const slugs = {
     categoria: params.category,
     post: params.post,

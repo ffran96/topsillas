@@ -30,4 +30,23 @@ const Arrow = (props) => (
   </svg>
 );
 
-export { Lupa, Arrow };
+function Hamburguer() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      viewBox="0 0 283.426 283.426"
+      xmlSpace="preserve"
+    >
+      <g fill="#010002">
+        <path d="M0 40.84H283.426V88.575H0z"></path>
+        <path d="M0 117.282H283.426V165.017H0z"></path>
+        <path d="M0 194.851H283.426V242.586H0z"></path>
+      </g>
+    </svg>
+  );
+}
+
+
+
+export { Lupa, Arrow, Hamburguer };

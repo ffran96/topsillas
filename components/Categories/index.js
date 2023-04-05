@@ -6,29 +6,6 @@ export default function Categories({ props }) {
   return (
     <>
         <h1>Top Sillas | Las mejores reseñas y comparativas sobre sillas</h1>
-{/*       <div className="cover">
-        <p>
-          <b>¡Bienvenido a Topsillas.info!</b> Somos un blog enfocado en
-          proporcionar<b> reseñas y comparativas de sillas</b> disponibles en
-          Amazon. En nuestro sitio, encontrarás información detallada sobre{" "}
-          <b>sillas gaming, sillas de escritorio, sillas ergonómicas, etc...</b>{" "}
-        </p>
-        <p>
-          Nuestro objetivo es ayudarte a encontrar la silla perfecta para tus
-          necesidades, ya sea para{" "}
-          <b>
-            jugar a videojuegos, trabajar en el ordenador o simplemente sentarte
-            cómodamente durante largas horas.{" "}
-          </b>
-          Si estás buscando una <b>silla ergonómica</b> para evitar problemas de
-          espalda o una <b>silla gaming</b> para mejorar tu experiencia de
-          juego, ¡has venido al lugar correcto! Nos esforzamos por proporcionar
-          <b> información precisa y útil</b> para que puedas tomar una decisión
-          informada sobre <b>qué silla es la mejor para ti.</b> ¡Esperamos que
-          disfrutes de tu visita a Topsillas.info y no dudes en contactarnos con
-          cualquier pregunta o sugerencia!
-        </p>
-      </div> */}
       <div className="container">
         {props.map((i, index) => (
           <CategoriasBox
@@ -44,19 +21,6 @@ export default function Categories({ props }) {
       </div>
 
       <style jsx>{`
-        .cover {
-          padding: 10px;
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.7),
-              rgba(0, 0, 0, 0.7)
-            ),
-            url("https://assets.architecturaldigest.in/photos/60083ce108ae763b9ae852fa/master/w_1920,h_1080,c_limit/dlf-magnolias-gurugram-penthouse-featured-image.jpg");
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          height: calc(100vh - 70px);
-        }
-
         .container {
           display: grid;
           grid-template-columns: repeat(1, 1fr);

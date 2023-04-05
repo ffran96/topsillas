@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-
 const index = (props) => {
   return (
     <>
@@ -9,7 +8,6 @@ const index = (props) => {
           {props.title}
         </a>
       </h2>
-
       <div className="top-box">
         <a href={props.url} rel="nofollow noreferrer" target="_blank">
           <div className="top-image">
@@ -21,7 +19,10 @@ const index = (props) => {
             />
           </div>
         </a>
-        <div className="top-text" dangerouslySetInnerHTML={{__html: props.text}} />
+        <div
+          className="top-text"
+          dangerouslySetInnerHTML={{ __html: props.text }}
+        />
       </div>
 
       <style jsx>{`
@@ -30,7 +31,7 @@ const index = (props) => {
           text-decoration: none;
         }
 
-        h2 a:hover{
+        h2 a:hover {
           text-decoration: underline;
         }
 
@@ -44,7 +45,6 @@ const index = (props) => {
         }
 
         @media only screen and (min-width: 1200px) {
-     
           .top-box {
             max-width: 1000px;
             margin: auto;
@@ -56,8 +56,11 @@ const index = (props) => {
             min-width: 320px;
           }
 
+          h2{
+            font-size: 26px;
+          }
+
           .top-text {
-            
           }
         }
       `}</style>

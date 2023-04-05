@@ -50,11 +50,6 @@ export default function index({ children }) {
           line-height: 32px;
         }
 
-        .container li {
-          font-size: 18px;
-          line-height: 32px;
-        }
-
         * {
           box-sizing: border-box;
         }

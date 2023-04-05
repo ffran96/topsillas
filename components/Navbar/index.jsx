@@ -1,12 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Buscador } from "/components/Imports";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+import { Dropdown } from "/components/Imports";
 
-export default function index() {
+export default function Navbar() {
+  const [HandleClick, setHandleClick] = useState(false);
   return (
     <>
+      {HandleClick && <Dropdown />}
       <header className="header">
         <nav className="container">
           <div className="logo">
@@ -27,15 +31,20 @@ export default function index() {
             }
           </div>
           <div className="Lista">
-            <a
-              href="https://wp.topsillas.info"
-              rel="nofollow noreferrer"
-              target="_blank"
-            >
-              <div className="Categorias">
-                <span>Login</span>
-              </div>
-            </a>
+            <ul className="Categorias">
+              <li>Uso</li>
+              <li>Estancias</li>
+              <li>Material</li>
+              <li>Diseño</li>
+              <li>Marcas</li>
+            </ul>
+          </div>
+          <div
+            onClick={() => setHandleClick(!HandleClick)}
+            className="mobile-buttom-menu"
+            style={{ width: "25px", color: "white" }}
+          >
+            <FontAwesomeIcon icon={HandleClick ? faXmark : faBars} />
           </div>
         </nav>
       </header>
@@ -66,6 +75,7 @@ export default function index() {
 
         .Lista {
           display: flex;
+          text-decoration: none;
         }
         .Lista {
           color: white;
@@ -73,7 +83,8 @@ export default function index() {
           font-weight: 700;
         }
         .Lista .Categorias {
-          padding: 25px 20px;
+          gap: 2em;
+          list-style: none;
           display: flex;
           align-items: center;
           cursor: pointer;
@@ -83,6 +94,21 @@ export default function index() {
           display: flex;
           align-items: center;
           cursor: pointer;
+        }
+
+        .mobile-buttom-menu {
+          display: none;
+        }
+
+        @media only screen and (max-width: 768px) {
+          .Lista {
+            display: none;
+          }
+          .mobile-buttom-menu {
+            display: block;
+            z-index: 100;
+            cursor: pointer;
+          }
         }
 
         @media only screen and (min-width: 600px) {

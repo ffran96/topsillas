@@ -42,7 +42,7 @@ export default function Navbar() {
           <div
             onClick={() => setHandleClick(!HandleClick)}
             className="mobile-buttom-menu"
-            style={{ width: "25px", color: "white" }}
+            style={{ fontSize: "28px", color: "white" }}
           >
             <FontAwesomeIcon icon={HandleClick ? faXmark : faBars} />
           </div>
@@ -98,6 +98,7 @@ export default function Navbar() {
 
         .mobile-buttom-menu {
           display: none;
+          -webkit-tap-highlight-color: rgba(0,0,0,0)
         }
 
         @media only screen and (max-width: 768px) {

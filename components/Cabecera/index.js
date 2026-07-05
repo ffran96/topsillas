@@ -1,70 +1,46 @@
 import Image from "next/image";
-import DateAuthor from "/components/DateAuthor";
 
-const index = (props) => {
+import { Badge } from "@/components/ui/badge";
+import DateAuthor from "../DateAuthor";
+
+export default function Cabecera(props) {
   return (
-    <>
-      <div className="container">
-        <h1 id={props.titleId}>{props.title}</h1>
-        <div className="cabecera">
-          <div className="figure">
-            <Image
-              src={props.img}
-              alt={props.img}
-              width={props.width}
-              height={props.height}
-            />
-            <div className="caption">
-              <DateAuthor
-                dateTime={props.dateTime}
-                date={props.date}
-                nameAvatar={props.nameAvatar}
-                authorAvatar={props.authorAvatar}
-              />
-            </div>
-          </div>
-          <div
-            className="cabecera-texto"
-            dangerouslySetInnerHTML={{ __html: props.text }}
+    <header className="mx-auto max-w-4xl px-4 pb-10 pt-4 sm:px-6 lg:px-8">
+      <div className="space-y-6">
+        <div className="space-y-4">
+          <Badge variant="secondary" className="w-fit">
+            Guia de compra
+          </Badge>
+          <h1
+            id={props.titleId}
+            className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl"
+          >
+            {props.title}
+          </h1>
+          <DateAuthor
+            dateTime={props.dateTime}
+            date={props.date}
+            nameAvatar={props.nameAvatar}
+            authorAvatar={props.authorAvatar}
           />
         </div>
+
+        <figure className="overflow-hidden rounded-lg border border-border bg-muted shadow-sm">
+          <Image
+            src={props.img}
+            alt={props.title}
+            width={props.width}
+            height={props.height}
+            priority
+            className="h-full w-full object-cover"
+          />
+        </figure>
+
+        <div
+          className="article-content rounded-lg border border-border bg-card p-5 text-muted-foreground shadow-sm sm:p-6"
+          dangerouslySetInnerHTML={{ __html: props.text }}
+        />
       </div>
-      <style jsx>{`
-        .figure {
-          max-width: 478.4px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          gap: 0.1em;
-          margin: auto;
-        }
-        h1 {
-          text-align: center;
-          text-transform: uppercase;
-        }
-        .cabecera {
-          margin-bottom: 2.5em;
-        }
-
-        @media only screen and (min-width: 1200px) {
-          .container {
-            padding: 0em 6em;
-          }
-          h1 {
-            font-size: 52px;
-          }
-          .cabecera {
-            margin-bottom: 3.5em;
-          }
-
-          .figure {
-            float: left;
-            padding-right: 30px;
-          }
-        }
-      `}</style>
-    </>
+    </header>
   );
-};
-
-export default index;
+}

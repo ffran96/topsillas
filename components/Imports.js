@@ -16,6 +16,7 @@ import Container from "./Container";
 import ContainerTop from "./ContainerTop";
 import CentrarDiv from "./CentrarDiv";
 import Dropdown from "./Dropdown"
+import FaqArticulo from "./FaqArticulo";
 
 export {
   Navbar,
@@ -36,4 +37,5 @@ export {
   ContainerTop,
   CentrarDiv,
   Dropdown,
+  FaqArticulo,
 };

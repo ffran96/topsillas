@@ -1,7 +1,7 @@
 import React from "react";
 import { client } from "../lib/apollo";
 import { gql } from "@apollo/client";
-import { Categories, ArticulosRecomendados, SEO } from "/components/Imports";
+import { Categories, ArticulosRecomendados, SEO } from "../components/Imports";
 
 export default function Home({ categories, recommendedArticles }) {
   return (

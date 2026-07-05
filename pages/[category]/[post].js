@@ -1,5 +1,5 @@
 import React from "react";
-import { client } from "/lib/apollo";
+import { client } from "../../lib/apollo";
 import { gql } from "@apollo/client";
 import {
   SEO,
@@ -7,14 +7,21 @@ import {
   Cabecera,
   Buttom,
   TopBox,
-  TablaContenido,
   Migas,
   Container,
   ContainerTop,
-} from "/components/Imports";
+  FaqArticulo,
+} from "../../components/Imports";
 
 export default function Articulo({ post, slugs }) {
   const p = post.postBy;
+  const seoDescription = p.excerpt
+    ? p.excerpt.replace(/<[^>]*>/g, "")
+    : `Reseña de ${p.title} en Top Sillas`;
+  const seoImage =
+    p.featuredImage?.node?.sourceUrl ||
+    p.acfArticulo?.cabecera?.portada?.mediaItemUrl ||
+    "https://www.topsillas.info/logo.png";
 
   let formattedDate = new Date(p.date).toLocaleDateString("es-ES", {
     weekday: "long",
@@ -31,12 +38,11 @@ export default function Articulo({ post, slugs }) {
       <SEO
         url={slugs.categoria + "/" + slugs.post}
         title={`Top Sillas - ${p.title}`}
-        description={p.acfArticulo.descriptionseoacf}
-        img={p.featuredImage.node.sourceUrl}
+        description={seoDescription}
+        img={seoImage}
         width="250"
         height="250"
       />
-      {/* <TablaContenido contenido={Contenido} /> */}
       <Container>
         <Migas
           category={p.categories.nodes[0].name}
@@ -64,6 +70,7 @@ export default function Articulo({ post, slugs }) {
               title={i.titulo}
               titleId={i.titulo}
               img={i.imagenDelTop.sourceUrl}
+              alt={i.imagenDelTop.altText}
               widthTop={i.imagenDelTop.mediaDetails.width}
               heightTop={i.imagenDelTop.mediaDetails.height}
               url={i.boton.enlace}
@@ -77,22 +84,16 @@ export default function Articulo({ post, slugs }) {
             <Buttom url={i.boton.enlace} label={i.boton.label} />
           </ContainerTop>
         ))}
-        <div
-          className="container"
-          dangerouslySetInnerHTML={{ __html: p.acfArticulo.veredicto }}
-        />
-        <div
-          className="container"
-          dangerouslySetInnerHTML={{ __html: p.acfArticulo.otros }}
-        />
+
+        <section className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+          <div
+            className="article-content rounded-lg border border-border bg-card p-5 shadow-sm sm:p-7"
+            dangerouslySetInnerHTML={{ __html: p.acfArticulo.veredicto }}
+          />
+        </section>
+
+        <FaqArticulo items={p.acfArticulo.otros} />
       </Container>
-      <style jsx>{`
-        @media only screen and (min-width: 1200px) {
-          .container {
-            padding: 1em 6em;
-          }
-        }
-      `}</style>
     </>
   );
 }
@@ -183,14 +184,17 @@ export async function getStaticProps({ params }) {
             }
           }
           veredicto
-          otros
-          descriptionseoacf
+          otros {
+            pregunta
+            respuesta
+          }
         }
         categories {
           nodes {
             name
           }
         }
+        excerpt
         title
         date
         id

@@ -1,52 +1,24 @@
-import React from "react";
 import Image from "next/image";
+import { CalendarDays } from "lucide-react";
 
-export default function DateAuthor(props) {
+export default function DateAuthor({ authorAvatar, date, dateTime, nameAvatar }) {
   return (
-    <>
-      <div className="container">
-      <div className="autor">
-          <Image
-            src={props.authorAvatar}
-            className="avatar"
-            alt={"Avatar de " + props.nameAvatar}
-            width={25}
-            height={25}
-          ></Image>
-        </div>
-        <span className="name">{props.nameAvatar}</span>
-        <time
-          className="datePublished"
-          itemProp="datePublished"
-          dateTime={props.dateTime}
-        >
-          {props.date}
-        </time>
-      </div>
-      <style jsx global>{`
-        .avatar {
-          border-radius: 50%;
-        }
-      `}</style>
-      <style jsx>{`
-        .container {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 13px;
-        }
-        .container .name {
-          margin-left: 0.5em;
-        }
-        .datePublished {
-          margin-right: 0.5em;
-        }
-         
-           .container .name::after {
-          content: "|";
-        } 
-        
-      `}</style>
-    </>
+    <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+      {authorAvatar && (
+        <Image
+          src={authorAvatar}
+          alt={"Avatar de " + nameAvatar}
+          width={32}
+          height={32}
+          className="h-8 w-8 rounded-full border border-border"
+        />
+      )}
+      <span className="font-semibold text-foreground">{nameAvatar}</span>
+      <span className="hidden h-1 w-1 rounded-full bg-muted-foreground/50 sm:block" />
+      <time dateTime={dateTime} className="inline-flex items-center gap-2">
+        <CalendarDays className="h-4 w-4" />
+        {date}
+      </time>
+    </div>
   );
 }

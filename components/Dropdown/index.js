@@ -1,116 +1,53 @@
-import React, { useEffect, useState } from "react";
-import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
-const Desplegable = () => (
-  <>
-    <ul>
-      <li>Comedor</li>
-      <li>Oficina</li>
-      <li>Gaming</li>
-      <li>Puffs</li>
-    </ul>
+const menuSections = [
+  {
+    title: "Uso",
+    items: [
+      { title: "Comedor", slug: "sillas-de-comedor" },
+      { title: "Oficina", slug: "sillas-de-escritorio" },
+      { title: "Gaming", slug: "sillas-gaming" },
+      { title: "Puffs", slug: "puffs" },
+    ],
+  },
+  {
+    title: "Guías",
+    items: [
+      { title: "Exterior", slug: "sillas-de-exterior" },
+      { title: "Taburetes", slug: "taburetes-para-barra-o-cocina" },
+      { title: "Masaje", slug: "sillones-de-masaje" },
+      { title: "Mecedoras", slug: "sillas-mecedoras" },
+    ],
+  },
+];
 
-    <style jsx>{`
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      ul {
-        margin-top: 0.5em;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5em;
-      }
-      li {
-        font-size: 24px;
-        font-weight: 400;
-      }
-    `}</style>
-  </>
-);
-
-export default function Index() {
-  const [HandleClick, setHandleClick] = useState(false);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  });
-
+export default function Index({ onClose }) {
   return (
-    <>
-      <div className="dropdown-container">
-        <nav>
-          <ul>
-            <li>
-              <div
-                onClick={() => setHandleClick(!HandleClick)}
-                className="btn-label-icon-menu"
-              >
-                <div className="label">Uso</div>
-                <div className="icon" style={{ marginTop: "3px" }}>
-                  <FontAwesomeIcon
-                    icon={HandleClick ? faAngleUp : faAngleDown}
-                  />
-                </div>
-              </div>
-              {HandleClick && <Desplegable />}
-            </li>
-            <li>Estancias</li>
-            <li>Material</li>
-            <li>Diseño</li>
-            <li>Marcas</li>
-          </ul>
-        </nav>
-      </div>
-
-      <style global jsx>{`
-        body {
-          overflow-y: hidden;
-        }
-      `}</style>
-
-      <style jsx>{`
-        * {
-          margin: 0;
-          padding: 0;
-        }
-
-        .dropdown-container {
-          display: flex;
-          background-color: #2c3e50;
-          position: absolute;
-          justify-content: center;
-          width: 100%;
-          height: 100%;
-          z-index: 10;
-        }
-        .dropdown-container nav ul {
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: 2.5em;
-          list-style: none;
-        }
-        .btn-label-icon-menu {
-          display: flex;
-          height: 100%;
-          align-items: center;
-          gap: 0.3em;
-        }
-        .dropdown-container nav ul li {
-          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-          display: flex;
-          color: white;
-          font-size: 28px;
-          cursor: pointer;
-          flex-direction: column;
-          justify-content: center;
-        }
-      `}</style>
-    </>
+    <div className="fixed inset-x-0 top-18 z-30 border-b border-border bg-white shadow-lg md:hidden">
+      <nav className="mx-auto grid max-w-6xl gap-5 px-4 py-6">
+        {menuSections.map((section) => (
+          <section key={section.title}>
+            <h2 className="mb-2 text-xs font-bold uppercase text-muted-foreground">
+              {section.title}
+            </h2>
+            <ul className="grid gap-1">
+              {section.items.map((item) => (
+                <li key={item.slug}>
+                  <Link
+                    href={"/" + item.slug}
+                    onClick={onClose}
+                    className="flex items-center justify-between rounded-md px-3 py-3 text-base font-semibold text-foreground transition hover:bg-muted"
+                  >
+                    {item.title}
+                    <ChevronRight className="h-4 w-4 text-muted-foreground" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </nav>
+    </div>
   );
 }

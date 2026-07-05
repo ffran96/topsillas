@@ -1,46 +1,17 @@
-import Image from "next/image"
+import Link from "next/link";
+import { ExternalLink } from "lucide-react";
 
-const index = ({url,label}) => {
+import { Button } from "@/components/ui/button";
+
+export default function Buttom({ label, url }) {
   return (
-    <>
-      <div className="buttom">
-        <a href={url} rel="nofollow noreferrer" target="_blank">
-          <Image
-            src="/tag-solid.svg"
-            alt="tag del butón"
-            width="16"
-            height="16"
-          />
+    <div className="flex justify-center pt-2">
+      <Button asChild size="lg" className="rounded-full px-8">
+        <Link href={url} rel="nofollow noreferrer" target="_blank">
           {label}
-        </a>
-      </div>
-      <style jsx>{`
-        .buttom {
-          margin-top: 35px;
-          display: flex;
-          justify-content: center;
-        }
-
-        .buttom a {
-          padding: 15px;
-          color: #ffffff;
-          background-color: #E84D0E;
-          border-radius: 4px;
-          font-weight: 700;
-          cursor: pointer;
-          color: white;
-          text-decoration: none;
-          display: flex;
-          align-items: center;
-          gap: 10px;
-        }
-
-        .buttom a:hover {
-          filter: opacity(85%);
-        }
-      `}</style>
-    </>
+          <ExternalLink className="h-4 w-4" />
+        </Link>
+      </Button>
+    </div>
   );
-};
-
-export default index;
+}

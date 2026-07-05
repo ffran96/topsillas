@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import { ApolloProvider } from "@apollo/client";
 import { client } from "../lib/apollo";
-import { Navbar, Footer } from "/components/Imports";
+import { Navbar, Footer } from "../components/Imports";
 import GoogleAnalytics from "@bradgarropy/next-google-analytics";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'

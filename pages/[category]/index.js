@@ -1,7 +1,7 @@
 import React from "react";
-import { client } from "/lib/apollo";
+import { client } from "../../lib/apollo";
 import { gql } from "@apollo/client";
-import { Container, ArticlesComp, SEO, Migas } from "/components/Imports";
+import { Container, ArticlesComp, SEO, Migas } from "../../components/Imports";
 
 export default function Articulos({ postResume }) {
   return (
@@ -79,7 +79,6 @@ export async function getStaticProps({ params }) {
                 altText
               }
             }
-            otros
           }
           categories {
             nodes {
